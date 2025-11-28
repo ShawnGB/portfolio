@@ -25,6 +25,12 @@ func main() {
 	if err := handlers.LoadImages(); err != nil {
 		log.Printf("WARN: Failed to load images: %v", err)
 	}
+	if err := handlers.LoadFeaturedProjects(); err != nil {
+		log.Printf("WARN: Failed to load featured projects: %v", err)
+	}
+	if err := handlers.LoadGitHubStats(); err != nil {
+		log.Printf("WARN: Failed to load GitHub stats: %v", err)
+	}
 
 	mux := http.NewServeMux()
 
@@ -64,7 +70,7 @@ func registerPageRoutes(mux *http.ServeMux) {
 	mux.HandleFunc("/", handlers.NewPageHandler(pages.Home))
 	mux.HandleFunc("/about", handlers.NewPageHandler(pages.About))
 	mux.HandleFunc("/experience", handlers.NewPageHandler(pages.Experience))
-	mux.HandleFunc("/projects", handlers.NewPageHandler(pages.Projects))
+	mux.HandleFunc("/projects", handlers.ProjectsHandler)
 	mux.HandleFunc("/arts", handlers.ArtsHandler)
 	mux.HandleFunc("/contact", handlers.ContactHandler)
 }

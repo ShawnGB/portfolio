@@ -1,0 +1,65 @@
+package components
+
+import "mymodules/gofolio/types"
+import "mymodules/gofolio/i18n"
+import "fmt"
+
+// GitHubStatsSection displays GitHub statistics
+templ GitHubStatsSection(pCtx i18n.PageContext, stats *types.GitHubStats) {
+	if stats != nil {
+		<section class="github-stats-section">
+			<h2>{ pCtx.T("projects.github.title") }</h2>
+			<p class="section-intro">{ pCtx.T("projects.github.description") }</p>
+
+			<div class="stats-grid">
+				<div class="stat-card">
+					<div class="stat-icon">@Icon("calendar", "32", "")</div>
+					<div class="stat-content">
+						<div class="stat-value">{ fmt.Sprintf("%d+", stats.YearsOnGitHub) }</div>
+						<div class="stat-label">{ pCtx.T("projects.github.yearsActive") }</div>
+					</div>
+				</div>
+
+				<div class="stat-card">
+					<div class="stat-icon">@Icon("github", "32", "")</div>
+					<div class="stat-content">
+						<div class="stat-value">{ fmt.Sprintf("%d+", stats.TotalRepos) }</div>
+						<div class="stat-label">{ pCtx.T("projects.github.publicRepos") }</div>
+					</div>
+				</div>
+
+				<div class="stat-card">
+					<div class="stat-icon">@Icon("code", "32", "")</div>
+					<div class="stat-content">
+						<div class="stat-value">{ stats.PrimaryLanguage }</div>
+						<div class="stat-label">{ pCtx.T("projects.github.primaryLanguage") }</div>
+					</div>
+				</div>
+
+				<div class="stat-card stat-card-wide">
+					<div class="stat-icon">@Icon("zap", "32", "")</div>
+					<div class="stat-content">
+						<div class="stat-label">{ pCtx.T("projects.github.languages") }</div>
+						<div class="language-tags">
+							for i, lang := range stats.Languages {
+								if i < 8 {
+									<span class="language-tag">{ lang }</span>
+								}
+							}
+							if len(stats.Languages) > 8 {
+								<span class="language-tag">+{ fmt.Sprintf("%d", len(stats.Languages) - 8) }</span>
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="github-cta">
+				<a href={ templ.URL("https://github.com/" + "ShawnGB") } class="icon-link" target="_blank" rel="noopener noreferrer">
+					@Icon("github", "24", "")
+					{ pCtx.T("projects.github.viewProfile") }
+				</a>
+			</p>
+		</section>
+	}
+}

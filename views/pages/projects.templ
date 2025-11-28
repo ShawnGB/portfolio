@@ -3,102 +3,141 @@ package pages
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 import "mymodules/gofolio/views/components"
+import "mymodules/gofolio/types"
 
-templ Projects(pCtx i18n.PageContext) {
+templ Projects(pCtx i18n.PageContext, featuredProjects []types.FeaturedProject, githubStats *types.GitHubStats) {
 	@layouts.SubpageTemplate(pCtx, "projects.title", "projects.pageSubtitle", "projects.introduction.title", "projects.introduction.p1", "projects.pageTitle", "projects.pageMetaDescription") {
+		<!-- Featured Projects Carousel -->
+		if len(featuredProjects) > 0 {
+			<section class="featured-section">
+				<h2>{ pCtx.T("projects.featured.title") }</h2>
+				<p class="section-intro">{ pCtx.T("projects.featured.description") }</p>
+				@components.ProjectCarousel(pCtx, featuredProjects)
+			</section>
+			@layouts.SectionDivider()
+		}
+		<!-- GitHub Stats -->
+		@components.GitHubStatsSection(pCtx, githubStats)
+		@layouts.SectionDivider()
 		<section>
 			<h2>{ pCtx.T("projects.currentProject.title") }</h2>
-			<p>{ pCtx.T("projects.currentProject.description") }</p>
-			<dl class="project-details-list">
-				<dt>{ pCtx.T("projects.currentProject.motivation.label") }</dt>
-				<dd>{ pCtx.T("projects.currentProject.motivation.text") }</dd>
-				<dt>{ pCtx.T("projects.currentProject.stack.label") }</dt>
-				<dd>
-					<div class="skill-list">
-						<span class="tech-label">Go (Golang) + native SSR templating</span>
-						<span class="tech-label">Hosted on Render</span>
-						<span class="tech-label">Email service integration with Resend</span>
-						<span class="tech-label">Language fallback and routing (i18n)</span>
-						<span class="tech-label">No framework – pure HTML, CSS and logic</span>
+			<div class="badges-container featured">
+				<div class="badge featured-project">
+					<div class="badge-icon">
+						@components.Icon("code", "48", "")
+						<span class="status-indicator status-wip">🟠</span>
 					</div>
-				</dd>
-			</dl>
-			<p>
-				<a href="https://github.com/ShawnGB/portfolioingo" class="icon-link" target="_blank" rel="noopener noreferrer">
-					@components.Icon("github", "24", "")
-					{ pCtx.T("projects.currentProject.linkGithubText") }
-				</a>
-			</p>
+					<div class="badge-content">
+						<h3>go-folio</h3>
+						<p>{ pCtx.T("projects.currentProject.description") }</p>
+						<div class="badge-meta">
+							<p class="meta-label">{ pCtx.T("projects.currentProject.motivation.label") }</p>
+							<p class="meta-text">{ pCtx.T("projects.currentProject.motivation.text") }</p>
+							<p class="meta-label">{ pCtx.T("projects.currentProject.stack.label") }</p>
+							<div class="tech-badges">
+								<span class="tech-badge">Go</span>
+								<span class="tech-badge">Templ</span>
+								<span class="tech-badge">HTMX</span>
+								<span class="tech-badge">i18n</span>
+							</div>
+						</div>
+						<p class="badge-link">
+							<a href="https://github.com/ShawnGB/portfolioingo" class="icon-link" target="_blank" rel="noopener noreferrer">
+								@components.Icon("github", "24", "")
+								{ pCtx.T("projects.currentProject.linkGithubText") }
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		@layouts.SectionDivider()
 		<section>
 			<h2>{ pCtx.T("projects.websitesBuilt.title") }</h2>
-			<ul class="is-grid">
-				<li class="service-card">
-					<article>
+			<div class="badges-container grid-2col">
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("palette", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.jessebecker.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.jessebecker.description") }</p>
-						<p class="project-links">
+						<p class="badge-link">
 							<a href="http://www.jessebecker.com/" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("external", "24", "")
 								www.jessebecker.com
 							</a>
 						</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("heart", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.arinashanzev.description") }</p>
-						<p class="project-links">
+						<p class="badge-link">
 							<a href="https://arinashanzev.com" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("external", "24", "")
 								arinashanzev.com
 							</a>
 						</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("tool", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.berndwolf.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.berndwolf.description") }</p>
-						<p class="project-links">
+						<p class="badge-link">
 							<a href="https://berndwolf.net/en/home" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("external", "24", "")
 								berndwolf.net
 							</a>
 						</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("zap", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.description") }</p>
-						<p class="project-links">
+						<p class="badge-link">
 							<a href="https://www.evolve-festival.com/" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("external", "24", "")
 								www.evolve-festival.com
 							</a>
 						</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("github", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.oldPortfolio.description") }</p>
-						<p class="project-links">
+						<p class="badge-link">
 							<a href="https://github.com/ShawnGB/my-portfolio" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("github", "24", "")
 								{ pCtx.T("projects.currentProject.linkGithubText") }
 							</a>
 						</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("sparkles", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h3>
 						<p>{ pCtx.T("projects.websitesBuilt.uskillity.description") }</p>
-						<div class="project-links">
+						<div class="badge-links">
 							<a href="https://www.instagram.com/uskillity/" class="icon-link" target="_blank" rel="noopener noreferrer">
 								@components.Icon("external", "24", "")
 								{ pCtx.T("projects.websitesBuilt.uskillity.linkInstagramText") }
@@ -112,45 +151,64 @@ templ Projects(pCtx i18n.PageContext) {
 								{ pCtx.T("projects.websitesBuilt.uskillity.linkBackendRepoText") }
 							</a>
 						</div>
-					</article>
-				</li>
-			</ul>
+					</div>
+				</div>
+			</div>
 		</section>
 		@layouts.SectionDivider()
 		<section>
 			<h2>{ pCtx.T("projects.cultural.title") }</h2>
-			<ul class="is-grid">
-				<li class="service-card">
-					<article>
+			<div class="badges-container grid-2col">
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("sparkles", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.cultural.kultschaette.name") }</h3>
 						<p>{ pCtx.T("projects.cultural.kultschaette.p1") }</p>
 						<p>{ pCtx.T("projects.cultural.kultschaette.p2") }</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("compass", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.cultural.evolveFestivalSupport.name") }</h3>
 						<p>{ pCtx.T("projects.cultural.evolveFestivalSupport.p1") }</p>
-					</article>
-				</li>
-				<li class="service-card">
-					<article>
+					</div>
+				</div>
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("award", "48", "")
+					</div>
+					<div class="badge-content">
 						<h3>{ pCtx.T("projects.cultural.vegetarischDeluxe.name") }</h3>
 						<p>{ pCtx.T("projects.cultural.vegetarischDeluxe.p1") }</p>
-					</article>
-				</li>
-			</ul>
+					</div>
+				</div>
+			</div>
 		</section>
 		@layouts.SectionDivider()
 		<section>
 			<h2>{ pCtx.T("projects.film.title") }</h2>
-			<p>{ pCtx.T("projects.film.description") }</p>
-			<p>
-				<a href="https://www.crew-united.com/de/Shawn-Gordon-Becker_270405.html" class="icon-link" target="_blank" rel="noopener noreferrer">
-					@components.Icon("external", "24", "")
-					{ pCtx.T("projects.film.linkCrewUnitedText") }
-				</a>
-			</p>
+			<div class="badges-container featured">
+				<div class="badge">
+					<div class="badge-icon">
+						@components.Icon("external", "48", "")
+					</div>
+					<div class="badge-content">
+						<h3>{ pCtx.T("projects.film.title") }</h3>
+						<p>{ pCtx.T("projects.film.description") }</p>
+						<p class="badge-link">
+							<a href="https://www.crew-united.com/de/Shawn-Gordon-Becker_270405.html" class="icon-link" target="_blank" rel="noopener noreferrer">
+								@components.Icon("external", "24", "")
+								{ pCtx.T("projects.film.linkCrewUnitedText") }
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	}
 }

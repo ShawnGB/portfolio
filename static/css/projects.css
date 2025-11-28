@@ -1,21 +1,168 @@
-/* Project Details Lists */
-.project-details-list dt {
-  font-family: "Overpass Mono", monospace;
+/* ===================================
+   Projects Page - Badge-based Design
+   =================================== */
+
+/* Featured Current Project - Emphasis */
+.badge.featured-project {
+  background: linear-gradient(
+    135deg,
+    var(--bg-surface) 0%,
+    hsla(18, 89%, 71%, 0.04) 100%
+  );
+  border: 2px solid hsla(18, 89%, 71%, 0.2);
+  padding: var(--space-4xl) var(--space-3xl);
+}
+
+.badge.featured-project .badge-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.badge.featured-project .badge-icon .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.badge.featured-project h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* Status Indicator (on badge icons) */
+.status-indicator {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  font-size: 1.2rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+/* Badge Meta Section */
+.badge-meta {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid hsla(0, 0%, 0%, 0.06);
+}
+
+.badge-meta .meta-label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--primary);
-  margin-top: 1rem;
-  font-size: 1em;
-  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
 }
 
-.project-details-list dd {
-  margin-inline-start: 0;
-  margin-bottom: 1rem;
-  padding-inline-start: 0;
+.badge-meta .meta-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
 }
 
-.skill-list {
+/* Tech Badges */
+.tech-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--primary);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--primary-rgb), 0.08) 0%,
+    rgba(var(--primary-rgb), 0.12) 100%
+  );
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(var(--primary-rgb), 0.15);
+}
+
+/* Badge Links */
+.badge-link,
+.badge-links {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid hsla(0, 0%, 0%, 0.06);
+}
+
+.badge-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.badge-links .icon-link {
+  font-size: 0.9rem;
+}
+
+/* Featured Section */
+.featured-section {
+  margin-bottom: 3rem;
+}
+
+.featured-section .section-intro {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 75ch;
+}
+
+/* Section Headers - Better Visual Hierarchy */
+section h2 {
+  position: relative;
+  padding-bottom: var(--space-md);
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    hsla(18, 89%, 71%, 0.3) 100%
+  );
+  border-radius: 2px;
+}
+
+/* Badge alignment improvements */
+.badge .badge-content p {
+  min-height: 3em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .badge.featured-project {
+    padding: var(--space-3xl) var(--space-2xl);
+  }
+
+  .badge.featured-project .badge-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge.featured-project .badge-icon .icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .badge.featured-project h3 {
+    font-size: 1.25rem;
+  }
 }

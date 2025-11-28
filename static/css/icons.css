@@ -99,14 +99,42 @@
   transform: scale(1.05);
 }
 
-/* === Achievement Badges - Refined 2x2 Grid === */
+/* === Achievement Badges - Refined Grid === */
 .badges-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: var(--space-2xl);
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-3xl);
+  width: 100%;
+}
+
+/* 2-column grid for projects page */
+.badges-container.grid-2col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3xl);
+}
+
+/* Single large badge for featured items */
+.badges-container.featured {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 900px) {
+  .badges-container.grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .badges-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
 }
 
 .badge {

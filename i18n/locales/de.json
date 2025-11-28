@@ -93,6 +93,22 @@
   "projects.introduction.title": "Einleitung",
   "projects.introduction.p1": "Diese Seite zeigt eine Auswahl digitaler und kultureller Projekte, an denen ich über die Jahre beteiligt war – von persönlichen Portfolio-Websites bis hin zu kollaborativen Festivalräumen und Filmarbeiten.",
   "projects.introduction.p2": "Ich ziele darauf ab, meine digitale Arbeit schlank, zugänglich und bedeutsam zu halten – und diese Webseite ist sowohl eine Experimentierplattform als auch eine Momentaufnahme meines sich entwickelnden Handwerks.",
+
+  "projects.featured.title": "Ausgewählte Live-Projekte",
+  "projects.featured.description": "Webseiten, die ich erstellt habe und die aktuell live sind und Nutzer bedienen",
+  "projects.carousel.viewLive": "Live-Seite anzeigen",
+
+  "projects.status.live": "Live & Gepflegt",
+  "projects.status.wip": "In Entwicklung",
+  "projects.status.archived": "Archiviert",
+
+  "projects.github.title": "Open Source & GitHub-Aktivität",
+  "projects.github.description": "Ein Schnappschuss meiner Coding-Reise und technischen Vielfalt über verschiedene Sprachen und Technologien",
+  "projects.github.yearsActive": "Jahre auf GitHub",
+  "projects.github.publicRepos": "Öffentliche Repositories",
+  "projects.github.primaryLanguage": "Hauptsprache",
+  "projects.github.languages": "Technologien & Sprachen",
+  "projects.github.viewProfile": "GitHub-Profil anzeigen",
   "projects.currentProject.title": "Aktuelles Projekt: Überarbeitung dieser Webseite",
   "projects.currentProject.description": "Dieses Portfolio ist ein fortlaufendes Projekt, erstellt, um mein Verständnis von serverseitigem Rendering mit Go und Templating zu vertiefen. Es ist ein Spielplatz für Experimente und eine saubere, schnelle und mehrsprachige Präsentation.",
   "projects.currentProject.motivation.label": "Motivation:",
