@@ -1,6 +1,6 @@
 # shawnbecker.de
 
-My personal portfolio site. Built with Go because I wanted to learn it properly, and because I was tired of JavaScript build tooling.
+My personal portfolio site. Built with Go because I wanted to learn it properly, and because I was tired of JS/TS :)
 
 **Live:** [shawnbecker.de](https://shawnbecker.de)
 
@@ -9,7 +9,7 @@ My personal portfolio site. Built with Go because I wanted to learn it properly,
 - **Go** + [Templ](https://templ.guide/) for server-side rendering
 - **HTMX** for the contact form (no client-side JS framework)
 - **i18n** with English/German support
-- Deployed on Hetzner
+- Deployed on render
 
 ## Why Go?
 
