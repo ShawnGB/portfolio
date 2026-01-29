@@ -5,72 +5,70 @@ import "mymodules/gofolio/views/layouts"
 import "mymodules/gofolio/views/components"
 
 templ projectsIntro(pCtx i18n.PageContext) {
-	<div class="pull-quote-wrapper">
-		<blockquote>Building digital products that respect both users and craft.</blockquote>
-	</div>
+	<blockquote>{ pCtx.T("projects.intro.quote") }</blockquote>
 	<p><em>{ pCtx.T("projects.pageSubtitle") }</em></p>
-	<p>{ pCtx.T("projects.introduction.p1") }</p>
+	<p>{ pCtx.T("projects.intro.p1") }</p>
 }
 
 templ Projects(pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "projects.title", projectsIntro(pCtx), "projects.pageTitle", "projects.pageMetaDescription") {
 			<section>
-				<p class="label-mono">Current Project</p>
+				<p class="label-mono">{ pCtx.T("projects.labels.currentProject") }</p>
 				<article class="project-card">
-					<img src="/static/images/projects/my-portfolio.png" alt="Portfolio website" title="Go portfolio website preview" class="img-editorial"/>
-					<span class="image-caption">Go monolith — Berlin, 2025</span>
-					<h2 class="section-header">{ pCtx.T("projects.currentProject.title") }</h2>
+					<img src="/static/images/projects/my-portfolio.png" alt={ pCtx.T("projects.currentProject.imageAlt") }/>
+					<span class="image-caption">{ pCtx.T("projects.currentProject.imageCaption") }</span>
+					<h2>{ pCtx.T("projects.currentProject.title") }</h2>
 					<p>{ pCtx.T("projects.currentProject.description") }</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.currentProject.motivation.label") }</h3>
+					<h3>{ pCtx.T("projects.currentProject.motivation.label") }</h3>
 					<p>{ pCtx.T("projects.currentProject.motivation.text") }</p>
 					<dl>
-						<dt class="label-mono">Stack</dt>
-						<dd>Go + Templ + HTMX + Native SSR</dd>
+						<dt class="label-mono">{ pCtx.T("projects.currentProject.stack.label") }</dt>
+						<dd>{ pCtx.T("projects.currentProject.stack.value") }</dd>
 					</dl>
 					<p>
 						<a href="https://github.com/ShawnGB/portfolioingo" class="cta-link with-icon" target="_blank" rel="noopener noreferrer">
 							@components.Icon("github", "20", "")
-							View on GitHub
+							{ pCtx.T("projects.links.viewOnGithub") }
 						</a>
 					</p>
 				</article>
 			</section>
 			<section>
-				<h2 class="section-header">Websites Built</h2>
+				<h2>{ pCtx.T("projects.websitesBuilt.title") }</h2>
 				<article class="project-card">
-					<img src="/static/images/projects/jesse-becker-preview.png" alt="Jesse Becker Photography" title="Jesse Becker Photography portfolio preview" class="img-editorial"/>
-					<p class="label-mono">Photography Portfolio</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.jessebecker.name") }</h3>
+					<img src="/static/images/projects/jesse-becker-preview.png" alt={ pCtx.T("projects.websitesBuilt.jessebecker.imageAlt") }/>
+					<p class="label-mono">{ pCtx.T("projects.labels.photographyPortfolio") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.jessebecker.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.jessebecker.description") }</p>
-					<blockquote>Minimalist design that lets photography speak — no distractions, just pure visual storytelling.</blockquote>
-					<p><a href="http://www.jessebecker.com/" class="cta-link" target="_blank" rel="noopener noreferrer">Visit Site</a></p>
+					<blockquote>{ pCtx.T("projects.websitesBuilt.jessebecker.quote") }</blockquote>
+					<p><a href="http://www.jessebecker.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
 				</article>
 				<article class="project-card">
-					<img src="/static/images/projects/arina-shanzev-preview.png" alt="Arina Shanzev Portfolio" title="Arina Shanzev portfolio preview" class="img-editorial"/>
-					<p class="label-mono">WordPress Portfolio</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h3>
+					<img src="/static/images/projects/arina-shanzev-preview.png" alt={ pCtx.T("projects.websitesBuilt.arinashanzev.imageAlt") }/>
+					<p class="label-mono">{ pCtx.T("projects.labels.wordpressPortfolio") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.arinashanzev.description") }</p>
-					<p><a href="https://arinashanzev.com/" class="cta-link" target="_blank" rel="noopener noreferrer">Visit Site</a></p>
+					<p><a href="https://arinashanzev.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">Artist Portfolio</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.berndwolf.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.artistPortfolio") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.berndwolf.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.berndwolf.description") }</p>
-					<p><a href="https://berndwolf.net/" class="cta-link" target="_blank" rel="noopener noreferrer">Visit Site</a></p>
+					<p><a href="https://berndwolf.net/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">Festival Website</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.festivalWebsite") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.description") }</p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">React SPA</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.reactSpa") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.oldPortfolio.description") }</p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">Educational Platform</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.educationalPlatform") }</p>
+					<h3>{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h3>
 					<p>{ pCtx.T("projects.websitesBuilt.uskillity.description") }</p>
 					<p>
 						<a href="https://www.instagram.com/uskillity/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.websitesBuilt.uskillity.linkInstagramText") }</a>
@@ -78,26 +76,26 @@ templ Projects(pCtx i18n.PageContext) {
 				</article>
 			</section>
 			<section>
-				<h2 class="section-header">{ pCtx.T("projects.cultural.title") }</h2>
+				<h2>{ pCtx.T("projects.cultural.title") }</h2>
 				<article class="project-card">
-					<p class="label-mono">Cultural Space</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.cultural.kultschaette.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.culturalSpace") }</p>
+					<h3>{ pCtx.T("projects.cultural.kultschaette.name") }</h3>
 					<p>{ pCtx.T("projects.cultural.kultschaette.p1") }</p>
 					<p>{ pCtx.T("projects.cultural.kultschaette.p2") }</p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">Festival Support</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.cultural.evolveFestivalSupport.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.festivalSupport") }</p>
+					<h3>{ pCtx.T("projects.cultural.evolveFestivalSupport.name") }</h3>
 					<p>{ pCtx.T("projects.cultural.evolveFestivalSupport.p1") }</p>
 				</article>
 				<article class="project-card">
-					<p class="label-mono">DIY Band</p>
-					<h3 class="subsection-header">{ pCtx.T("projects.cultural.vegetarischDeluxe.name") }</h3>
+					<p class="label-mono">{ pCtx.T("projects.labels.diyBand") }</p>
+					<h3>{ pCtx.T("projects.cultural.vegetarischDeluxe.name") }</h3>
 					<p>{ pCtx.T("projects.cultural.vegetarischDeluxe.p1") }</p>
 				</article>
 			</section>
 			<section>
-				<h2 class="section-header">{ pCtx.T("projects.film.title") }</h2>
+				<h2>{ pCtx.T("projects.film.title") }</h2>
 				<article class="project-card">
 					<p>{ pCtx.T("projects.film.description") }</p>
 					<p><a href="https://www.crew-united.com/de/Shawn-Gordon-Becker_283693.html" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.film.linkCrewUnitedText") }</a></p>
@@ -107,10 +105,10 @@ templ Projects(pCtx i18n.PageContext) {
 				<p>
 					<a href="/static/ShawnBeckerResume.pdf" class="cta-link with-icon download" target="_blank" rel="noopener noreferrer">
 						@components.Icon("download", "24", "")
-						Download CV
+						{ pCtx.T("projects.links.downloadCV") }
 					</a>
 				</p>
-				<p>or <a href={ pCtx.CurrentLangLink("/contact") }>get in touch</a></p>
+				<p>{ pCtx.T("projects.cta.orGetInTouch") } <a href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("projects.cta.contactLinkText") }</a></p>
 			</section>
 	}
 }
