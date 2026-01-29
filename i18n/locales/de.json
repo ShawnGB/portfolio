@@ -149,6 +149,9 @@
 
   "experience.chapter1.title": "Klang, Raum und Systeme",
   "experience.chapter1.subtitle": "2006 - 2016",
+  "experience.chapter1.quote": "Leidenschaftliche Menschen vermitteln ihre Leidenschaften mühelos, und Lernen funktioniert am besten, wenn es peer-to-peer und praxisorientiert ist.",
+  "experience.chapter1.image.alt": "Live-Performance in der Kultstätte Keller",
+  "experience.chapter1.image.caption": "Kultstätte Keller — 2014",
   "experience.chapter1.p1": "Ich habe das Bauen von Systemen nicht in einem Informatik-Hörsaal gelernt. Es begann mit 21 Jahren, hinter einem Mischpult am SAE Institute in Berlin, wo ich lernte, akustische Räume zu gestalten. Ich hatte als Jugendlicher Bass in einer Punkband gespielt (Musik war immer präsent), doch Virtuosität interessierte mich nicht. Was mich anzog, war das Engineering: wie Frequenzen interagieren, wie ein Mix Dimensionen schafft, wie man aus diskreten Elementen eine Atmosphäre baut.",
   "experience.chapter1.p2": "Die Audioproduktion lehrte mich eine Denkweise, für die ich damals noch keine Worte hatte. Man balanciert ständig Elemente aus, findet Klarheit in Komplexität, trifft technische Entscheidungen, die einem Gefühl dienen. Nach dem SAE verbrachte ich mehrere Jahre mit Erkundungen, verschiedenen Jobs, darunter Assistenztätigkeiten bei Filmproduktionen durch die Kontakte meines Vaters als Kameramann. Diese Filmdrehs lehrten mich Zusammenarbeit unter Druck, Handwerk und Präsenz, wenn die Arbeit es verlangt.",
   "experience.chapter1.p3": "2011 wurde ich über Freunde in Berlins Kulturszene in ein leerstehendes Gebäude in Neukölln einbezogen. Die Idee war, Raum für Kunst und Gemeinschaftsevents zu schaffen. Ich begann, Tonstudios im Keller zu bauen. Was wir stattdessen schufen, war Kultstätte Keller, das von gelegentlichen Partys zu einem Nachtclub wuchs, der sechs Nächte die Woche Entertainment bot. Ich habe die Studios nie fertiggestellt. Stattdessen wurde ich Mitinhaber und Betreiber, zuständig für Soundsysteme, technische Infrastruktur und Logistik für einen Ort, der seine eigene Dynamik gefunden hatte.",
@@ -160,6 +163,8 @@
 
   "experience.chapter2.title": "Die Formalisierungsjahre",
   "experience.chapter2.subtitle": "2016 - 2022",
+  "experience.chapter2.image.alt": "Arbeit an der U/skillity-Plattform",
+  "experience.chapter2.image.caption": "U/skillity entwickeln — Peer-to-Peer-Lernplattform",
   "experience.chapter2.p1": "Irland war hart. Ich studierte Vollzeit Business und Marketing, fühlte mich aber zunehmend zu einem Informatik-Modul hingezogen, das ich hinzugefügt hatte – besonders Java-Programmierung, die anders klickte als die Business-Kurse. Die Arbeit war intensiv: fünf Tage Vorlesungen, dann abends und am Wochenende im Apple-Einzelhandel arbeiten, um alles zu finanzieren. Aber ich lernte, und U/skillity lief remote weiter, während meine Freundin und ich an Prototypen arbeiteten.",
   "experience.chapter2.p2": "Nach anderthalb Jahren entdeckte ich etwas Interessantes: Weil ich an einer EU-Universität akzeptiert worden war, konnte ich überall in Europa wechseln. Ich hatte von der CODE University in Berlin gehört – einer neuen Art von Institution, die sich auf interdisziplinäre Produktentwicklung und angewandtes Lernen konzentrierte. Ich bewarb mich, wurde angenommen und zog 2018 zurück nach Hause, um Produktmanagement zu studieren.",
   "experience.chapter2.p3": "An der CODE begannen die Dinge zu konvergieren. Das Programm betonte Synthese: wie Technologie, Design, Business und menschliche Bedürfnisse sich überschneiden. Struktur, Empathie und Zweck waren keine separaten Anliegen – sie formten einander. Aber ich musste auch arbeiten. Da fand ich YPTOKEY, ein Startup, das blockchain-basierte IoT-Zugangssysteme baute.",
@@ -170,6 +175,9 @@
 
   "experience.chapter3.title": "Die Suche nach Tiefe",
   "experience.chapter3.subtitle": "2023 - Heute",
+  "experience.chapter3.quote": "Ich starte nicht mit 40 eine Karriere. Ich bringe zwanzig Jahre Erfahrung mit, Dinge zu bauen, die funktionieren.",
+  "experience.chapter3.image.alt": "Remote-Arbeitsplatz",
+  "experience.chapter3.image.caption": "Die Freelance-Realität — von überall arbeiten",
   "experience.chapter3.p1": "Nach drei Jahren Freelance-Arbeit habe ich gelernt, was ich nicht will, genauso klar wie das, was ich will.",
   "experience.chapter3.p2": "Die Freiheit ist real – ich bestimme meinen Zeitplan, wähle meine Tools, arbeite von überall. Aber die Arbeit selbst war einschränkend: meist kleine Landing Pages, WordPress-Anpassungen, Design-Tweaks für Kunden, die eine Web-Präsenz brauchen, aber kein System. Mir wurde klar, dass mir Kundenakquise keinen Spaß macht, und ich vermisse die Struktur eines regelmäßigen Einkommens. Aber mehr noch vermisse ich tiefe logische Arbeit.",
   "experience.chapter3.p3": "Was ich damit meine: Backends bauen, Systeme architekturieren, komplexe Probleme lösen, die nachhaltiges Nachdenken und sorgfältiges Design erfordern. Die Art von Arbeit, bei der man nicht ein Template anpasst, sondern etwas mit innerer Logik und Kohärenz erschafft. Ich vermisse die Arbeit mit einem Team – Leute, von denen man lernen kann, mit denen man Code reviewed, Abwägungen und Ansätze diskutiert.",
@@ -201,6 +209,7 @@
 
   "experience.cta.downloadCV": "Vollständigen Lebenslauf herunterladen (PDF)",
   "experience.cta.viewProjects": "Projekt-Portfolio erkunden →",
+  "experience.cta.or": "oder",
 
   "contact.title": "Kontakt",
   "contact.subtitle": "Melde dich mit einer Idee, einer Frage oder einfach aus Neugier.",

@@ -13,17 +13,15 @@ templ Experience(pCtx i18n.PageContext) {
 					<h2>{ pCtx.T("experience.chapter1.title") }</h2>
 				</div>
 				<div class="grid-col-12">
-					<blockquote>
-						Passionate people teach their passions effortlessly, and learning works best when it's peer-to-peer and practice-based.
-					</blockquote>
+					<blockquote>{ pCtx.T("experience.chapter1.quote") }</blockquote>
 				</div>
 				<div class="grid--halves">
 					<p>{ pCtx.T("experience.chapter1.p1") }</p>
 					<p style="margin-top:1.8rem;">{ pCtx.T("experience.chapter1.p2") }</p>
 				</div>
 				<div class="breakout-image-container">
-					<img src="/static/images/experience/a-performance-at-keller.jpg" alt="Live performance at Kultstätte Keller" loading="lazy" class="breakout-image-horizontal"/>
-					<span class="image-caption">Kultstätte Keller - 2014</span>
+					<img src="/static/images/experience/a-performance-at-keller.jpg" alt={ pCtx.T("experience.chapter1.image.alt") } loading="lazy" class="breakout-image-horizontal"/>
+					<span class="image-caption">{ pCtx.T("experience.chapter1.image.caption") }</span>
 				</div>
 				<div>
 					<div class="grid-col-3">
@@ -47,8 +45,8 @@ templ Experience(pCtx i18n.PageContext) {
 				<div class="grid-row">
 					<div class="grid-col-3">
 						<figure class="vertical-image-strip-wrapper">
-							<img src="/static/images/experience/building-uskillity.jpg" alt="Working on U/skillity platform" loading="lazy" class="vertical-image-strip"/>
-							<span class="image-caption">Building U/skillity — peer-to-peer learning platform</span>
+							<img src="/static/images/experience/building-uskillity.jpg" alt={ pCtx.T("experience.chapter2.image.alt") } loading="lazy" class="vertical-image-strip"/>
+							<span class="image-caption">{ pCtx.T("experience.chapter2.image.caption") }</span>
 						</figure>
 					</div>
 					<div class="grid-col-9">
@@ -73,9 +71,7 @@ templ Experience(pCtx i18n.PageContext) {
 						<h2>{ pCtx.T("experience.chapter3.title") }</h2>
 					</div>
 					<div class="grid-col-9">
-						<blockquote>
-							I'm not starting a career at 40. I'm bringing twenty years of learning how to build things that work.
-						</blockquote>
+						<blockquote>{ pCtx.T("experience.chapter3.quote") }</blockquote>
 					</div>
 				</div>
 				<div class="grid-row">
@@ -92,8 +88,8 @@ templ Experience(pCtx i18n.PageContext) {
 				<div class="grid-row">
 					<div class="grid-col-12">
 						<figure class="full-width-image">
-							<img src="/static/images/experience/work-from-anywhere.jpg" alt="Remote work setup" loading="lazy"/>
-							<span class="image-caption">The freelance reality — working from anywhere</span>
+							<img src="/static/images/experience/work-from-anywhere.jpg" alt={ pCtx.T("experience.chapter3.image.alt") } loading="lazy"/>
+							<span class="image-caption">{ pCtx.T("experience.chapter3.image.caption") }</span>
 						</figure>
 					</div>
 				</div>
@@ -116,7 +112,7 @@ templ Experience(pCtx i18n.PageContext) {
 						</a>
 					</div>
 					<div class="contact-sentence">
-						<p>or <a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("experience.cta.viewProjects") }</a></p>
+						<p>{ pCtx.T("experience.cta.or") } <a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("experience.cta.viewProjects") }</a></p>
 					</div>
 				</div>
 			</div>

@@ -151,6 +151,9 @@
 
   "experience.chapter1.title": "Sound, Space, and Systems",
   "experience.chapter1.subtitle": "2006 - 2016",
+  "experience.chapter1.quote": "Passionate people teach their passions effortlessly, and learning works best when it's peer-to-peer and practice-based.",
+  "experience.chapter1.image.alt": "Live performance at Kultstätte Keller",
+  "experience.chapter1.image.caption": "Kultstätte Keller — 2014",
   "experience.chapter1.p1": "I didn't learn to build systems in a computer science classroom. It started at 21, standing behind a mixing console at SAE Institute in Berlin, learning to shape acoustic space. I'd played bass in a punk band through my teens (music was always present) but I wasn't interested in virtuosity. What drew me was the engineering: how frequencies interact, how a mix creates dimension, how you can build an atmosphere from discrete elements.",
   "experience.chapter1.p2": "Audio production taught me a way of thinking I didn't have words for yet. You're constantly balancing elements, finding clarity in complexity, making technical decisions that serve a feeling. After SAE, I spent several years exploring, working various jobs, including assistant roles on film sets through my father's connections as a camera operator. Those film productions taught me about collaboration under pressure, about craft, and about being present when the work demands it.",
   "experience.chapter1.p3": "In 2011, through friends in Berlin's cultural scene, I got involved with an empty building in Neukölln. The idea was to create space for art and community events. I started building recording studios in the basement. What we created instead was Kultstätte Keller, which grew from occasional parties into a nightclub running entertainment six nights a week. I never finished those studios. Instead, I became co-owner and operator, managing sound systems, technical infrastructure, and logistics for a space that had found its own momentum.",
@@ -162,6 +165,8 @@
 
   "experience.chapter2.title": "The Formalisation Years",
   "experience.chapter2.subtitle": "2016 - 2022",
+  "experience.chapter2.image.alt": "Working on U/skillity platform",
+  "experience.chapter2.image.caption": "Building U/skillity — peer-to-peer learning platform",
   "experience.chapter2.p1": "Ireland was hard. I studied business and marketing full-time, but found myself increasingly drawn to a computer science module I'd added, particularly Java programming, which clicked in a way the business courses didn't. The work was intense: five days of lectures, then working evenings and weekends at an Apple retail job to finance it all. But I was learning, and U/skillity continued remotely as my girlfriend and I iterated on prototypes.",
   "experience.chapter2.p2": "After a year and a half, I discovered something interesting: because I'd been accepted to one EU university, I could transfer anywhere in Europe. I'd heard about CODE University in Berlin, a new kind of institution focused on interdisciplinary product development and applied learning. I applied, got in, and moved back home in 2018 to study Product Management.",
   "experience.chapter2.p3": "CODE was where things started connecting. The programme emphasised synthesis: how technology, design, business, and human needs intersect. Structure, empathy, and purpose weren't separate concerns. They shaped each other. But I also needed to work. That's when I found YPTOKEY, a startup building blockchain-based IoT access systems.",
@@ -172,6 +177,9 @@
 
   "experience.chapter3.title": "Seeking Depth",
   "experience.chapter3.subtitle": "2023 - Present",
+  "experience.chapter3.quote": "I'm not starting a career at 40. I'm bringing twenty years of learning how to build things that work.",
+  "experience.chapter3.image.alt": "Remote work setup",
+  "experience.chapter3.image.caption": "The freelance reality — working from anywhere",
   "experience.chapter3.p1": "Three years into freelance work, I've learned what I don't want as clearly as what I do.",
   "experience.chapter3.p2": "The freedom is real. I set my schedule, choose my tools, work from anywhere. But the work itself has been limiting: mostly small landing pages, WordPress customisations, design tweaks for clients who need a web presence but not a system. I've realised I don't enjoy client acquisition, and I miss the structure of regular income. But more than that, I miss deep logical work.",
   "experience.chapter3.p3": "What I mean by that: building backends, architecting systems, solving complex problems that require sustained thought and careful design. The kind of work where you're not customising a template, but creating something with internal logic and coherence. I miss working with a team, people to learn from, to review code with, to discuss trade-offs and approaches.",
@@ -203,6 +211,7 @@
 
   "experience.cta.downloadCV": "Download Complete CV (PDF)",
   "experience.cta.viewProjects": "Explore Project Portfolio →",
+  "experience.cta.or": "or",
 
   "contact.title": "Contact",
   "contact.subtitle": "Reach out with an idea, a question, or just curiosity.",
