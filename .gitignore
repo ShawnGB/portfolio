@@ -4,9 +4,8 @@ tmp/
 
 .env
 
-# Templ generated files (auto-generated, not version controlled)
+# Templ generated files
 *_templ.go
 
-.claude/
-CLAUDE.md
-
+# Local development
+docs/

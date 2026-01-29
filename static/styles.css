@@ -10,9 +10,6 @@
 /* Reusable utility classes */
 @import "./css/utilities.css";
 
-/* Photography integration */
-@import "./css/photo-moments.css";
-
 /* Layout components */
 @import "./css/nav.css";
 @import "./css/footer.css";

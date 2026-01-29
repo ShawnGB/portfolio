@@ -11,7 +11,7 @@ templ BaseHtml(pCtx i18n.PageContext, pagetitle string, pagedescription string) 
 			<div class="page-container">
 				{ children... }
 			</div>
-			@Footer()
+			@Footer(pCtx)
 		</body>
 	</html>
 }

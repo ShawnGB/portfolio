@@ -19,28 +19,28 @@ templ About(pCtx i18n.PageContext) {
 								<li>
 									@components.Icon("compass", "20", "")
 									<div class="value-content">
-										<h3 class="subsection-header">{ pCtx.T("about.drivesMe.item1.title") }</h3>
+										<h3 >{ pCtx.T("about.drivesMe.item1.title") }</h3>
 										<p>{ pCtx.T("about.drivesMe.item1.text") }</p>
 									</div>
 								</li>
 								<li>
 									@components.Icon("book-open", "20", "")
 									<div class="value-content">
-										<h3 class="subsection-header">{ pCtx.T("about.drivesMe.item2.title") }</h3>
+										<h3 >{ pCtx.T("about.drivesMe.item2.title") }</h3>
 										<p>{ pCtx.T("about.drivesMe.item2.text") }</p>
 									</div>
 								</li>
 								<li>
 									@components.Icon("heart", "20", "")
 									<div class="value-content">
-										<h3 class="subsection-header">{ pCtx.T("about.drivesMe.item3.title") }</h3>
+										<h3 >{ pCtx.T("about.drivesMe.item3.title") }</h3>
 										<p>{ pCtx.T("about.drivesMe.item3.text") }</p>
 									</div>
 								</li>
 								<li>
 									@components.Icon("users", "20", "")
 									<div class="value-content">
-										<h3 class="subsection-header">{ pCtx.T("about.drivesMe.item4.title") }</h3>
+										<h3 >{ pCtx.T("about.drivesMe.item4.title") }</h3>
 										<p>{ pCtx.T("about.drivesMe.item4.text") }</p>
 									</div>
 								</li>
@@ -49,7 +49,7 @@ templ About(pCtx i18n.PageContext) {
 					</div>
 					<div class="grid-col-5">
 						<div class="path-label">
-							<small>My Journey</small>
+							<small>{ pCtx.T("about.path.label") }</small>
 						</div>
 						<div class="body-text">
 							<p>{ pCtx.T("about.path.p1") }</p>
@@ -63,35 +63,31 @@ templ About(pCtx i18n.PageContext) {
 				<div class="grid-row">
 					<!-- Left: Pull Quote -->
 					<div class="grid-col-3">
-						<div class="pull-quote-wrapper">
-							<blockquote>
-								I build digital experiences that work with integrity – clear, purposeful, and grounded in respect for the people who use them.
-							</blockquote>
-						</div>
+						<blockquote>{ pCtx.T("about.quote") }</blockquote>
 					</div>
 					<!-- Middle: Mirror Image Slice -->
 					<div class="grid-col-4 image-wrapper-hero">
-						<img src="/static/images/arts/05.jpg" alt="Self-reflection in mirror" title="Mirror reflection - Italy, 2025" loading="lazy" class="hero-portrait img-editorial"/>
-						<span class="image-caption">Italy, 2025</span>
+						<img src="/static/images/arts/05.jpg" alt={ pCtx.T("about.image.alt") } loading="lazy" class="hero-portrait"/>
+						<span class="image-caption">{ pCtx.T("about.image.caption") }</span>
 					</div>
 					<!-- Right: Beyond the Screen -->
 					<div class="grid-col-4">
-						<h2 class="section-label">Beyond the Screen</h2>
+						<h2>{ pCtx.T("about.outsideScreen.title") }</h2>
 						<div class="body-text">
 							<p>{ pCtx.T("about.outsideScreen.p1") }</p>
 						</div>
 						<div class="interests-grid-inline">
 							<article>
 								@components.Icon("music", "18", "")
-								<span>Music</span>
+								<span>{ pCtx.T("about.interests.music") }</span>
 							</article>
 							<article>
 								@components.Icon("map", "18", "")
-								<span>Cycling</span>
+								<span>{ pCtx.T("about.interests.cycling") }</span>
 							</article>
 							<article>
 								@components.Icon("palette", "18", "")
-								<span>Photography</span>
+								<span>{ pCtx.T("about.interests.photography") }</span>
 							</article>
 						</div>
 					</div>
@@ -101,14 +97,14 @@ templ About(pCtx i18n.PageContext) {
 			<div class="grid-section looking-for-section major-break">
 				<div class="grid-row">
 					<div class="looking-for-header">
-						<h2 class="section-header">{ pCtx.T("about.lookingFor.title") }</h2>
+						<h2 >{ pCtx.T("about.lookingFor.title") }</h2>
 					</div>
 				</div>
 				<div class="grid-row">
 					<div class="grid-col-4">
 						<div class="icon-header">
 							@components.Icon("briefcase", "20", "")
-							<h3 class="subsection-header">Ideal Environment</h3>
+							<h3>{ pCtx.T("about.lookingFor.environment.title") }</h3>
 						</div>
 						<div class="body-text">
 							<p>{ pCtx.T("about.lookingFor.p1") }</p>
@@ -117,7 +113,7 @@ templ About(pCtx i18n.PageContext) {
 					<div class="grid-col-4">
 						<div class="icon-header">
 							@components.Icon("zap", "20", "")
-							<h3 class="subsection-header">I Thrive On</h3>
+							<h3>{ pCtx.T("about.lookingFor.thrive.title") }</h3>
 						</div>
 						<ul class="checkmark-list">
 							<li>{ pCtx.T("about.lookingFor.item1") }</li>
@@ -129,7 +125,7 @@ templ About(pCtx i18n.PageContext) {
 					<div class="grid-col-4">
 						<div class="icon-header">
 							@components.Icon("calendar", "20", "")
-							<h3 class="subsection-header">Role & Availability</h3>
+							<h3>{ pCtx.T("about.lookingFor.role.title") }</h3>
 						</div>
 						<div class="body-text">
 							<p>{ pCtx.T("about.lookingFor.p2") }</p>

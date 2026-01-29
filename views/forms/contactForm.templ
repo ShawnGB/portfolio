@@ -6,19 +6,14 @@ import "mymodules/gofolio/views/components"
 templ ContactFormPartial(data ContactFormData, pCtx i18n.PageContext) {
 	<div id="contact-form-container">
 		if data.SuccessMessage != "" {
-			<!-- HTMX Success State - Elegant replacement -->
 			<div class="contact-success-state">
-				<div class="success-icon">
-					@components.Icon("check", "48", "")
-				</div>
-				<h3 class="success-title">Message Sent</h3>
-				<p class="success-message">{ data.SuccessMessage }</p>
-				<a href={ pCtx.CurrentLangLink("/") } class="cta-link--solid">Return to home</a>
+				@components.Icon("check", "48", "")
+				<h3>{ pCtx.T("contact.success.title") }</h3>
+				<p>{ data.SuccessMessage }</p>
+				<a href={ pCtx.CurrentLangLink("/") } class="button--solid">{ pCtx.T("contact.success.returnHome") }</a>
 			</div>
 		} else {
-			<!-- Contact Form - Editorial 2-column layout -->
 			<form
-				class="contact-form-editorial"
 				hx-post={ pCtx.CurrentLangLink("/contact") }
 				hx-target="#contact-form-container"
 				hx-swap="innerHTML"
@@ -84,16 +79,16 @@ templ ContactFormPartial(data ContactFormData, pCtx i18n.PageContext) {
 				</div>
 				<!-- Submit button -->
 				<div class="form-actions">
-					<button type="submit" class="cta-link--solid" id="submit-contact-form-button" disabled>
+					<button type="submit" class="button--solid" id="submit-contact-form-button" disabled>
 						{ pCtx.T("contact.form.submitButton") }
 					</button>
-					<span id="loading-indicator" class="htmx-indicator loading-indicator">
+					<span id="loading-indicator" class="htmx-indicator">
 						{ pCtx.T("contact.form.loadingIndicator") }
 					</span>
 				</div>
 				<!-- Error message -->
 				if data.ErrorMessage != "" {
-					<div id="form-feedback-error" class="form-error">{ data.ErrorMessage }</div>
+					<p class="text-error">{ data.ErrorMessage }</p>
 				}
 				<script>
 					function enableSubmitButton() {

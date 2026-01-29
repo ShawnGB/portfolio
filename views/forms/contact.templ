@@ -18,21 +18,19 @@ type ContactFormData struct {
 templ contactIntro(pCtx i18n.PageContext) {
 	<p><em>{ pCtx.T("contact.subtitle") }</em></p>
 	<p>{ pCtx.T("contact.intro.p1") }</p>
-	<blockquote>No pitch required. Just real conversation.</blockquote>
 	<p><strong>{ pCtx.T("contact.intro.availability") }</strong></p>
 }
 
 templ Contact(data ContactFormData, pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "contact.title", contactIntro(pCtx), "contact.pageTitle", "contact.pageMetaDescription") {
 			<section>
-				<h2 class="section-label">{ pCtx.T("contact.intro.p2") }</h2>
+				<h2>{ pCtx.T("contact.intro.p2") }</h2>
 				@ContactFormPartial(data, pCtx)
 			</section>
 			<section>
-				<h2 class="section-label">Alternative Contact</h2>
-				<p>Prefer email? Reach me directly at <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
-				<p>Or connect on <a href="https://www.linkedin.com/in/shawn-gordon-becker/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-				<p>{ pCtx.T("contact.outro.p1") }</p>
+				<h2>{ pCtx.T("contact.alternative.title") }</h2>
+				<p>{ pCtx.T("contact.alternative.email") } <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
+				<p>{ pCtx.T("contact.alternative.linkedin") } <a href="https://www.linkedin.com/in/shawn-gordon-becker/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 			</section>
 	}
 }

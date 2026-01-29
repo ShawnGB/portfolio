@@ -7,19 +7,17 @@ templ Home(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("home.pageTitle"), pCtx.T("home.pageMetaDescription")) {
 		<div class="hero-section-wrapper">
 			<div class="hero-left-column">
-				<img src="/static/images/arts/16.jpg" alt="Shawn Becker" title="Photography - Berlin, 2025" class="img-editorial"/>
+				<img src="/static/images/arts/16.jpg" alt={ pCtx.T("home.hero.image.alt") }/>
 			</div>
 			<div class="hero-right-column">
 				<div class="hero-content">
 					<h1 class="hero-main-visual-text">
-						<span class="line-1">Hey, I'm Shawn -</span>
-						<span class="line-2">building thoughtful digital things</span>
+						<span class="line-1">{ pCtx.T("home.hero.line1") }</span>
+						<span class="line-2">{ pCtx.T("home.hero.line2") }</span>
 					</h1>
-					<p class="hero-subtitle">
-						Full-stack developer who cares about craft, clarity, and the people using what I build.
-					</p>
+					<p class="hero-subtitle">{ pCtx.T("home.hero.subtitle") }</p>
 					<div class="hero-cta">
-						<a href={ pCtx.CurrentLangLink("/about") }>About my work</a>
+						<a href={ pCtx.CurrentLangLink("/about") }>{ pCtx.T("home.hero.cta") }</a>
 					</div>
 				</div>
 			</div>

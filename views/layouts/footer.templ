@@ -1,7 +1,9 @@
 package layouts
 
-templ Footer() {
+import "mymodules/gofolio/i18n"
+
+templ Footer(pCtx i18n.PageContext) {
 	<footer>
-		<p class="copyright">© 2026 Shawn Gordon Becker</p>
+		<p class="copyright">{ pCtx.T("footer.copyright") }</p>
 	</footer>
 }
