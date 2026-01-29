@@ -31,9 +31,13 @@
   "about.greeting.p3": "Ich arbeite ruhig und fokussiert. Ich erkenne Muster, verstehe Systeme und versuche, Dinge zu entwickeln, die wirklich etwas verbessern.",
 
   "about.path.title": "Mein Weg",
+  "about.path.label": "Mein Werdegang",
   "about.path.p1": "Mein Weg war nicht geradlinig. Er begann irgendwo zwischen Musik und Code, Filmsets und Neugier. Studien in Marketing und Informatik legten das Fundament. Verbunden hat sich alles später an der CODE University: Struktur, Empathie, Sinn.",
   "about.path.p2": "Ich war in verschiedenen Rollen unterwegs: als Entwickler, Produktdenker, Mitgestalter in digitalen und kulturellen Kontexten. Ich arbeitete mit Startups wie YPTOKEY und Data4Life, gründete 2016 U/skillity (eine Plattform für geteiltes Wissen, seit 2021 pausiert) und die Kultstätte Keller, ein Raum für Kunst, Klang und Gemeinschaft. Zwischendurch war ich immer wieder bei Filmproduktionen, meist als Assistent hinter den Kulissen. Diese Erfahrungen haben geprägt, wie ich Zusammenarbeit, Timing und Präsenz verstehe.",
 
+  "about.quote": "Ich baue digitale Erlebnisse, die mit Integrität funktionieren – klar, zielgerichtet und gegründet auf Respekt für die Menschen, die sie nutzen.",
+  "about.image.alt": "Selbstreflexion im Spiegel",
+  "about.image.caption": "Italien, 2025",
   "about.drivesMe.title": "Was mich antreibt",
   "about.drivesMe.item1.title": "Klarheit & Stimmigkeit",
   "about.drivesMe.item1.text": "Ich entwerfe Systeme und Interaktionen, die ruhig, nachvollziehbar und logisch sind. Unstimmigkeiten fallen mir früh auf, und ich suche dann nach Klarheit.",
@@ -53,10 +57,16 @@
   "about.skillset.ethicalConsulting.skills": "Bewusste Technologieentscheidungen, Privacy-by-Design, Barrierefreiheit (WCAG), Green-IT-Ansätze, Wartungsstrategien",
 
   "about.outsideScreen.title": "Abseits vom Bildschirm",
+  "about.interests.music": "Musik",
+  "about.interests.cycling": "Radfahren",
+  "about.interests.photography": "Fotografie",
   "about.outsideScreen.p1": "Abseits der Arbeit beschäftige ich mich mit Musik (hörend und produzierend), fermentiere Wasserkefir, fahre lange Strecken mit dem Rad oder bin draußen in der Natur. Neuerdings entdecke ich auch die Fotografie, langsam und intuitiv.",
   "about.outsideScreen.p2": "Ich lebe in Berlin und bin offen für sinnvolle, ortsunabhängige Zusammenarbeit weltweit.",
 
   "about.lookingFor.title": "Wonach ich suche",
+  "about.lookingFor.environment.title": "Ideale Umgebung",
+  "about.lookingFor.thrive.title": "Ich blühe auf bei",
+  "about.lookingFor.role.title": "Rolle & Verfügbarkeit",
   "about.lookingFor.p1": "Ich suche Arbeit bei produktorientierten Unternehmen, bei denen technische Exzellenz auf sinnvolle Wirkung trifft. Ich arbeite am besten in Umgebungen, die Folgendes schätzen:",
   "about.lookingFor.item1": "Saubere Architektur und wartbare Codebasen",
   "about.lookingFor.item2": "Funktionsübergreifende Zusammenarbeit zwischen Engineering, Produkt und Design",

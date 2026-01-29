@@ -31,9 +31,13 @@
   "about.greeting.p3": "I work with quiet consistency. I look for patterns, recognise systems, and try to make things that genuinely improve something.",
 
   "about.path.title": "My Path",
+  "about.path.label": "My Journey",
   "about.path.p1": "I didn't take a straight path. It started with music and code, film sets and curiosity. Studies in marketing and informatics laid a foundation, but my time in product management (CODE University) connected the dots: structure, empathy, purpose.",
   "about.path.p2": "Over the years, I've worked in different roles: as a developer, product thinker, and collaborator in both digital and cultural spaces. I worked with startups like YPTOKEY and Data4Life, co-founded U/skillity (a platform for shared knowledge) and Kultstätte Keller, a space for art, sound, and community. Along the way, I also supported various film productions, often in assistant roles behind the scenes. These experiences shaped how I understand collaboration, pace, and presence.",
 
+  "about.quote": "I build digital experiences that work with integrity – clear, purposeful, and grounded in respect for the people who use them.",
+  "about.image.alt": "Self-reflection in mirror",
+  "about.image.caption": "Italy, 2025",
   "about.drivesMe.title": "What Drives Me",
   "about.drivesMe.item1.title": "Clarity & Coherence",
   "about.drivesMe.item1.text": "I design systems and interactions that are calm, understandable, and logical. I notice friction early and look for clarity in response.",
@@ -53,10 +57,16 @@
   "about.skillset.ethicalConsulting.skills": "Conscious technology choices, Privacy-by-Design, Accessibility (WCAG), Green IT approaches, Maintenance Strategies",
 
   "about.outsideScreen.title": "Beyond the Screen",
+  "about.interests.music": "Music",
+  "about.interests.cycling": "Cycling",
+  "about.interests.photography": "Photography",
   "about.outsideScreen.p1": "Outside of work, I explore music (creating and listening), ferment water kefir, ride long distances by bike, or spend time in nature. More recently, I've started learning photography, slowly and intuitively.",
   "about.outsideScreen.p2": "I'm based in Berlin and open to meaningful remote collaborations worldwide.",
 
   "about.lookingFor.title": "What I'm Looking For",
+  "about.lookingFor.environment.title": "Ideal Environment",
+  "about.lookingFor.thrive.title": "I Thrive On",
+  "about.lookingFor.role.title": "Role & Availability",
   "about.lookingFor.p1": "I'm looking for work with product-driven companies where technical excellence meets meaningful impact. I work best in environments that value:",
   "about.lookingFor.item1": "Clean architecture and maintainable codebases",
   "about.lookingFor.item2": "Cross-functional collaboration between engineering, product, and design",
