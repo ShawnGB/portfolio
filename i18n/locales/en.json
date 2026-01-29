@@ -11,8 +11,16 @@
   "common.githubProfile": "GitHub Profile",
   "common.linkedinProfile": "LinkedIn Profile",
 
+  "nav.logo": "SGB",
+  "nav.ariaLabel": "Main navigation",
+  "nav.toggleMenu": "Toggle navigation menu",
+  "nav.github.ariaLabel": "GitHub",
+  "nav.linkedin.ariaLabel": "LinkedIn",
+
+  "footer.copyright": "© 2026 Shawn Gordon Becker",
+
   "home.hero.image.alt": "Shawn Becker",
-  "home.hero.line1": "Hey, I'm Shawn —",
+  "home.hero.line1": "Hey, I'm Shawn -",
   "home.hero.line2": "building thoughtful digital things",
   "home.hero.subtitle": "Full-stack developer who cares about craft, clarity, and the people using what I build.",
   "home.hero.cta": "About my work",

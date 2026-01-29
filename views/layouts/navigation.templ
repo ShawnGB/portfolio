@@ -4,16 +4,16 @@ import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/components"
 
 templ Navigation(pCtx i18n.PageContext) {
-	<nav aria-label="Main navigation">
+	<nav aria-label={ pCtx.T("nav.ariaLabel") }>
 		<div class="nav-inner">
 			<div class="nav-left-group">
 				<a id="logo-link" href={ pCtx.CurrentLangLink("/") }>
-					<h3>SGB</h3>
+					<h3>{ pCtx.T("nav.logo") }</h3>
 				</a>
 				@LanguageSwitcher(pCtx)
 			</div>
 			<input type="checkbox" id="burger-toggle" class="burger-toggle-checkbox"/>
-			<label for="burger-toggle" class="burger-menu-label" aria-label="Toggle navigation menu">
+			<label for="burger-toggle" class="burger-menu-label" aria-label={ pCtx.T("nav.toggleMenu") }>
 				<span class="burger-bar"></span>
 				<span class="burger-bar"></span>
 				<span class="burger-bar"></span>
@@ -21,10 +21,10 @@ templ Navigation(pCtx i18n.PageContext) {
 			<div class="nav-right-group">
 				@NavigationLinks(pCtx)
 				<div class="nav-utility-icons">
-					<a href="https://github.com/ShawnGB" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+					<a href="https://github.com/ShawnGB" target="_blank" rel="noopener noreferrer" aria-label={ pCtx.T("nav.github.ariaLabel") }>
 						@components.Icon("github", "20", "")
 					</a>
-					<a href="https://www.linkedin.com/in/shawn-gordon-becker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+					<a href="https://www.linkedin.com/in/shawn-gordon-b-540076b3/" target="_blank" rel="noopener noreferrer" aria-label={ pCtx.T("nav.linkedin.ariaLabel") }>
 						@components.Icon("linkedin", "20", "")
 					</a>
 				</div>
