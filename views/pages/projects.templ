@@ -12,103 +12,100 @@ templ projectsIntro(pCtx i18n.PageContext) {
 
 templ Projects(pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "projects.title", projectsIntro(pCtx), "projects.pageTitle", "projects.pageMetaDescription") {
-			<section>
-				<p class="label-mono">{ pCtx.T("projects.labels.currentProject") }</p>
-				<article class="project-card">
-					<img src="/static/images/projects/my-portfolio.png" alt={ pCtx.T("projects.currentProject.imageAlt") }/>
-					<span class="image-caption">{ pCtx.T("projects.currentProject.imageCaption") }</span>
+		<div class="grid-section projects-featured major-break">
+			<div class="featured-hero">
+				<img src="/static/images/projects/my-portfolio.png" alt={ pCtx.T("projects.currentProject.imageAlt") } class="featured-screenshot"/>
+				<div class="featured-overlay">
+					<p class="label-mono">{ pCtx.T("projects.labels.currentProject") }</p>
 					<h2>{ pCtx.T("projects.currentProject.title") }</h2>
-					<p>{ pCtx.T("projects.currentProject.description") }</p>
-					<h3>{ pCtx.T("projects.currentProject.motivation.label") }</h3>
-					<p>{ pCtx.T("projects.currentProject.motivation.text") }</p>
-					<dl>
-						<dt class="label-mono">{ pCtx.T("projects.currentProject.stack.label") }</dt>
-						<dd>{ pCtx.T("projects.currentProject.stack.value") }</dd>
-					</dl>
-					<p>
-						<a href="https://github.com/ShawnGB/portfolioingo" class="cta-link with-icon" target="_blank" rel="noopener noreferrer">
-							@components.Icon("github", "20", "")
+				</div>
+			</div>
+			<div class="featured-details">
+				<p>{ pCtx.T("projects.currentProject.description") }</p>
+				<div class="featured-meta">
+					<span class="stack">{ pCtx.T("projects.currentProject.stack.value") }</span>
+					<div class="project-cta">
+						<a href="https://github.com/ShawnGB/portfolioingo" target="_blank" rel="noopener noreferrer">
 							{ pCtx.T("projects.links.viewOnGithub") }
 						</a>
-					</p>
-				</article>
-			</section>
-			<section>
-				<h2>{ pCtx.T("projects.websitesBuilt.title") }</h2>
-				<article class="project-card">
-					<img src="/static/images/projects/jesse-becker-preview.png" alt={ pCtx.T("projects.websitesBuilt.jessebecker.imageAlt") }/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-section projects-client">
+			<div class="grid-row">
+				<div class="grid-col-7">
+					<h2>{ pCtx.T("projects.section02.title") }</h2>
 					<p class="label-mono">{ pCtx.T("projects.labels.photographyPortfolio") }</p>
 					<h3>{ pCtx.T("projects.websitesBuilt.jessebecker.name") }</h3>
-					<p>{ pCtx.T("projects.websitesBuilt.jessebecker.description") }</p>
 					<blockquote>{ pCtx.T("projects.websitesBuilt.jessebecker.quote") }</blockquote>
-					<p><a href="http://www.jessebecker.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
-				</article>
-				<article class="project-card">
-					<img src="/static/images/projects/arina-shanzev-preview.png" alt={ pCtx.T("projects.websitesBuilt.arinashanzev.imageAlt") }/>
+					<p>{ pCtx.T("projects.websitesBuilt.jessebecker.description") }</p>
+					<a href="http://www.jessebecker.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a>
+				</div>
+				<div class="grid-col-5">
+					<div class="client-image-tall">
+						<img src="/static/images/projects/jesse-becker-preview.png" alt={ pCtx.T("projects.websitesBuilt.jessebecker.imageAlt") }/>
+					</div>
+				</div>
+			</div>
+			<h3>{ pCtx.T("projects.section02.otherWork") }</h3>
+			<div class="grid-row other-work-grid">
+				<div class="grid-col-4">
 					<p class="label-mono">{ pCtx.T("projects.labels.wordpressPortfolio") }</p>
-					<h3>{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h3>
+					<h4>{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.arinashanzev.description") }</p>
-					<p><a href="https://arinashanzev.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
-				</article>
-				<article class="project-card">
+					<a href="https://arinashanzev.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a>
+				</div>
+				<div class="grid-col-4">
 					<p class="label-mono">{ pCtx.T("projects.labels.artistPortfolio") }</p>
-					<h3>{ pCtx.T("projects.websitesBuilt.berndwolf.name") }</h3>
+					<h4>{ pCtx.T("projects.websitesBuilt.berndwolf.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.berndwolf.description") }</p>
-					<p><a href="https://berndwolf.net/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a></p>
-				</article>
-				<article class="project-card">
+					<a href="https://berndwolf.net/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a>
+				</div>
+				<div class="grid-col-4">
 					<p class="label-mono">{ pCtx.T("projects.labels.festivalWebsite") }</p>
-					<h3>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h3>
+					<h4>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.description") }</p>
-				</article>
-				<article class="project-card">
-					<p class="label-mono">{ pCtx.T("projects.labels.reactSpa") }</p>
-					<h3>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h3>
-					<p>{ pCtx.T("projects.websitesBuilt.oldPortfolio.description") }</p>
-				</article>
-				<article class="project-card">
+				</div>
+			</div>
+		</div>
+		<div class="grid-section projects-explorations">
+			<h2>{ pCtx.T("projects.section03.title") }</h2>
+			<p class="lead">Side projects and experiments that shaped how I think about building software.</p>
+			<div class="grid-row explorations-grid">
+				<div class="grid-col-6">
 					<p class="label-mono">{ pCtx.T("projects.labels.educationalPlatform") }</p>
-					<h3>{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h3>
+					<h4>{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.uskillity.description") }</p>
-					<p>
-						<a href="https://www.instagram.com/uskillity/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.websitesBuilt.uskillity.linkInstagramText") }</a>
-					</p>
-				</article>
-			</section>
-			<section>
-				<h2>{ pCtx.T("projects.cultural.title") }</h2>
-				<article class="project-card">
-					<p class="label-mono">{ pCtx.T("projects.labels.culturalSpace") }</p>
-					<h3>{ pCtx.T("projects.cultural.kultschaette.name") }</h3>
-					<p>{ pCtx.T("projects.cultural.kultschaette.p1") }</p>
-					<p>{ pCtx.T("projects.cultural.kultschaette.p2") }</p>
-				</article>
-				<article class="project-card">
-					<p class="label-mono">{ pCtx.T("projects.labels.festivalSupport") }</p>
-					<h3>{ pCtx.T("projects.cultural.evolveFestivalSupport.name") }</h3>
-					<p>{ pCtx.T("projects.cultural.evolveFestivalSupport.p1") }</p>
-				</article>
-				<article class="project-card">
-					<p class="label-mono">{ pCtx.T("projects.labels.diyBand") }</p>
-					<h3>{ pCtx.T("projects.cultural.vegetarischDeluxe.name") }</h3>
-					<p>{ pCtx.T("projects.cultural.vegetarischDeluxe.p1") }</p>
-				</article>
-			</section>
-			<section>
-				<h2>{ pCtx.T("projects.film.title") }</h2>
-				<article class="project-card">
-					<p>{ pCtx.T("projects.film.description") }</p>
-					<p><a href="https://www.crew-united.com/de/Shawn-Gordon-Becker_283693.html" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.film.linkCrewUnitedText") }</a></p>
-				</article>
-			</section>
-			<section>
-				<p>
+					<a href="https://www.instagram.com/uskillity/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.websitesBuilt.uskillity.linkInstagramText") }</a>
+				</div>
+				<div class="grid-col-6">
+					<p class="label-mono">{ pCtx.T("projects.labels.reactSpa") }</p>
+					<h4>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h4>
+					<p>{ pCtx.T("projects.websitesBuilt.oldPortfolio.description") }</p>
+				</div>
+			</div>
+		</div>
+		<div class="grid-section projects-background">
+			<h2>{ pCtx.T("projects.section04.title") }</h2>
+			<div class="background-inline">
+				<span><strong>{ pCtx.T("projects.cultural.kultschaette.name") }</strong> — { pCtx.T("projects.cultural.kultschaette.p1") }</span>
+				<span><strong>{ pCtx.T("projects.cultural.evolveFestivalSupport.name") }</strong> — { pCtx.T("projects.cultural.evolveFestivalSupport.p1") }</span>
+				<span><strong>Film</strong> — { pCtx.T("projects.film.description") } <a href="https://www.crew-united.com/de/Shawn-Gordon-Becker_283693.html" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.film.linkCrewUnitedText") }</a></span>
+			</div>
+		</div>
+		<div class="grid-section">
+			<div class="grid-row cta-footer-grid">
+				<div class="cta-button-wrapper">
 					<a href="/static/ShawnBeckerResume.pdf" class="cta-link with-icon download" target="_blank" rel="noopener noreferrer">
 						@components.Icon("download", "24", "")
 						{ pCtx.T("projects.links.downloadCV") }
 					</a>
-				</p>
-				<p>{ pCtx.T("projects.cta.orGetInTouch") } <a href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("projects.cta.contactLinkText") }</a></p>
-			</section>
+				</div>
+				<div class="contact-sentence">
+					<p>{ pCtx.T("projects.cta.orGetInTouch") } <a class="cta-link" href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("projects.cta.contactLinkText") }</a></p>
+				</div>
+			</div>
+		</div>
 	}
 }
