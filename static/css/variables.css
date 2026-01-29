@@ -73,7 +73,7 @@
      ================================= */
 
   /* Font Families */
-  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif; /* Display/Headers - Geometric sans */
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, sans-serif; /* Display/Headers - Humanist sans */
   --font-body: "Newsreader", Georgia, serif; /* Body text - Editorial serif */
   --font-mono: "JetBrains Mono", "Courier New", monospace; /* Technical/Code */
 
