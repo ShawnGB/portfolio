@@ -5,8 +5,6 @@ import "mymodules/gofolio/views/layouts"
 import "mymodules/gofolio/views/components"
 
 templ projectsIntro(pCtx i18n.PageContext) {
-	<blockquote>{ pCtx.T("projects.intro.quote") }</blockquote>
-	<p><em>{ pCtx.T("projects.pageSubtitle") }</em></p>
 	<p>{ pCtx.T("projects.intro.p1") }</p>
 }
 
@@ -38,7 +36,6 @@ templ Projects(pCtx i18n.PageContext) {
 					<h2>{ pCtx.T("projects.section02.title") }</h2>
 					<p class="label-mono">{ pCtx.T("projects.labels.photographyPortfolio") }</p>
 					<h3>{ pCtx.T("projects.websitesBuilt.jessebecker.name") }</h3>
-					<blockquote>{ pCtx.T("projects.websitesBuilt.jessebecker.quote") }</blockquote>
 					<p>{ pCtx.T("projects.websitesBuilt.jessebecker.description") }</p>
 					<a href="http://www.jessebecker.com/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.visitSite") }</a>
 				</div>
@@ -71,7 +68,7 @@ templ Projects(pCtx i18n.PageContext) {
 		</div>
 		<div class="grid-section projects-explorations">
 			<h2>{ pCtx.T("projects.section03.title") }</h2>
-			<p class="lead">Side projects and experiments that shaped how I think about building software.</p>
+			<p class="lead">{ pCtx.T("projects.explorations.lead") }</p>
 			<div class="grid-row explorations-grid">
 				<div class="grid-col-6">
 					<p class="label-mono">{ pCtx.T("projects.labels.educationalPlatform") }</p>
