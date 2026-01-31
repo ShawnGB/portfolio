@@ -1,44 +1,58 @@
-/* ===================================================================
-   EXPERIENCE PAGE — EDITORIAL CREATIVE LAYOUTS
-   Three distinct chapter layouts + decorative elements
-   =================================================================== */
-
-/* ========================================
-   CHAPTER 1: HORIZONTAL BREAKOUT
-   ======================================== */
-
-.experience-chapter-1 {
+.experience-chapter-1,
+.experience-chapter-2,
+.experience-chapter-3 {
   position: relative;
 }
 
-/* Decorative section number "01" */
-.experience-chapter-1::before {
-  content: "2006 - 2016";
-  position: absolute;
-  top: 120px;
-  right: -32px;
+.experience-chapter-1 h2 + .label-mono,
+.experience-chapter-2 h2 + .label-mono,
+.experience-chapter-3 h2 + .label-mono {
+  margin-bottom: var(--space-xl);
+}
+
+.experience-chapter-1 h2 + .label-mono::before,
+.experience-chapter-2 h2 + .label-mono::before,
+.experience-chapter-3 h2 + .label-mono::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  background: var(--ink-warm);
+  opacity: 0.3;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+.experience-chapter-1 .grid--halves p:first-child::first-letter,
+.experience-chapter-2 .grid-col-9 p:first-child::first-letter,
+.experience-chapter-3 .grid-col-6:first-child p:first-child::first-letter {
+  float: left;
   font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  color: var(--ink-warm);
+}
+
+.experience-chapter-1::after,
+.experience-chapter-2::after,
+.experience-chapter-3::after {
+  content: "<section>";
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+  font-family: var(--font-mono);
+  font-size: 4.5rem;
+  font-weight: 400;
   line-height: 1;
   color: var(--ink-warm);
-  opacity: 0.04;
+  opacity: 0.035;
   pointer-events: none;
-  z-index: 0;
+  letter-spacing: -0.02em;
 }
 
-/* Editorial hairline */
-.experience-chapter-1::after {
-  content: "";
-  position: absolute;
-  top: -24px;
-  left: 0;
-  width: 4rem;
-  height: 1px;
-  background: rgba(43, 43, 43, 0.15);
-}
 
-/* Full-bleed horizontal image container */
 .breakout-image-container {
   width: 100vw;
   position: relative;
@@ -51,12 +65,11 @@
   text-align: center;
 }
 
-/* Horizontal strip image - middle third crop */
 .breakout-image-horizontal {
   width: 100%;
   height: 280px;
   object-fit: cover;
-  object-position: center 40%; /* Slightly above center for better composition */
+  object-position: center 40%;
   display: block;
   filter: saturate(0.82) contrast(0.92);
   opacity: 0.9;
@@ -68,31 +81,6 @@
   padding: 0 var(--space-xl);
 }
 
-/* ========================================
-   CHAPTER 2: VERTICAL SIDEBAR
-   ======================================== */
-
-.experience-chapter-2 {
-  position: relative;
-}
-
-/* Decorative section number "02" */
-.experience-chapter-2::before {
-  content: "2016 - 2022";
-  position: absolute;
-  top: 48px;
-  left: -32px;
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Vertical image strip - tall sidebar */
 .vertical-image-strip-wrapper {
   position: relative;
   margin: 0;
@@ -113,31 +101,6 @@
   margin-top: var(--space-sm);
 }
 
-/* ========================================
-   CHAPTER 3: FULL WIDTH IMAGE BETWEEN TEXT
-   ======================================== */
-
-.experience-chapter-3 {
-  position: relative;
-}
-
-/* Decorative section number "03" */
-.experience-chapter-3::before {
-  content: "2023 - Present";
-  position: absolute;
-  top: 48px;
-  right: -24px;
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Full-width image between text sections */
 .full-width-image {
   margin: var(--space-2xl) 0;
 }
@@ -156,29 +119,11 @@
   text-align: center;
 }
 
-/* ========================================
-   RESPONSIVE ADJUSTMENTS
-   ======================================== */
-
 @media (max-width: 900px) {
-  /* Disable decorative numbers on mobile */
-  .experience-chapter-1::before,
-  .experience-chapter-2::before,
-  .experience-chapter-3::before {
-    display: none;
-  }
-
-  /* Disable vertical metadata text on mobile */
-  .experience-chapter-2 .grid-row::after {
-    display: none;
-  }
-
-  /* Stack image breakout */
   .breakout-image-horizontal {
     height: 200px;
   }
 
-  /* Reduce vertical image height */
   .vertical-image-strip {
     height: 600px;
   }

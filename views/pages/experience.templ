@@ -6,35 +6,35 @@ import "mymodules/gofolio/views/components"
 
 templ Experience(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("experience.pageTitle"), pCtx.T("experience.pageMetaDescription")) {
-		<!-- Full-bleed horizontal image strip -->
 		<div class="page-grid-container">
-			<div class="grid-section">
+			<div class="grid-section experience-chapter-1">
 				<div class="grid-col-12">
 					<h2>{ pCtx.T("experience.chapter1.title") }</h2>
-				</div>
-				<div class="grid-col-12">
-					<blockquote>{ pCtx.T("experience.chapter1.quote") }</blockquote>
+					<p class="label-mono">{ pCtx.T("experience.chapter1.subtitle") }</p>
 				</div>
 				<div class="grid--halves">
 					<p>{ pCtx.T("experience.chapter1.p1") }</p>
-					<p style="margin-top:1.8rem;">{ pCtx.T("experience.chapter1.p2") }</p>
+					<p>{ pCtx.T("experience.chapter1.p2") }</p>
 				</div>
 				<div class="breakout-image-container">
 					<img src="/static/images/experience/a-performance-at-keller.jpg" alt={ pCtx.T("experience.chapter1.image.alt") } loading="lazy" class="breakout-image-horizontal"/>
 					<span class="image-caption">{ pCtx.T("experience.chapter1.image.caption") }</span>
 				</div>
-				<div>
-					<div class="grid-col-3">
-						<p>{ pCtx.T("experience.chapter1.p3") }</p>
-						<p>{ pCtx.T("experience.chapter1.p4") }</p>
-						<p>{ pCtx.T("experience.chapter1.p5") }</p>
-						<p>{ pCtx.T("experience.chapter1.p6") }</p>
-						<p>{ pCtx.T("experience.chapter1.p7") }</p>
-						<p>{ pCtx.T("experience.chapter1.p8") }</p>
-					</div>
+				<div class="grid-col-3">
+					<p>{ pCtx.T("experience.chapter1.p3") }</p>
+					<p>{ pCtx.T("experience.chapter1.p4") }</p>
+					<p>{ pCtx.T("experience.chapter1.p5") }</p>
+				</div>
+				<div class="grid-col-12">
+					<blockquote>{ pCtx.T("experience.chapter1.quote") }</blockquote>
+				</div>
+				<div class="grid-col-3">
+					<p>{ pCtx.T("experience.chapter1.p6") }</p>
+					<p>{ pCtx.T("experience.chapter1.p7") }</p>
+					<p>{ pCtx.T("experience.chapter1.p8") }</p>
 				</div>
 			</div>
-			<!-- Chapter 2: The Formalization Years - VERTICAL SIDEBAR -->
+			<!-- Chapter 2: The Formalisation Years - VERTICAL SIDEBAR -->
 			<div class="grid-section experience-chapter-2">
 				<div class="grid-row">
 					<div class="grid-col-12">
@@ -59,6 +59,11 @@ templ Experience(pCtx i18n.PageContext) {
 				</div>
 				<div class="grid-row">
 					<div class="grid-col-12">
+						<blockquote>{ pCtx.T("experience.chapter2.quote") }</blockquote>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-col-12">
 						<p>{ pCtx.T("experience.chapter2.p6") }</p>
 						<p>{ pCtx.T("experience.chapter2.p7") }</p>
 					</div>
@@ -67,11 +72,9 @@ templ Experience(pCtx i18n.PageContext) {
 			<!-- Chapter 3: Seeking Depth - FULL WIDTH IMAGE BETWEEN TEXT -->
 			<div class="grid-section experience-chapter-3">
 				<div class="grid-row">
-					<div class="grid-col-3">
+					<div class="grid-col-12">
 						<h2>{ pCtx.T("experience.chapter3.title") }</h2>
-					</div>
-					<div class="grid-col-9">
-						<blockquote>{ pCtx.T("experience.chapter3.quote") }</blockquote>
+						<p class="label-mono">{ pCtx.T("experience.chapter3.subtitle") }</p>
 					</div>
 				</div>
 				<div class="grid-row">
@@ -98,6 +101,15 @@ templ Experience(pCtx i18n.PageContext) {
 						<p>{ pCtx.T("experience.chapter3.p6") }</p>
 						<p>{ pCtx.T("experience.chapter3.p7") }</p>
 						<p>{ pCtx.T("experience.chapter3.p8") }</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-col-12">
+						<blockquote>{ pCtx.T("experience.chapter3.quote") }</blockquote>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-col-12">
 						<p>{ pCtx.T("experience.chapter3.p9") }</p>
 					</div>
 				</div>
