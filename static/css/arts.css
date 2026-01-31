@@ -1,16 +1,81 @@
-/* ===================================================================
-   ARTS PAGE
-   Layout-specific styles only
-   =================================================================== */
+.arts-anchor {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
 
-/* Anchor images - full width, visual dominance */
 .arts-anchor img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+.arts-anchor--slim img {
+  height: 35vh;
+}
+
+.arts-anchor--contained {
+  padding: 0 8vw;
+  margin-top: calc(-8rem + var(--space-md));
+}
+
+.arts-anchor--contained img,
+.arts-anchor--contained video {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.arts-grid {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0 8vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  box-sizing: border-box;
+}
+
+.arts-grid img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Sound & Music section - image + text, no grid */
+.arts-grid--halves {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0 8vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  box-sizing: border-box;
+}
+
+.arts-grid--halves img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .arts-sound {
   display: flex;
   gap: var(--space-xl);
@@ -32,8 +97,23 @@
   margin-top: 0;
 }
 
-/* Responsive: Stack on mobile */
 @media (max-width: 768px) {
+  .arts-anchor img {
+    height: 50vh;
+  }
+
+  .arts-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    padding: 0 var(--space-md);
+  }
+
+  .arts-grid--halves {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    padding: 0 var(--space-md);
+  }
+
   .arts-sound {
     flex-direction: column;
   }
