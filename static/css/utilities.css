@@ -84,7 +84,7 @@
 }
 
 .icon-header h3 {
-  margin: 0; /* Reset h3 margin inside icon-header for proper flex alignment */
+  margin: 0;
 }
 
 /* Mono label - uppercase metadata */
@@ -162,4 +162,3 @@
   color: var(--ink-warm);
   opacity: 0.5;
 }
-

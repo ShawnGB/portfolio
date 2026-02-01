@@ -1,21 +1,12 @@
-/* ===================================================================
-   ABOUT PAGE — EDITORIAL MONOCHROME
-   Layout-specific styles only
-   =================================================================== */
-
-/* --- ABOUT INTRO --- */
 .about-intro-section {
   padding-top: var(--space-2xl);
   position: relative;
 }
 
-
-/* --- 4. WHAT DRIVES ME + MY PATH (EDITORIAL ENHANCEMENT) --- */
 .drives-path-section {
   position: relative;
 }
 
-/* Large decorative section number "01" */
 .drives-path-section::before {
   content: "01";
   position: absolute;
@@ -31,7 +22,6 @@
   z-index: 0;
 }
 
-/* Editorial hairline above section */
 .drives-path-section::after {
   content: "";
   position: absolute;
@@ -42,7 +32,6 @@
   background: rgba(43, 43, 43, 0.15);
 }
 
-/* Vertical metadata text */
 .drives-path-section .grid-row::after {
   content: "VALUES / JOURNEY";
   position: absolute;
@@ -59,25 +48,17 @@
   pointer-events: none;
 }
 
-/* Values list uses .values-list from utilities.css */
-
-/* Better prose spacing in "My Path" column */
 .drives-path-section .body-text p {
-  max-width: 55ch; /* Slightly tighter for side column */
+  max-width: 55ch;
 }
 
-/* Path label now in utilities.css (used across multiple pages) */
-
-
-/* --- 5. PULL QUOTE + IMAGE + BEYOND (THREE-COLUMN EDITORIAL) --- */
 .quote-image-beyond-module {
-  align-items: flex-start; /* Top align all three columns */
-  padding: 112px 0; /* Generous breathing room */
+  align-items: flex-start;
+  padding: 112px 0;
   position: relative;
-  background: var(--paper-mid); /* Subtle background variation */
+  background: var(--paper-mid);
 }
 
-/* Large decorative section number "02" */
 .quote-image-beyond-module::before {
   content: "02";
   position: absolute;
@@ -93,11 +74,9 @@
   z-index: 0;
 }
 
-
-/* Hero-style portrait - larger, center-cropped editorial image */
 .image-wrapper-hero {
   position: relative;
-  height: 680px; /* Tall hero-style crop */
+  height: 680px;
   overflow: hidden;
   border-radius: var(--radius-sm);
 }
@@ -107,10 +86,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center; /* Center crop - will slice to middle */
+  object-position: center center;
 }
 
-/* Subtle radial gradient for depth */
 .image-wrapper-hero::before {
   content: "";
   position: absolute;
@@ -124,13 +102,9 @@
   z-index: 1;
 }
 
-
-
-/* --- 6. WHAT I'M LOOKING FOR (NOW SECTION 04) --- */
 .looking-for-section {
-  background-color: var(--paper-light); /* Different from quote section */
+  background-color: var(--paper-light);
   border-top: 1px solid var(--border-subtle);
-  /* Full-bleed effect */
   margin-left: -64px;
   margin-right: -64px;
   padding-left: 64px;
@@ -138,7 +112,6 @@
   position: relative;
 }
 
-/* Large decorative section number "03" */
 .looking-for-section::before {
   content: "03";
   position: absolute;
@@ -159,9 +132,6 @@
   text-align: center;
   margin-bottom: var(--space-xl);
 }
-
-
-/* Looking for items use .checkmark-list from utilities.css */
 
 .cta-footer-grid {
   grid-column: 1 / -1;
@@ -184,7 +154,7 @@
 .cta-footer-grid .contact-sentence {
   grid-column: 1 / -1;
   text-align: center;
-  font-size: 0.9375rem; /* Slightly larger than before */
+  font-size: 0.9375rem;
   margin-top: var(--space-lg);
   color: var(--text-secondary);
 }
@@ -194,9 +164,6 @@
   font-weight: 500;
 }
 
-
-/* Beyond the Screen - inline in three-column layout */
-
 .quote-image-beyond-module .body-text p {
   color: var(--text-secondary);
   font-size: 0.9375rem;
@@ -204,7 +171,6 @@
   margin-bottom: var(--space-md);
 }
 
-/* Interests grid - inline compact version */
 .interests-grid-inline {
   display: flex;
   flex-direction: column;
@@ -212,13 +178,7 @@
   margin-top: var(--space-md);
 }
 
-
-/* =================================
-   MOBILE RESPONSIVE
-   ================================= */
-
 @media (max-width: 900px) {
-  /* Full-bleed section margin adjustment */
   .looking-for-section {
     margin-left: -24px;
     margin-right: -24px;
@@ -226,29 +186,24 @@
     padding-right: 24px;
   }
 
-  /* Hide decorative section numbers */
   .drives-path-section::before,
   .quote-image-beyond-module::before,
   .looking-for-section::before {
     display: none;
   }
 
-  /* Hide vertical metadata text */
   .drives-path-section .grid-row::after {
     display: none;
   }
 
-  /* Reduce tall hero image height */
   .image-wrapper-hero {
     height: 400px;
   }
 
-  /* Quote section breathing room */
   .quote-image-beyond-module {
     padding: var(--space-3xl) 0;
   }
 
-  /* CTA footer - stack and reorder */
   .cta-footer-grid {
     display: flex;
     flex-direction: column;
@@ -263,5 +218,3 @@
     order: 2;
   }
 }
-
-/* --- END OF ABOUT PAGE STYLES --- */

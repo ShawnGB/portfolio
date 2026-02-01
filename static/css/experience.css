@@ -40,7 +40,7 @@
 .experience-chapter-3::after {
   content: "<section>";
   position: absolute;
-  top: -0.5rem;
+  top: 3rem;
   right: -1rem;
   font-family: var(--font-mono);
   font-size: 4.5rem;
@@ -51,7 +51,6 @@
   pointer-events: none;
   letter-spacing: -0.02em;
 }
-
 
 .breakout-image-container {
   width: 100vw;

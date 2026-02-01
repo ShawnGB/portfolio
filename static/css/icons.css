@@ -100,7 +100,6 @@
   transform: translateY(2px);
 }
 
-/* CTA with Icon - Editorial Monochrome Style */
 .cta-link.with-icon {
   display: inline-flex;
   align-items: center;
@@ -114,7 +113,7 @@
   color: var(--ink-warm);
   text-decoration: none;
   transition: all 0.2s ease;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
 }
 
 .cta-link.with-icon .icon {
@@ -138,7 +137,6 @@
   transform: translateY(3px) scale(1.1);
 }
 
-/* CTA Solid Variant - Inverse of .with-icon (for forms, primary actions) */
 .cta-link--solid,
 button.cta-link--solid {
   display: inline-flex;
@@ -171,13 +169,11 @@ button.cta-link--solid:disabled {
   cursor: not-allowed;
 }
 
-/* Large variant for emphasis (e.g., form submit) */
 .cta-link--solid.large,
 button.cta-link--solid.large {
   padding: var(--space-lg) var(--space-3xl);
 }
 
-/* Tech Stack Grid */
 .tech-stack-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -197,7 +193,7 @@ button.cta-link--solid.large {
 }
 
 .tech-category h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -211,7 +207,6 @@ button.cta-link--solid.large {
   justify-content: flex-start;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 900px) {
   .tech-stack-grid {
     grid-template-columns: 1fr;

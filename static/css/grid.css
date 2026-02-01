@@ -3,7 +3,6 @@
    Centralized grid layout system
    ================================= */
 
-/* Grid container - max width and centering */
 .page-grid-container {
   max-width: 1280px;
   margin-left: auto;
@@ -12,7 +11,6 @@
   position: relative;
 }
 
-/* 12-column grid row */
 .grid-row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -64,14 +62,12 @@
    Common Grid Patterns
    ================================= */
 
-/* Intro layout - narrow title, wide content (3/9 or 4/8) */
 .grid--intro {
   display: grid;
   grid-template-columns: 4fr 8fr;
   gap: var(--space-2xl);
 }
 
-/* Hero layout - image left, content right (5/7) */
 .grid--hero {
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -79,21 +75,18 @@
   align-items: center;
 }
 
-/* Thirds - three equal columns */
 .grid--thirds {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
 }
 
-/* Halves - two equal columns */
 .grid--halves {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
 }
 
-/* Asymmetric - 7/5 split */
 .grid--feature {
   display: grid;
   grid-template-columns: 7fr 5fr;
