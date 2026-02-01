@@ -128,8 +128,7 @@ p.lead {
   margin: 0 0 2rem 0;
 }
 
-small,
-.text-small {
+small {
   font-family: var(--font-mono);
   font-size: 0.875rem;
   font-weight: 400;
@@ -153,38 +152,12 @@ strong {
   color: var(--text-primary);
 }
 
-em,
-i {
+em {
   font-style: italic;
   color: var(--ink-soft);
 }
 
-code,
-kbd,
-samp {
-  font-family: var(--font-mono);
-  font-size: 0.9em;
-  font-weight: 400;
-  color: var(--ink-warm);
-  background-color: var(--paper-mid);
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-}
-
-pre {
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  line-height: 1.6;
-  padding: 1.5rem;
-  background: var(--paper-mid);
-  border-left: 2px solid var(--border-medium);
-  overflow-x: auto;
-  margin: 2rem 0;
-  color: var(--ink-warm);
-}
-
-ul,
-ol {
+ul {
   margin: 1.5rem 0;
   padding-left: 2rem;
   line-height: 1.8;
@@ -220,38 +193,8 @@ blockquote::before {
   opacity: 0.2;
 }
 
-dl dt {
-  font-family: var(--font-mono);
-  font-weight: 600;
-  color: var(--text-tertiary);
-  margin-top: var(--space-md);
-  font-size: 0.95em;
-  margin-bottom: var(--space-xs);
-}
-
-dl dd {
-  margin-inline-start: 0;
-  margin-bottom: var(--space-md);
-  padding-inline-start: var(--space-md);
-}
-
-dl dd ul {
-  list-style-type: disc;
-  margin-block-start: 0.25em;
-  margin-block-end: 0;
-  padding-inline-start: 20px;
-}
-
-dl dd ul li {
-  margin-bottom: 0.25em;
-}
-
 .hidden {
   display: none;
-}
-
-.text-success {
-  color: #2d7a3e;
 }
 .text-error {
   color: #b71c1c;
@@ -275,12 +218,6 @@ img {
   height: auto;
 }
 
-img.img-original {
-  filter: none;
-  opacity: 1;
-  mix-blend-mode: normal;
-}
-
 article {
   display: flex;
   align-items: center;
@@ -297,15 +234,6 @@ article {
 article:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(43, 43, 43, 0.08);
-}
-
-article.article--column {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-article.article--accent {
-  border-left: 2px solid var(--border-default);
 }
 
 .button,
@@ -375,24 +303,6 @@ button.cta-link:hover {
   opacity: 0.6;
 }
 
-.cta-link--underline {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ink-warm);
-  text-decoration: none;
-  border-bottom: 2px solid var(--ink-warm);
-  padding-bottom: 2px;
-  transition: opacity 0.2s ease;
-}
-
-.cta-link--underline:hover {
-  opacity: 0.65;
-}
-
 hr,
 .divider,
 .section-divider {
@@ -401,12 +311,6 @@ hr,
   background: var(--border-subtle);
   border: none;
   margin: var(--space-4xl) 0;
-}
-
-.divider-space {
-  height: var(--space-xl);
-  background: transparent;
-  border: none;
 }
 
 .page-container {
