@@ -90,12 +90,6 @@ nav ul li a:hover {
   opacity: 0.65;
 }
 
-nav ul li a.active,
-nav ul li a[aria-current="page"] {
-  color: var(--ink-warm);
-  border-bottom-color: var(--ink-warm);
-}
-
 .nav-utility-icons {
   display: flex;
   align-items: center;
@@ -246,8 +240,7 @@ nav ul li a[aria-current="page"] {
     border: none;
   }
 
-  nav ul li a:hover,
-  nav ul li a.active {
+  nav ul li a:hover {
     opacity: 1;
     background: var(--paper-mid);
   }
