@@ -1,8 +1,3 @@
-/* =================================
-   Reset & Base Styles
-   ================================= */
-
-/* ZERO TOLERANCE FOR OVERFLOW */
 * {
   box-sizing: border-box;
 }
@@ -56,7 +51,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.65; /* Opacity fade, not color change */
+  opacity: 0.65;
 }
 
 a:visited {
@@ -69,7 +64,6 @@ a:focus-visible {
   border-radius: 2px;
 }
 
-/* Heading Foundations - Editorial Typography */
 h1,
 h2,
 h3,
@@ -79,20 +73,18 @@ h4 {
   color: var(--text-primary);
 }
 
-/* H1: Main headline - Readable, NOT oversized */
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem); /* 32px → 5vw → 56px */
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
   margin: 0 0 1.5rem 0;
   color: var(--ink-warm);
-  text-transform: none; /* No all-caps */
+  text-transform: none;
 }
 
-/* H2: Section headings */
 h2 {
-  font-size: clamp(1.5rem, 3.5vw, 2.25rem); /* 24px → 3.5vw → 36px */
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -100,19 +92,17 @@ h2 {
   color: var(--ink-warm);
 }
 
-/* H3: Subsection headings */
 h3 {
-  font-size: clamp(0.95rem, 1.5vw, 1.125rem); /* 15px → 1.5vw → 18px - compact to prevent wrapping */
+  font-size: clamp(0.95rem, 1.5vw, 1.125rem);
   font-weight: 600;
   line-height: 1.3;
-  letter-spacing: -0.02em; /* tighter tracking */
+  letter-spacing: -0.02em;
   margin: 2rem 0 0.75rem 0;
   color: var(--ink-soft);
 }
 
-/* H4: Minor headings */
 h4 {
-  font-size: clamp(1rem, 2vw, 1.25rem); /* 16px → 2vw → 20px */
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0;
@@ -120,39 +110,35 @@ h4 {
   color: var(--ink-soft);
 }
 
-/* Body Text: Optimized for reading */
 p {
   margin: 0 0 1.75rem 0;
-  max-width: 65ch; /* Optimal line length */
+  max-width: 65ch;
   font-weight: 400;
   color: var(--text-secondary);
-  line-height: 1.7; /* Generous for readability */
-  font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px → 1.5vw → 18px */
+  line-height: 1.7;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
-/* Lead paragraph - larger, lighter weight */
 p.lead {
-  font-size: clamp(1.125rem, 2vw, 1.375rem); /* 18px → 2vw → 22px */
-  font-weight: 300; /* Light weight for elegance */
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 300;
   line-height: 1.65;
   color: var(--ink-soft);
   max-width: 60ch;
   margin: 0 0 2rem 0;
 }
 
-/* Small text - captions, metadata */
 small,
 .text-small {
   font-family: var(--font-mono);
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--text-tertiary);
 }
 
-/* Section spacing */
 section + section {
-  margin-top: var(--space-xl); /* Generous between sections */
+  margin-top: var(--space-xl);
 }
 
 h2 + p,
@@ -160,7 +146,6 @@ h3 + p {
   margin-top: var(--space-md);
 }
 
-/* Strong Emphasis */
 p strong,
 strong {
   font-family: var(--font-body);
@@ -168,14 +153,12 @@ strong {
   color: var(--text-primary);
 }
 
-/* Emphasis */
 em,
 i {
   font-style: italic;
   color: var(--ink-soft);
 }
 
-/* Code and technical elements */
 code,
 kbd,
 samp {
@@ -200,7 +183,6 @@ pre {
   color: var(--ink-warm);
 }
 
-/* Lists */
 ul,
 ol {
   margin: 1.5rem 0;
@@ -213,7 +195,6 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Blockquote - pull quote style with editorial hairline */
 blockquote {
   font-family: var(--font-body);
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
@@ -239,7 +220,6 @@ blockquote::before {
   opacity: 0.2;
 }
 
-/* Definition lists */
 dl dt {
   font-family: var(--font-mono);
   font-weight: 600;
@@ -266,15 +246,10 @@ dl dd ul li {
   margin-bottom: 0.25em;
 }
 
-/* =================================
-   4. Utility Classes
-   ================================= */
-
 .hidden {
   display: none;
 }
 
-/* Text utilities */
 .text-success {
   color: #2d7a3e;
 }
@@ -282,7 +257,6 @@ dl dd ul li {
   color: #b71c1c;
 }
 
-/* Section spacing and padding */
 section {
   padding: var(--space-4xl) 0;
   margin-bottom: 0; /* spacing handled by padding */
@@ -292,7 +266,6 @@ section:last-child {
   padding-bottom: var(--space-5xl);
 }
 
-/* Images - Editorial monochrome by default */
 img {
   filter: saturate(0.82) contrast(0.92);
   opacity: 0.9;
@@ -302,14 +275,12 @@ img {
   height: auto;
 }
 
-/* Remove filter when needed */
 img.img-original {
   filter: none;
   opacity: 1;
   mix-blend-mode: normal;
 }
 
-/* Articles (cards) - default card styling */
 article {
   display: flex;
   align-items: center;
@@ -318,7 +289,9 @@ article {
   background: var(--paper-warm);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 article:hover {
@@ -326,7 +299,6 @@ article:hover {
   box-shadow: 0 4px 12px rgba(43, 43, 43, 0.08);
 }
 
-/* Article variations */
 article.article--column {
   flex-direction: column;
   align-items: flex-start;
@@ -336,11 +308,6 @@ article.article--accent {
   border-left: 2px solid var(--border-default);
 }
 
-/* =================================
-   5. Common Components
-   ================================= */
-
-/* Buttons - Semantic button styling */
 .button,
 a.button,
 button {
@@ -358,7 +325,9 @@ button {
   background: transparent;
   border: 1px solid var(--border-default);
   border-radius: var(--radius-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
 }
 
@@ -369,7 +338,6 @@ button:hover {
   box-shadow: 0 2px 8px rgba(43, 43, 43, 0.1);
 }
 
-/* Solid button variant */
 .button--solid,
 a.button--solid,
 button.button--solid {
@@ -385,7 +353,6 @@ button.button--solid:hover {
   border-color: var(--ink-soft);
 }
 
-/* Legacy support - keep cta-link as alias to button */
 a.cta-link,
 button.cta-link {
   display: inline-block;
@@ -408,7 +375,6 @@ button.cta-link:hover {
   opacity: 0.6;
 }
 
-/* CTA Link with underline (for larger editorial links with icons) */
 .cta-link--underline {
   display: inline-flex;
   align-items: center;
@@ -427,7 +393,6 @@ button.cta-link:hover {
   opacity: 0.65;
 }
 
-/* Horizontal divider */
 hr,
 .divider,
 .section-divider {
@@ -438,24 +403,18 @@ hr,
   margin: var(--space-4xl) 0;
 }
 
-/* Spacer divider - no line */
 .divider-space {
   height: var(--space-xl);
   background: transparent;
   border: none;
 }
 
-/* === Page container === */
 .page-container {
   width: 100%;
   max-width: var(--container-max);
   margin: var(--nav-height) auto 0;
   padding: 0 2rem;
 }
-
-/* =================================
-   Responsive Design
-   ================================= */
 
 @media (max-width: 900px) {
   .page-container {
