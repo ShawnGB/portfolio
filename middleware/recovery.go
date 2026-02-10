@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// Recovery recovers from panics and logs the error
 func Recovery(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		defer func() {

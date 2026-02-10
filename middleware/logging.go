@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-// Logging logs each HTTP request with method, URI, and duration
 func Logging(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		start := time.Now()
