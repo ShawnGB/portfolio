@@ -15,7 +15,6 @@ var (
 	imagesMutex  sync.RWMutex
 )
 
-// LoadImages loads and caches image filenames at startup
 func LoadImages() error {
 	images, err := utils.GetArtsImages()
 	if err != nil {
@@ -28,7 +27,6 @@ func LoadImages() error {
 	return nil
 }
 
-// ArtsHandler handles the Arts page with cached image list
 func ArtsHandler(w http.ResponseWriter, r *http.Request) {
 	pCtx := i18n.NewPageContext(r)
 

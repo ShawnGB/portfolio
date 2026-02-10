@@ -31,7 +31,6 @@ func GetArtsImages() ([]string, error) {
 		}
 
 		if !d.IsDir() && isImage(path) {
-			// Remove both "./static/" and "static/" prefixes to handle different path formats
 			rel := strings.TrimPrefix(path, "./static/")
 			rel = strings.TrimPrefix(rel, "static/")
 			images = append(images, rel)

@@ -19,7 +19,6 @@ func main() {
 		log.Println("INFO: .env not found")
 	}
 
-	// Initialize dependencies
 	handlers.InitCaptchaClient()
 	i18n.Init("i18n/locales")
 	if err := handlers.LoadImages(); err != nil {
@@ -28,11 +27,9 @@ func main() {
 
 	mux := http.NewServeMux()
 
-	// Static File Server
 	fs := http.FileServer(http.Dir("./static"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
 
-	// routes fuer sitemap und robots
 	mux.HandleFunc("/robots.txt", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/robots.txt")
 	})
@@ -45,7 +42,6 @@ func main() {
 		http.ServeFile(w, r, "./static/.well-known/security.txt")
 	})
 
-	// Page routes using handler factory pattern
 	registerPageRoutes(mux)
 
 	port := os.Getenv("PORT")
@@ -55,7 +51,6 @@ func main() {
 
 	log.Printf("INFO: Starting server on :%s", port)
 
-	// Apply middleware chain: Recovery -> Security -> Logging -> i18n -> Routes
 	handler := middleware.Recovery(middleware.Security(middleware.Logging(i18n.MiddlewareI18n(mux))))
 
 	err = http.ListenAndServe(":"+port, handler)

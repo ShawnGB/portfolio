@@ -1,7 +1,11 @@
 package i18n
 
 import (
+	"context"
+	"html"
+	"io"
 	"net/http"
+	"strings"
 
 	"github.com/a-h/templ"
 	goi18n "github.com/nicksnyder/go-i18n/v2/i18n"
@@ -16,15 +20,31 @@ type PageContext struct {
 
 func (pc PageContext) T(messageID string) string {
 	if pc.L == nil {
-		// Fallback, falls kein Localizer vorhanden ist
 		return messageID
 	}
 	return pc.L.MustLocalize(&goi18n.LocalizeConfig{MessageID: messageID})
 }
 
-// LanguageSwitchURL gibt jetzt templ.SafeURL zurück.
+func (pc PageContext) TRich(messageID string) templ.Component {
+	raw := pc.T(messageID)
+	return templ.ComponentFunc(func(ctx context.Context, w io.Writer) error {
+		parts := strings.Split(raw, "**")
+		for i, part := range parts {
+			var s string
+			if i%2 == 1 {
+				s = "<strong>" + html.EscapeString(part) + "</strong>"
+			} else {
+				s = html.EscapeString(part)
+			}
+			if _, err := io.WriteString(w, s); err != nil {
+				return err
+			}
+		}
+		return nil
+	})
+}
+
 func (pc PageContext) LanguageSwitchURL(targetLangCode string) templ.SafeURL {
-	// Die Logik zur Pfad-Generierung bleibt gleich.
 	path := "/" + targetLangCode
 	if pc.BasePath != "/" {
 		path += pc.BasePath
@@ -35,26 +55,15 @@ func (pc PageContext) LanguageSwitchURL(targetLangCode string) templ.SafeURL {
 	if pc.OriginalQuery != "" {
 		path = path + "?" + pc.OriginalQuery
 	}
-	// HINZUGEFÜGT: Der generierte String-Pfad wird mit templ.URL() umgewandelt.
 	return templ.URL(path)
 }
 
-// CurrentLangLink gibt jetzt templ.SafeURL zurück.
 func (pc PageContext) CurrentLangLink(pathSegment string) templ.SafeURL {
-	// Die Logik zur Pfad-Generierung bleibt gleich.
 	if pathSegment == "" {
 		pathSegment = "/"
 	} else if pathSegment[0] != '/' {
 		pathSegment = "/" + pathSegment
 	}
-
-	// ActiveLang sollte von der Middleware immer korrekt gesetzt werden.
-	// Ein Fallback hier könnte sein:
-	// activeLang := pc.ActiveLang
-	// if activeLang == "" {
-	//     activeLang = defaultLang.String() // Benötigt Zugriff auf defaultLang
-	// }
-	// Für die Lernübung verlassen wir uns darauf, dass ActiveLang gesetzt ist.
 
 	path := "/" + pc.ActiveLang
 	if pathSegment != "/" {
@@ -62,7 +71,6 @@ func (pc PageContext) CurrentLangLink(pathSegment string) templ.SafeURL {
 	} else {
 		path += "/"
 	}
-	// HINZUGEFÜGT: Der generierte String-Pfad wird mit templ.URL() umgewandelt.
 	return templ.URL(path)
 }
 

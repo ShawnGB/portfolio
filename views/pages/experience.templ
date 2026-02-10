@@ -13,25 +13,25 @@ templ Experience(pCtx i18n.PageContext) {
 					<p class="label-mono">{ pCtx.T("experience.chapter1.subtitle") }</p>
 				</div>
 				<div class="grid--halves">
-					<p>{ pCtx.T("experience.chapter1.p1") }</p>
-					<p>{ pCtx.T("experience.chapter1.p2") }</p>
+					<p>@pCtx.TRich("experience.chapter1.p1")</p>
+					<p>@pCtx.TRich("experience.chapter1.p2")</p>
 				</div>
 				<div class="breakout-image-container">
 					<img src="/static/images/experience/a-performance-at-keller.jpg" alt={ pCtx.T("experience.chapter1.image.alt") } loading="lazy" class="breakout-image-horizontal"/>
 					<span class="image-caption">{ pCtx.T("experience.chapter1.image.caption") }</span>
 				</div>
 				<div class="grid-col-3">
-					<p>{ pCtx.T("experience.chapter1.p3") }</p>
-					<p>{ pCtx.T("experience.chapter1.p4") }</p>
-					<p>{ pCtx.T("experience.chapter1.p5") }</p>
+					<p>@pCtx.TRich("experience.chapter1.p3")</p>
+					<p>@pCtx.TRich("experience.chapter1.p4")</p>
+					<p>@pCtx.TRich("experience.chapter1.p5")</p>
 				</div>
 				<div class="grid-col-12">
 					<blockquote>{ pCtx.T("experience.chapter1.quote") }</blockquote>
 				</div>
 				<div class="grid-col-3">
-					<p>{ pCtx.T("experience.chapter1.p6") }</p>
-					<p>{ pCtx.T("experience.chapter1.p7") }</p>
-					<p>{ pCtx.T("experience.chapter1.p8") }</p>
+					<p>@pCtx.TRich("experience.chapter1.p6")</p>
+					<p>@pCtx.TRich("experience.chapter1.p7")</p>
+					<p>@pCtx.TRich("experience.chapter1.p8")</p>
 				</div>
 			</div>
 			<!-- Chapter 2: The Formalisation Years - VERTICAL SIDEBAR -->
@@ -50,19 +50,19 @@ templ Experience(pCtx i18n.PageContext) {
 						</figure>
 					</div>
 					<div class="grid-col-9">
-						<p>{ pCtx.T("experience.chapter2.p1") }</p>
-						<p>{ pCtx.T("experience.chapter2.p2") }</p>
-						<p>{ pCtx.T("experience.chapter2.p3") }</p>
-						<p>{ pCtx.T("experience.chapter2.p4") }</p>
-						<p>{ pCtx.T("experience.chapter2.p5") }</p>
+						<p>@pCtx.TRich("experience.chapter2.p1")</p>
+						<p>@pCtx.TRich("experience.chapter2.p2")</p>
+						<p>@pCtx.TRich("experience.chapter2.p3")</p>
+						<p>@pCtx.TRich("experience.chapter2.p4")</p>
+						<p>@pCtx.TRich("experience.chapter2.p5")</p>
 						<blockquote>{ pCtx.T("experience.chapter2.quote") }</blockquote>
 					</div>
 				</div>
 				<div class="grid-row"></div>
 				<div class="grid-row">
 					<div class="grid-col-12">
-						<p>{ pCtx.T("experience.chapter2.p6") }</p>
-						<p>{ pCtx.T("experience.chapter2.p7") }</p>
+						<p>@pCtx.TRich("experience.chapter2.p6")</p>
+						<p>@pCtx.TRich("experience.chapter2.p7")</p>
 					</div>
 				</div>
 			</div>
@@ -76,13 +76,13 @@ templ Experience(pCtx i18n.PageContext) {
 				</div>
 				<div class="grid-row">
 					<div class="grid-col-6">
-						<p>{ pCtx.T("experience.chapter3.p1") }</p>
-						<p>{ pCtx.T("experience.chapter3.p2") }</p>
-						<p>{ pCtx.T("experience.chapter3.p3") }</p>
+						<p>@pCtx.TRich("experience.chapter3.p1")</p>
+						<p>@pCtx.TRich("experience.chapter3.p2")</p>
+						<p>@pCtx.TRich("experience.chapter3.p3")</p>
 					</div>
 					<div class="grid-col-6">
-						<p>{ pCtx.T("experience.chapter3.p4") }</p>
-						<p>{ pCtx.T("experience.chapter3.p5") }</p>
+						<p>@pCtx.TRich("experience.chapter3.p4")</p>
+						<p>@pCtx.TRich("experience.chapter3.p5")</p>
 					</div>
 				</div>
 				<div class="grid-row">
@@ -95,19 +95,13 @@ templ Experience(pCtx i18n.PageContext) {
 				</div>
 				<div class="grid-row">
 					<div class="grid-col-12">
-						<p>{ pCtx.T("experience.chapter3.p6") }</p>
-						<p>{ pCtx.T("experience.chapter3.p7") }</p>
-						<p>{ pCtx.T("experience.chapter3.p8") }</p>
+						<p>@pCtx.TRich("experience.chapter3.p6")</p>
+						<p>@pCtx.TRich("experience.chapter3.p7")</p>
 					</div>
 				</div>
 				<div class="grid-row">
 					<div class="grid-col-12">
 						<blockquote>{ pCtx.T("experience.chapter3.quote") }</blockquote>
-					</div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-col-12">
-						<p>{ pCtx.T("experience.chapter3.p9") }</p>
 					</div>
 				</div>
 			</div>
