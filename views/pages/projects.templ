@@ -12,6 +12,26 @@ templ Projects(pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "projects.title", projectsIntro(pCtx), "projects.pageTitle", "projects.pageMetaDescription") {
 		<div class="grid-section projects-featured major-break">
 			<div class="featured-hero">
+				<img src="/static/images/projects/uskillity-preview.png" alt={ pCtx.T("projects.uskillity.imageAlt") } class="featured-screenshot"/>
+				<div class="featured-overlay">
+					<p class="label-mono">{ pCtx.T("projects.labels.sideProject") }</p>
+					<h2>{ pCtx.T("projects.uskillity.title") }</h2>
+				</div>
+			</div>
+			<div class="featured-details">
+				<p>{ pCtx.T("projects.uskillity.description") }</p>
+				<div class="featured-meta">
+					<span class="stack">{ pCtx.T("projects.uskillity.stack.value") }</span>
+					<div class="project-cta">
+						<a href="https://github.com/ShawnGB/skillity-mono-bun" target="_blank" rel="noopener noreferrer">
+							{ pCtx.T("projects.links.viewOnGithub") }
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-section projects-featured">
+			<div class="featured-hero">
 				<img src="/static/images/projects/my-portfolio.png" alt={ pCtx.T("projects.currentProject.imageAlt") } class="featured-screenshot"/>
 				<div class="featured-overlay">
 					<p class="label-mono">{ pCtx.T("projects.labels.currentProject") }</p>
@@ -70,12 +90,6 @@ templ Projects(pCtx i18n.PageContext) {
 			<h2>{ pCtx.T("projects.section03.title") }</h2>
 			<p class="lead">{ pCtx.T("projects.explorations.lead") }</p>
 			<div class="grid-row explorations-grid">
-				<div class="grid-col-6">
-					<p class="label-mono">{ pCtx.T("projects.labels.educationalPlatform") }</p>
-					<h4>{ pCtx.T("projects.websitesBuilt.uskillity.name") }</h4>
-					<p>{ pCtx.T("projects.websitesBuilt.uskillity.description") }</p>
-					<a href="https://www.instagram.com/uskillity/" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.websitesBuilt.uskillity.linkInstagramText") }</a>
-				</div>
 				<div class="grid-col-6">
 					<p class="label-mono">{ pCtx.T("projects.labels.reactSpa") }</p>
 					<h4>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h4>

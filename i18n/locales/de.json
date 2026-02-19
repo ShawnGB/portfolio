@@ -70,6 +70,7 @@
   "projects.intro.p1": "Eine Auswahl dessen, was ich gebaut habe. Dieses Portfolio ist der aktuelle Fokus, von Grund auf in Go gebaut, um die Sprache richtig zu lernen. Darunter Kundenprojekte und Kollaborationen der letzten Jahre, dazu ein paar frühere Experimente, die geprägt haben, wie ich über Software denke.",
   "projects.explorations.lead": "Nebenprojekte, die geprägt haben, wie ich über Software denke.",
 
+  "projects.section01.title": "Aktuelle Projekte",
   "projects.section02.title": "Kunden & Kollaborationen",
   "projects.section02.otherWork": "Weitere Arbeiten",
   "projects.section03.title": "Experimente",
@@ -82,6 +83,7 @@
   "projects.labels.festivalWebsite": "Festival-Webseite",
   "projects.labels.reactSpa": "React SPA",
   "projects.labels.educationalPlatform": "Bildungsplattform",
+  "projects.labels.sideProject": "Nebenprojekt — Revival",
 
   "projects.links.viewOnGithub": "Auf GitHub ansehen",
   "projects.links.visitSite": "Webseite besuchen",
@@ -109,6 +111,11 @@
   "projects.websitesBuilt.uskillity.name": "U/skillity (Prototyp)",
   "projects.websitesBuilt.uskillity.description": "Bildungsplattform-Konzept – Mitgründer und Hauptentwickler des MVP, verantwortlich für Nutzerverwaltung und Content-Publishing.",
   "projects.websitesBuilt.uskillity.linkInstagramText": "Uskillity auf Instagram",
+
+  "projects.uskillity.title": "U/skillity",
+  "projects.uskillity.imageAlt": "U/skillity Plattform – Landingpage mit Workshop-Kategorien",
+  "projects.uskillity.description": "Revival einer Plattform, die ich 2017 mitgegründet habe — ein Peer-to-Peer-Marktplatz für Workshops von leidenschaftlichen Menschen. Jetzt baue ich sie alleine von Grund auf neu, mit einem modernen Stack. Workshops von Menschen, die für etwas brennen, für Menschen, die lernen wollen. Kleine Gruppen, vor Ort, in deiner Stadt.",
+  "projects.uskillity.stack.value": "Bun · NestJS · Next.js · PostgreSQL · Docker",
 
   "projects.cultural.kultschaette.name": "Kultstätte Keller (2011–2016)",
   "projects.cultural.kultschaette.p1": "Mitbegründer der Kultstätte Keller, eines lebendigen, hybriden Kulturraums in Berlin, der ein Yogastudio, Aufnahmemöglichkeiten, einen Club und einen Workshop-Ort beherbergte.",

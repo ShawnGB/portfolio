@@ -71,6 +71,7 @@
   "projects.intro.p1": "A selection of what I've built. This portfolio is the current focus, built from scratch in Go to learn the language properly. Below that, client work and collaborations from recent years, plus some earlier experiments that shaped how I think about software.",
   "projects.explorations.lead": "Side projects that shaped how I think about building software.",
 
+  "projects.section01.title": "Current Projects",
   "projects.section02.title": "Client & Collaboration",
   "projects.section02.otherWork": "Other Work",
   "projects.section03.title": "Explorations",
@@ -83,6 +84,7 @@
   "projects.labels.festivalWebsite": "Festival Website",
   "projects.labels.reactSpa": "React SPA",
   "projects.labels.educationalPlatform": "Educational Platform",
+  "projects.labels.sideProject": "Side Project — Revival",
 
   "projects.links.viewOnGithub": "View on GitHub",
   "projects.links.visitSite": "Visit Site",
@@ -110,6 +112,11 @@
   "projects.websitesBuilt.uskillity.name": "U/skillity (prototype)",
   "projects.websitesBuilt.uskillity.description": "Educational platform concept – co-founder and lead developer on the MVP, handling user management and content publishing.",
   "projects.websitesBuilt.uskillity.linkInstagramText": "Uskillity on Instagram",
+
+  "projects.uskillity.title": "U/skillity",
+  "projects.uskillity.imageAlt": "U/skillity platform – landing page showing workshop categories",
+  "projects.uskillity.description": "Reviving a platform I originally co-founded in 2017 — a peer-to-peer marketplace for workshops led by passionate people. Now rebuilding it solo from scratch with a modern stack. Workshops led by people who care deeply about something, for people who want to learn. Small groups, in person, in your city.",
+  "projects.uskillity.stack.value": "Bun · NestJS · Next.js · PostgreSQL · Docker",
 
   "projects.cultural.kultschaette.name": "Kultstätte Keller (2011–2016)",
   "projects.cultural.kultschaette.p1": "Co-founded Kultstätte Keller, a vibrant hybrid cultural space in Berlin, housing a yoga studio, recording facilities, a club, and a workshop venue.",
