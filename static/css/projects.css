@@ -133,6 +133,21 @@
   object-position: top center;
 }
 
+.client-image-small {
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-md);
+}
+
+.client-image-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .other-work-grid {
   margin-top: var(--space-md);
   padding-top: var(--space-lg);
@@ -169,6 +184,14 @@
 
 .explorations-grid {
   margin-top: var(--space-lg);
+}
+
+.explorations-grid .stack {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
 }
 
 .projects-background {

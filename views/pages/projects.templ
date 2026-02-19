@@ -68,6 +68,9 @@ templ Projects(pCtx i18n.PageContext) {
 			<h3>{ pCtx.T("projects.section02.otherWork") }</h3>
 			<div class="grid-row other-work-grid">
 				<div class="grid-col-4">
+					<div class="client-image-small">
+						<img src="/static/images/projects/arina-shanzev-preview.png" alt={ pCtx.T("projects.websitesBuilt.arinashanzev.name") }/>
+					</div>
 					<p class="label-mono">{ pCtx.T("projects.labels.wordpressPortfolio") }</p>
 					<h4>{ pCtx.T("projects.websitesBuilt.arinashanzev.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.arinashanzev.description") }</p>
@@ -83,17 +86,35 @@ templ Projects(pCtx i18n.PageContext) {
 					<p class="label-mono">{ pCtx.T("projects.labels.festivalWebsite") }</p>
 					<h4>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.name") }</h4>
 					<p>{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.description") }</p>
+					<a href="https://github.com/ShawnGB/evolve-hub-landing" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.websitesBuilt.evolveFestivalWebsite.githubLinkText") }</a>
 				</div>
 			</div>
 		</div>
 		<div class="grid-section projects-explorations">
 			<h2>{ pCtx.T("projects.section03.title") }</h2>
-			<p class="lead">{ pCtx.T("projects.explorations.lead") }</p>
+			<p class="lead">{ pCtx.T("projects.technicalWork.lead") }</p>
 			<div class="grid-row explorations-grid">
-				<div class="grid-col-6">
-					<p class="label-mono">{ pCtx.T("projects.labels.reactSpa") }</p>
-					<h4>{ pCtx.T("projects.websitesBuilt.oldPortfolio.name") }</h4>
-					<p>{ pCtx.T("projects.websitesBuilt.oldPortfolio.description") }</p>
+				<div class="grid-col-4">
+					<p class="label-mono">{ pCtx.T("projects.tadaa.label") }</p>
+					<h4>{ pCtx.T("projects.tadaa.name") }</h4>
+					<p>{ pCtx.T("projects.tadaa.description") }</p>
+					<span class="stack">{ pCtx.T("projects.tadaa.stack") }</span>
+					<a href="https://github.com/dmitrijLo/Tadaa" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.viewOnGithub") }</a>
+				</div>
+				<div class="grid-col-4">
+					<p class="label-mono">{ pCtx.T("projects.booksApp.label") }</p>
+					<h4>{ pCtx.T("projects.booksApp.name") }</h4>
+					<p>{ pCtx.T("projects.booksApp.description") }</p>
+					<span class="stack">{ pCtx.T("projects.booksApp.stack") }</span>
+					<a href="https://github.com/ShawnGB/awd-booksApi" class="cta-link" target="_blank" rel="noopener noreferrer">API { pCtx.T("projects.links.viewOnGithub") }</a>
+					<a href="https://github.com/ShawnGB/awd-booksFrontend" class="cta-link" target="_blank" rel="noopener noreferrer">Frontend { pCtx.T("projects.links.viewOnGithub") }</a>
+				</div>
+				<div class="grid-col-4">
+					<p class="label-mono">{ pCtx.T("projects.everlastTask.label") }</p>
+					<h4>{ pCtx.T("projects.everlastTask.name") }</h4>
+					<p>{ pCtx.T("projects.everlastTask.description") }</p>
+					<span class="stack">{ pCtx.T("projects.everlastTask.stack") }</span>
+					<a href="https://github.com/ShawnGB/everlast-task" class="cta-link" target="_blank" rel="noopener noreferrer">{ pCtx.T("projects.links.viewOnGithub") }</a>
 				</div>
 			</div>
 		</div>

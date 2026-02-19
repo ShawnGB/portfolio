@@ -69,11 +69,12 @@
   "projects.title": "Projekte",
   "projects.intro.p1": "Eine Auswahl dessen, was ich gebaut habe. Dieses Portfolio ist der aktuelle Fokus, von Grund auf in Go gebaut, um die Sprache richtig zu lernen. Darunter Kundenprojekte und Kollaborationen der letzten Jahre, dazu ein paar frühere Experimente, die geprägt haben, wie ich über Software denke.",
   "projects.explorations.lead": "Nebenprojekte, die geprägt haben, wie ich über Software denke.",
+  "projects.technicalWork.lead": "Ausgewählte Projekte mit verschiedenen Stacks und Kontexten.",
 
   "projects.section01.title": "Aktuelle Projekte",
   "projects.section02.title": "Kunden & Kollaborationen",
   "projects.section02.otherWork": "Weitere Arbeiten",
-  "projects.section03.title": "Experimente",
+  "projects.section03.title": "Technische Arbeit",
   "projects.section04.title": "Hintergrund",
 
   "projects.labels.currentProject": "Aktuelles Projekt",
@@ -108,6 +109,23 @@
   "projects.websitesBuilt.evolveFestivalWebsite.description": "Festival-Webseite neu gebaut, ursprünglich Wix (Hinweis: diese Version ist nicht mehr online). Klarere Struktur, integrierter Ticketverkauf.",
   "projects.websitesBuilt.oldPortfolio.name": "Alte Portfolio-Webseite (2022)",
   "projects.websitesBuilt.oldPortfolio.description": "React SPA mit Tailwind. Meine erste richtige Webpräsenz.",
+
+  "projects.websitesBuilt.evolveFestivalWebsite.githubLinkText": "Auf GitHub ansehen",
+
+  "projects.tadaa.label": "Bootcamp-Abschlussprojekt",
+  "projects.tadaa.name": "Tadaa",
+  "projects.tadaa.description": "Interaktive Secret-Santa-App – Wunschlisten, flexible Ausschlussregeln und anonymer Chat. Als Abschlussprojekt für Neue Fische (2025) entwickelt. Meine Rolle: Produktmanagement und Entwicklung.",
+  "projects.tadaa.stack": "TypeScript · Handlebars · CSS",
+
+  "projects.booksApp.label": "Full-Stack TypeScript",
+  "projects.booksApp.name": "Books API + Frontend",
+  "projects.booksApp.description": "NestJS REST API zusammen mit einem React-Frontend – zwei Repos, eine Anwendung. Full-Stack TypeScript mit Docker, im Rahmen des Neue Fische Advanced Web Development Programms entwickelt.",
+  "projects.booksApp.stack": "TypeScript · NestJS · React · Docker",
+
+  "projects.everlastTask.label": "Technical Assessment",
+  "projects.everlastTask.name": "Everlast Task",
+  "projects.everlastTask.description": "Mehrsprachige technische Aufgabe für einen Bewerbungsprozess: Python-Backend, TypeScript-Tooling, containerisiert mit Docker.",
+  "projects.everlastTask.stack": "Python · TypeScript · Docker",
   "projects.websitesBuilt.uskillity.name": "U/skillity (Prototyp)",
   "projects.websitesBuilt.uskillity.description": "Bildungsplattform-Konzept – Mitgründer und Hauptentwickler des MVP, verantwortlich für Nutzerverwaltung und Content-Publishing.",
   "projects.websitesBuilt.uskillity.linkInstagramText": "Uskillity auf Instagram",

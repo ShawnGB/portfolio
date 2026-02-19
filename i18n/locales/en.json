@@ -70,11 +70,12 @@
   "projects.title": "Projects",
   "projects.intro.p1": "A selection of what I've built. This portfolio is the current focus, built from scratch in Go to learn the language properly. Below that, client work and collaborations from recent years, plus some earlier experiments that shaped how I think about software.",
   "projects.explorations.lead": "Side projects that shaped how I think about building software.",
+  "projects.technicalWork.lead": "Selected projects across different stacks and contexts.",
 
   "projects.section01.title": "Current Projects",
   "projects.section02.title": "Client & Collaboration",
   "projects.section02.otherWork": "Other Work",
-  "projects.section03.title": "Explorations",
+  "projects.section03.title": "Technical Work",
   "projects.section04.title": "Background",
 
   "projects.labels.currentProject": "Current Project",
@@ -109,6 +110,23 @@
   "projects.websitesBuilt.evolveFestivalWebsite.description": "Rebuilt the festival's website from a Wix original (note: this version is no longer live). Clearer structure, embedded ticket sales.",
   "projects.websitesBuilt.oldPortfolio.name": "Old portfolio website (2022)",
   "projects.websitesBuilt.oldPortfolio.description": "React SPA with Tailwind. My first proper web presence.",
+
+  "projects.websitesBuilt.evolveFestivalWebsite.githubLinkText": "View on GitHub",
+
+  "projects.tadaa.label": "Bootcamp Capstone",
+  "projects.tadaa.name": "Tadaa",
+  "projects.tadaa.description": "Interactive Secret Santa app — wish lists, flexible exclusion rules, and anonymous chat. Built as capstone project for Neue Fische (2025). My role: product management and development.",
+  "projects.tadaa.stack": "TypeScript · Handlebars · CSS",
+
+  "projects.booksApp.label": "Full-Stack TypeScript",
+  "projects.booksApp.name": "Books API + Frontend",
+  "projects.booksApp.description": "NestJS REST API paired with a React frontend — two repos, one application. Full-stack TypeScript with Docker, built during Neue Fische advanced web development training.",
+  "projects.booksApp.stack": "TypeScript · NestJS · React · Docker",
+
+  "projects.everlastTask.label": "Technical Assessment",
+  "projects.everlastTask.name": "Everlast Task",
+  "projects.everlastTask.description": "Multi-language technical assessment completed for a hiring process: Python backend, TypeScript tooling, containerized with Docker.",
+  "projects.everlastTask.stack": "Python · TypeScript · Docker",
   "projects.websitesBuilt.uskillity.name": "U/skillity (prototype)",
   "projects.websitesBuilt.uskillity.description": "Educational platform concept – co-founder and lead developer on the MVP, handling user management and content publishing.",
   "projects.websitesBuilt.uskillity.linkInstagramText": "Uskillity on Instagram",
