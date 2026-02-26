@@ -3,58 +3,39 @@ package pages
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 
+func safeSlice(s []string, start, end int) []string {
+	if start >= len(s) {
+		return nil
+	}
+	if end > len(s) {
+		end = len(s)
+	}
+	return s[start:end]
+}
+
 templ artsIntro(pCtx i18n.PageContext) {
 	<p>{ pCtx.T("arts.intro.p1") }</p>
 }
 
+templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext) {
+	if len(imgs) > 0 {
+		<section class={ sectionClass }>
+			for _, img := range imgs {
+				<img src={ "/static/" + img } alt={ pCtx.T("arts.gallery.imageAlt") }/>
+			}
+		</section>
+	}
+}
+
 templ Arts(images []string, pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "arts.title", artsIntro(pCtx), "arts.pageTitle", "arts.pageMetaDescription") {
-		if len(images) > 3 {
-			<section class="arts-grid">
-				<img src={ "/static/" + images[1] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[2] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[3] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 6 {
-			<section class="arts-grid">
-				<img src={ "/static/" + images[4] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[5] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[6] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 7 {
-			<section class="arts-anchor arts-anchor--slim">
-				<img src={ "/static/" + images[7] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 10 {
-			<section class="arts-grid">
-				<img src={ "/static/" + images[8] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[9] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[10] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 13 {
-			<section class="arts-grid">
-				<img src={ "/static/" + images[11] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[12] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[13] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 16 {
-			<section class="arts-grid">
-				<img src={ "/static/" + images[14] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[15] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[16] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
-		if len(images) > 18 {
-			<section class="arts-grid--halves">
-				<img src={ "/static/" + images[17] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-				<img src={ "/static/" + images[18] } alt={ pCtx.T("arts.gallery.imageAlt") }/>
-			</section>
-		}
+		@artsImageSection(safeSlice(images, 1, 4), "arts-grid", pCtx)
+		@artsImageSection(safeSlice(images, 4, 7), "arts-grid", pCtx)
+		@artsImageSection(safeSlice(images, 7, 8), "arts-anchor arts-anchor--slim", pCtx)
+		@artsImageSection(safeSlice(images, 8, 11), "arts-grid", pCtx)
+		@artsImageSection(safeSlice(images, 11, 14), "arts-grid", pCtx)
+		@artsImageSection(safeSlice(images, 14, 17), "arts-grid", pCtx)
+		@artsImageSection(safeSlice(images, 17, 19), "arts-grid--halves", pCtx)
 		<section class="arts-anchor arts-anchor--contained">
 			<video autoplay loop muted playsinline>
 				<source src="/static/images/arts/IMG_3991.MOV" type="video/quicktime"/>

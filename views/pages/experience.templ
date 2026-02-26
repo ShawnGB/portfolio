@@ -2,7 +2,6 @@ package pages
 
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
-import "mymodules/gofolio/views/components"
 
 templ Experience(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("experience.pageTitle"), pCtx.T("experience.pageMetaDescription")) {
@@ -58,7 +57,6 @@ templ Experience(pCtx i18n.PageContext) {
 						<blockquote>{ pCtx.T("experience.chapter2.quote") }</blockquote>
 					</div>
 				</div>
-				<div class="grid-row"></div>
 				<div class="grid-row">
 					<div class="grid-col-12">
 						<p>@pCtx.TRich("experience.chapter2.p6")</p>
@@ -106,19 +104,7 @@ templ Experience(pCtx i18n.PageContext) {
 				</div>
 			</div>
 			<!-- CTA Footer -->
-			<div class="grid-section">
-				<div class="grid-row cta-footer-grid">
-					<div class="cta-button-wrapper">
-						<a href="/static/ShawnBeckerResume.pdf" class="cta-link with-icon download" target="_blank" rel="noopener noreferrer">
-							@components.Icon("download", "24", "")
-							{ pCtx.T("experience.cta.downloadCV") }
-						</a>
-					</div>
-					<div class="contact-sentence">
-						<p>{ pCtx.T("experience.cta.or") } <a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("experience.cta.viewProjects") }</a></p>
-					</div>
-				</div>
-			</div>
+			@layouts.CTAFooter(pCtx, "experience.cta.downloadCV", "experience.cta.or", "experience.cta.viewProjects", "/projects")
 		</div>
 	}
 }

@@ -1,5 +1,26 @@
 package layouts
 
+import (
+	"mymodules/gofolio/i18n"
+	"mymodules/gofolio/views/components"
+)
+
+templ CTAFooter(pCtx i18n.PageContext, downloadLabelKey, sentenceKey, sentenceLinkKey, sentenceLinkPath string) {
+	<div class="grid-section">
+		<div class="grid-row cta-footer-grid">
+			<div class="cta-button-wrapper">
+				<a href="/static/ShawnBeckerResume.pdf" class="cta-link with-icon download" target="_blank" rel="noopener noreferrer">
+					@components.Icon("download", "24", "")
+					{ pCtx.T(downloadLabelKey) }
+				</a>
+			</div>
+			<div class="contact-sentence">
+				<p>{ pCtx.T(sentenceKey) } <a href={ pCtx.CurrentLangLink(sentenceLinkPath) }>{ pCtx.T(sentenceLinkKey) }</a></p>
+			</div>
+		</div>
+	</div>
+}
+
 // IntegratedHeader renders a two-column header with title and additional content
 templ IntegratedHeader(title string, subtitle string, contentLabel string, contentText string) {
 	<header class="header-integrated">
