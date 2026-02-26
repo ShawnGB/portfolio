@@ -7,7 +7,7 @@ templ Home(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("home.pageTitle"), pCtx.T("home.pageMetaDescription")) {
 		<div class="hero-section-wrapper">
 			<div class="hero-left-column">
-				<img src="/static/images/website/shawn-hero.jpg" alt={ pCtx.T("home.hero.image.alt") }/>
+				<img src="/static/images/website/shawn-hero.webp" alt={ pCtx.T("home.hero.image.alt") } fetchpriority="high"/>
 			</div>
 			<div class="hero-right-column">
 				<div class="hero-content">
