@@ -3,20 +3,6 @@ package pages
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 
-func safeSlice(s []string, start, end int) []string {
-	if start >= len(s) {
-		return nil
-	}
-	if end > len(s) {
-		end = len(s)
-	}
-	return s[start:end]
-}
-
-templ artsIntro(pCtx i18n.PageContext) {
-	<p>{ pCtx.T("arts.intro.p1") }</p>
-}
-
 templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext) {
 	if len(imgs) > 0 {
 		<section class={ sectionClass }>
@@ -28,14 +14,14 @@ templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext
 }
 
 templ Arts(images []string, pCtx i18n.PageContext) {
-	@layouts.SubpageTemplate(pCtx, "arts.title", artsIntro(pCtx), "arts.pageTitle", "arts.pageMetaDescription") {
-		@artsImageSection(safeSlice(images, 1, 4), "arts-grid", pCtx)
-		@artsImageSection(safeSlice(images, 4, 7), "arts-grid", pCtx)
-		@artsImageSection(safeSlice(images, 7, 8), "arts-anchor arts-anchor--slim", pCtx)
-		@artsImageSection(safeSlice(images, 8, 11), "arts-grid", pCtx)
-		@artsImageSection(safeSlice(images, 11, 14), "arts-grid", pCtx)
-		@artsImageSection(safeSlice(images, 14, 17), "arts-grid", pCtx)
-		@artsImageSection(safeSlice(images, 17, 19), "arts-grid--halves", pCtx)
+	@layouts.SubpageTemplate(pCtx, "arts.title", "arts.intro.p1", "arts.pageTitle", "arts.pageMetaDescription") {
+		@artsImageSection(images[1:4], "arts-grid", pCtx)
+		@artsImageSection(images[4:7], "arts-grid", pCtx)
+		@artsImageSection(images[7:8], "arts-anchor arts-anchor--slim", pCtx)
+		@artsImageSection(images[8:11], "arts-grid", pCtx)
+		@artsImageSection(images[11:14], "arts-grid", pCtx)
+		@artsImageSection(images[14:17], "arts-grid", pCtx)
+		@artsImageSection(images[17:19], "arts-grid--halves", pCtx)
 		<section class="arts-anchor arts-anchor--contained">
 			<video autoplay loop muted playsinline>
 				<source src="/static/images/arts/IMG_3991.MOV" type="video/quicktime"/>

@@ -4,13 +4,8 @@ import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 import "mymodules/gofolio/views/components"
 
-templ aboutIntro(pCtx i18n.PageContext) {
-	<p>{ pCtx.T("about.greeting.p1") }</p>
-}
-
 templ About(pCtx i18n.PageContext) {
-	@layouts.SubpageTemplate(pCtx, "about.title", aboutIntro(pCtx), "about.pageTitle", "about.pageMetaDescription") {
-		<!-- 4. WHAT DRIVES ME + MY PATH -->
+	@layouts.SubpageTemplate(pCtx, "about.title", "about.greeting.p1", "about.pageTitle", "about.pageMetaDescription") {
 			<div class="grid-section major-break drives-path-section">
 				<div class="grid-row">
 					<div class="grid-col-7">
@@ -58,19 +53,15 @@ templ About(pCtx i18n.PageContext) {
 					</div>
 				</div>
 			</div>
-			<!-- 5. PULL QUOTE + IMAGE + BEYOND SCREEN -->
 			<div class="grid-section quote-image-beyond-module">
 				<div class="grid-row">
-					<!-- Left: Pull Quote -->
 					<div class="grid-col-3">
 						<blockquote>{ pCtx.T("about.quote") }</blockquote>
 					</div>
-					<!-- Middle: Mirror Image Slice -->
 					<div class="grid-col-4 image-wrapper-hero">
 						<img src="/static/images/arts/05.jpg" alt={ pCtx.T("about.image.alt") } loading="lazy" class="hero-portrait"/>
 						<span class="image-caption">{ pCtx.T("about.image.caption") }</span>
 					</div>
-					<!-- Right: Beyond the Screen -->
 					<div class="grid-col-4">
 						<h2>{ pCtx.T("about.outsideScreen.title") }</h2>
 						<div class="body-text">
@@ -93,7 +84,6 @@ templ About(pCtx i18n.PageContext) {
 					</div>
 				</div>
 			</div>
-			<!-- 6. WHAT I'M LOOKING FOR -->
 			<div class="grid-section looking-for-section major-break">
 				<div class="grid-row">
 					<div class="looking-for-header">

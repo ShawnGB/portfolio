@@ -4,12 +4,8 @@ import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 import "mymodules/gofolio/views/components"
 
-templ projectsIntro(pCtx i18n.PageContext) {
-	<p>{ pCtx.T("projects.intro.p1") }</p>
-}
-
 templ Projects(pCtx i18n.PageContext) {
-	@layouts.SubpageTemplate(pCtx, "projects.title", projectsIntro(pCtx), "projects.pageTitle", "projects.pageMetaDescription") {
+	@layouts.SubpageTemplate(pCtx, "projects.title", "projects.intro.p1", "projects.pageTitle", "projects.pageMetaDescription") {
 		<div class="grid-section projects-featured major-break">
 			<div class="featured-hero">
 				<img src="/static/images/projects/uskillity-preview.png" alt={ pCtx.T("projects.uskillity.imageAlt") } class="featured-screenshot"/>

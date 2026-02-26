@@ -2,29 +2,13 @@ package layouts
 
 import "mymodules/gofolio/i18n"
 
-// SubpageTemplate wraps the common subpage structure with the about page intro pattern:
-// - BaseHtml with navigation and footer
-// - page-grid-container wrapper
-// - Grid-based intro section (4-col title + 8-col content with vertical rule)
-// - Children content for the rest of the page
-templ SubpageTemplate(pCtx i18n.PageContext, sectionLabelKey string, introContent templ.Component, metaTitleKey string, metaDescKey string) {
+templ SubpageTemplate(pCtx i18n.PageContext, sectionLabelKey string, introTextKey string, metaTitleKey string, metaDescKey string) {
 	@BaseHtml(pCtx, pCtx.T(metaTitleKey), pCtx.T(metaDescKey)) {
 		<div class="page-grid-container">
-			<div class="grid-section">
-				<div class="grid-row">
-					<div class="grid-col-4">
-						<h2 class="section-label">{ pCtx.T(sectionLabelKey) }</h2>
-					</div>
-					<div class="grid-col-8">
-						<div class="intro-content">
-							<div class="vertical-rule"></div>
-							<div class="body-text">
-								@introContent
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<section class="grid--intro">
+				<h2>{ pCtx.T(sectionLabelKey) }</h2>
+				<p>{ pCtx.T(introTextKey) }</p>
+			</section>
 			{ children... }
 		</div>
 	}

@@ -15,12 +15,8 @@ type ContactFormData struct {
 	ErrorMessage   string
 }
 
-templ contactIntro(pCtx i18n.PageContext) {
-	<p>{ pCtx.T("contact.intro.p1") }</p>
-}
-
 templ Contact(data ContactFormData, pCtx i18n.PageContext) {
-	@layouts.SubpageTemplate(pCtx, "contact.title", contactIntro(pCtx), "contact.pageTitle", "contact.pageMetaDescription") {
+	@layouts.SubpageTemplate(pCtx, "contact.title", "contact.intro.p1", "contact.pageTitle", "contact.pageMetaDescription") {
 		<section>
 			@ContactFormPartial(data, pCtx)
 		</section>
