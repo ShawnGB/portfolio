@@ -20,22 +20,3 @@ templ CTAFooter(pCtx i18n.PageContext, downloadLabelKey, sentenceKey, sentenceLi
 		</div>
 	</div>
 }
-
-// IntegratedHeader renders a two-column header with title and additional content
-templ IntegratedHeader(title string, subtitle string, contentLabel string, contentText string) {
-	<header class="header-integrated">
-		<div class="header-main">
-			<h1>{ title }</h1>
-			<p class="page-subtitle">{ subtitle }</p>
-		</div>
-		<div class="header-content">
-			<h2 class="content-label">{ contentLabel }</h2>
-			<p class="content-text">{ contentText }</p>
-		</div>
-	</header>
-}
-
-// SectionDivider renders the standard horizontal divider
-templ SectionDivider() {
-	<hr class="section-divider"/>
-}
