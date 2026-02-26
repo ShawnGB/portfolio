@@ -4,7 +4,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"sync"
 
 	"mymodules/gofolio/i18n"
 	"mymodules/gofolio/utils"
@@ -17,7 +16,6 @@ import (
 
 var (
 	cachedImages  []string
-	imagesMutex   sync.RWMutex
 	captchaClient *hcaptcha.Client
 	emailConfig   utils.SendContactMailConfig
 )
@@ -47,9 +45,7 @@ func LoadImages() error {
 	if err != nil {
 		return err
 	}
-	imagesMutex.Lock()
 	cachedImages = images
-	imagesMutex.Unlock()
 	log.Printf("INFO: Loaded %d images for Arts page", len(images))
 	return nil
 }
@@ -66,10 +62,7 @@ func PageHandler(render func(i18n.PageContext) templ.Component) http.HandlerFunc
 func ArtsHandler(w http.ResponseWriter, r *http.Request) {
 	pCtx := i18n.NewPageContext(r)
 
-	imagesMutex.RLock()
 	images := cachedImages
-	imagesMutex.RUnlock()
-
 	component := pages.Arts(images, pCtx)
 	if err := component.Render(r.Context(), w); err != nil {
 		log.Printf("ERROR: rendering Arts component: %v", err)
