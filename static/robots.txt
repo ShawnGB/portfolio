@@ -2,9 +2,5 @@
 User-agent: *
 Allow: /
 
-# Disallow static assets from being indexed
-User-agent: *
-Disallow: /static/
-
 # Sitemap location
 Sitemap: https://shawnbecker.de/sitemap.xml

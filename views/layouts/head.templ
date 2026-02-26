@@ -32,11 +32,11 @@ templ Head(pCtx i18n.PageContext, pagetitle string, pagedescription string) {
 			<meta property="og:locale:alternate" content="en_US"/>
 		}
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image"/>
-		<meta property="twitter:url" content={ string("https://shawnbecker.de" + string(pCtx.CurrentLangLink(pCtx.BasePath))) }/>
-		<meta property="twitter:title" content={ pagetitle }/>
-		<meta property="twitter:description" content={ pagedescription }/>
-		<meta property="twitter:image" content="https://shawnbecker.de/static/images/DSC01149.jpeg"/>
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:url" content={ string("https://shawnbecker.de" + string(pCtx.CurrentLangLink(pCtx.BasePath))) }/>
+		<meta name="twitter:title" content={ pagetitle }/>
+		<meta name="twitter:description" content={ pagedescription }/>
+		<meta name="twitter:image" content="https://shawnbecker.de/static/images/DSC01149.jpeg"/>
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="/static/favicon.ico"/>
 		<!-- Google Fonts - Inky Minimalism Typography -->

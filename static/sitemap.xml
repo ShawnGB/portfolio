@@ -4,9 +4,10 @@
 
     <url>
         <loc>https://shawnbecker.de/en/</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -14,16 +15,18 @@
         <loc>https://shawnbecker.de/de/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
         <loc>https://shawnbecker.de/en/about</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/about"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/about"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/about"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/about"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -31,16 +34,18 @@
         <loc>https://shawnbecker.de/de/about</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/about"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/about"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/about"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://shawnbecker.de/en/experience</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/experience"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/experience"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/experience"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/experience"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -48,16 +53,18 @@
         <loc>https://shawnbecker.de/de/experience</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/experience"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/experience"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/experience"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://shawnbecker.de/en/projects</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/projects"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/projects"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/projects"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/projects"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -65,16 +72,18 @@
         <loc>https://shawnbecker.de/de/projects</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/projects"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/projects"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/projects"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://shawnbecker.de/en/arts</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/arts"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/arts"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/arts"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/arts"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -82,16 +91,18 @@
         <loc>https://shawnbecker.de/de/arts</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/arts"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/arts"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/arts"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://shawnbecker.de/en/contact</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/contact"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/contact"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/contact"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/contact"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -99,7 +110,8 @@
         <loc>https://shawnbecker.de/de/contact</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://shawnbecker.de/en/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://shawnbecker.de/de/contact"/>
-        <lastmod>2025-11-20</lastmod>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://shawnbecker.de/en/contact"/>
+        <lastmod>2026-02-26</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
