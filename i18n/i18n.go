@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/nicksnyder/go-i18n/v2/i18n"
@@ -32,8 +33,8 @@ func Init(localesDir string) {
 	bundle = i18n.NewBundle(defaultLang)
 	bundle.RegisterUnmarshalFunc("json", json.Unmarshal)
 
-	enPath := localesDir + "/en.json" // Construct path for en.json
-	dePath := localesDir + "/de.json" // Construct path for de.json
+	enPath := filepath.Join(localesDir, "en.json")
+	dePath := filepath.Join(localesDir, "de.json")
 
 	if _, err := os.Stat(enPath); os.IsNotExist(err) {
 		log.Printf("WARN: i18n: %s not found. Skipping load.", enPath)
@@ -56,7 +57,7 @@ func MiddlewareI18n(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		currentPath := r.URL.Path
 		var langCodeToUse string
-		var basePath string = currentPath
+		basePath := currentPath
 
 		trimmedPath := strings.TrimPrefix(currentPath, "/")
 		segments := strings.SplitN(trimmedPath, "/", 2)
@@ -99,7 +100,7 @@ func MiddlewareI18n(next http.Handler) http.Handler {
 					Path:     targetPathWithLang,
 					RawQuery: r.URL.RawQuery,
 				}
-				http.Redirect(w, r, targetURL.String(), http.StatusFound) // Using StatusFound (302) for temporary redirect
+				http.Redirect(w, r, targetURL.String(), http.StatusFound)
 				return
 			}
 
@@ -118,27 +119,25 @@ func MiddlewareI18n(next http.Handler) http.Handler {
 	})
 }
 
-func GetLocalizer(ctx context.Context) *i18n.Localizer {
+func getLocalizer(ctx context.Context) *i18n.Localizer {
 	val, ok := ctx.Value(keyLocalizer).(*i18n.Localizer)
 	if !ok {
-
 		log.Println("i18n: WARNING no localiser found, reverting to default")
-
 		return i18n.NewLocalizer(bundle, defaultLang.String())
 	}
 	return val
 }
 
-func GetActiveLang(ctx context.Context) string {
+func getActiveLang(ctx context.Context) string {
 	if val, ok := ctx.Value(keyActiveLang).(string); ok {
 		return val
 	}
-	return defaultLang.String() // Fallback to default language string if not found
+	return defaultLang.String()
 }
 
-func GetBasePath(ctx context.Context) string {
+func getBasePath(ctx context.Context) string {
 	if val, ok := ctx.Value(keyBasePath).(string); ok {
 		return val
 	}
-	return "/" // Fallback to root path if not found
+	return "/"
 }

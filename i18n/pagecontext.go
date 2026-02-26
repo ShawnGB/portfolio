@@ -12,17 +12,17 @@ import (
 )
 
 type PageContext struct {
-	L             *goi18n.Localizer
+	Localizer     *goi18n.Localizer
 	ActiveLang    string
 	BasePath      string
 	OriginalQuery string
 }
 
 func (pc PageContext) T(messageID string) string {
-	if pc.L == nil {
+	if pc.Localizer == nil {
 		return messageID
 	}
-	return pc.L.MustLocalize(&goi18n.LocalizeConfig{MessageID: messageID})
+	return pc.Localizer.MustLocalize(&goi18n.LocalizeConfig{MessageID: messageID})
 }
 
 func (pc PageContext) TRich(messageID string) templ.Component {
@@ -44,18 +44,21 @@ func (pc PageContext) TRich(messageID string) templ.Component {
 	})
 }
 
-func (pc PageContext) LanguageSwitchURL(targetLangCode string) templ.SafeURL {
-	path := "/" + targetLangCode
-	if pc.BasePath != "/" {
-		path += pc.BasePath
+func buildLangURL(lang, basePath, query string) templ.SafeURL {
+	path := "/" + lang
+	if basePath != "/" {
+		path += basePath
 	} else {
 		path += "/"
 	}
-
-	if pc.OriginalQuery != "" {
-		path = path + "?" + pc.OriginalQuery
+	if query != "" {
+		path += "?" + query
 	}
 	return templ.URL(path)
+}
+
+func (pc PageContext) LanguageSwitchURL(targetLangCode string) templ.SafeURL {
+	return buildLangURL(targetLangCode, pc.BasePath, pc.OriginalQuery)
 }
 
 func (pc PageContext) CurrentLangLink(pathSegment string) templ.SafeURL {
@@ -64,24 +67,17 @@ func (pc PageContext) CurrentLangLink(pathSegment string) templ.SafeURL {
 	} else if pathSegment[0] != '/' {
 		pathSegment = "/" + pathSegment
 	}
-
-	path := "/" + pc.ActiveLang
-	if pathSegment != "/" {
-		path += pathSegment
-	} else {
-		path += "/"
-	}
-	return templ.URL(path)
+	return buildLangURL(pc.ActiveLang, pathSegment, "")
 }
 
 func NewPageContext(r *http.Request) PageContext {
-	localizer := GetLocalizer(r.Context())
-	activeLang := GetActiveLang(r.Context())
-	basePath := GetBasePath(r.Context())
+	localizer := getLocalizer(r.Context())
+	activeLang := getActiveLang(r.Context())
+	basePath := getBasePath(r.Context())
 	originalQuery := r.URL.RawQuery
 
 	return PageContext{
-		L:             localizer,
+		Localizer:     localizer,
 		ActiveLang:    activeLang,
 		BasePath:      basePath,
 		OriginalQuery: originalQuery,
