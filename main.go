@@ -20,6 +20,7 @@ func main() {
 	}
 
 	handlers.InitCaptchaClient()
+	handlers.InitEmailConfig()
 	i18n.Init("i18n/locales")
 	if err := handlers.LoadImages(); err != nil {
 		log.Printf("WARN: Failed to load images: %v", err)
@@ -46,7 +47,8 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Printf("INFO: No PORT environment variable detected, defaulting to :%s", port)
+		port = "8080"
+		log.Println("INFO: No PORT set, defaulting to :8080")
 	}
 
 	log.Printf("INFO: Starting server on :%s", port)
@@ -60,10 +62,10 @@ func main() {
 }
 
 func registerPageRoutes(mux *http.ServeMux) {
-	mux.HandleFunc("/", handlers.NewPageHandler(pages.Home))
-	mux.HandleFunc("/about", handlers.NewPageHandler(pages.About))
-	mux.HandleFunc("/experience", handlers.NewPageHandler(pages.Experience))
-	mux.HandleFunc("/projects", handlers.NewPageHandler(pages.Projects))
+	mux.HandleFunc("/", handlers.PageHandler(pages.Home))
+	mux.HandleFunc("/about", handlers.PageHandler(pages.About))
+	mux.HandleFunc("/experience", handlers.PageHandler(pages.Experience))
+	mux.HandleFunc("/projects", handlers.PageHandler(pages.Projects))
 	mux.HandleFunc("/arts", handlers.ArtsHandler)
 	mux.HandleFunc("/contact", handlers.ContactHandler)
 }
