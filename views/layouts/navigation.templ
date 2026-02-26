@@ -10,7 +10,11 @@ templ Navigation(pCtx i18n.PageContext) {
 				<a id="logo-link" href={ pCtx.CurrentLangLink("/") }>
 					<h3>{ pCtx.T("nav.logo") }</h3>
 				</a>
-				@LanguageSwitcher(pCtx)
+				<div class="language-switcher">
+					<a href={ pCtx.LanguageSwitchURL("de") } class="lang-link">de</a>
+					<span class="lang-separator">|</span>
+					<a href={ pCtx.LanguageSwitchURL("en") } class="lang-link">en</a>
+				</div>
 			</div>
 			<input type="checkbox" id="burger-toggle" class="burger-toggle-checkbox"/>
 			<label for="burger-toggle" class="burger-menu-label" aria-label={ pCtx.T("nav.toggleMenu") }>
@@ -19,7 +23,13 @@ templ Navigation(pCtx i18n.PageContext) {
 				<span class="burger-bar"></span>
 			</label>
 			<div class="nav-right-group">
-				@NavigationLinks(pCtx)
+				<ul class="nav-links" id="nav-links-list">
+					<li><a href={ pCtx.CurrentLangLink("/about") }>{ pCtx.T("nav.about") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/experience") }>{ pCtx.T("nav.experience") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("nav.projects") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/arts") }>{ pCtx.T("nav.arts") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("nav.contact") }</a></li>
+				</ul>
 				<div class="nav-utility-icons">
 					<a href="https://github.com/ShawnGB" target="_blank" rel="noopener noreferrer" aria-label={ pCtx.T("nav.github.ariaLabel") }>
 						@components.Icon("github", "20", "")
@@ -31,22 +41,4 @@ templ Navigation(pCtx i18n.PageContext) {
 			</div>
 		</div>
 	</nav>
-}
-
-templ LanguageSwitcher(pCtx i18n.PageContext) {
-	<div class="language-switcher mx-md">
-		<a href={ pCtx.LanguageSwitchURL("de") } class="lang-link">de</a>
-		<span class="lang-separator">|</span>
-		<a href={ pCtx.LanguageSwitchURL("en") } class="lang-link">en</a>
-	</div>
-}
-
-templ NavigationLinks(pCtx i18n.PageContext) {
-	<ul class="nav-links" id="nav-links-list">
-		<li><a href={ pCtx.CurrentLangLink("/about") }>{ pCtx.T("nav.about") }</a></li>
-		<li><a href={ pCtx.CurrentLangLink("/experience") }>{ pCtx.T("nav.experience") }</a></li>
-		<li><a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("nav.projects") }</a></li>
-		<li><a href={ pCtx.CurrentLangLink("/arts") }>{ pCtx.T("nav.arts") }</a></li>
-		<li><a href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("nav.contact") }</a></li>
-	</ul>
 }
