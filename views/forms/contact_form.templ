@@ -74,8 +74,7 @@ templ ContactFormPartial(data ContactFormData, pCtx i18n.PageContext) {
 				</div>
 				<!-- hCaptcha -->
 				<div class="form-field-group">
-					<script src="https://hcaptcha.com/1/api.js" async defer></script>
-					<div class="h-captcha" data-sitekey="66f63f0e-f6b6-4fd4-9658-868291dca84a" data-callback="enableSubmitButton"></div>
+					<div class="h-captcha" data-sitekey={ data.HCaptchaSiteKey } data-callback="enableSubmitButton"></div>
 				</div>
 				<!-- Submit button -->
 				<div class="form-actions">

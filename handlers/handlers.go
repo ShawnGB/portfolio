@@ -25,6 +25,9 @@ func InitCaptchaClient() {
 	if secret == "" {
 		log.Fatal("FATAL: HCAPTCHA_SECRET_KEY is not set. Cannot initialize hCaptcha client.")
 	}
+	if os.Getenv("HCAPTCHA_SITE_KEY") == "" {
+		log.Println("WARN: HCAPTCHA_SITE_KEY is not set. Contact form captcha widget will not render.")
+	}
 	captchaClient = hcaptcha.New(secret)
 	log.Println("INFO: hCaptcha client initialized successfully.")
 }
@@ -80,7 +83,7 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	pCtx := i18n.NewPageContext(r)
 
 	if r.Method == http.MethodGet {
-		renderContact(w, r, forms.Contact(forms.ContactFormData{}, pCtx), http.StatusOK)
+		renderContact(w, r, forms.Contact(forms.ContactFormData{HCaptchaSiteKey: os.Getenv("HCAPTCHA_SITE_KEY")}, pCtx), http.StatusOK)
 		return
 	}
 
@@ -90,6 +93,7 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var formData forms.ContactFormData
+	formData.HCaptchaSiteKey = os.Getenv("HCAPTCHA_SITE_KEY")
 
 	if err := r.ParseForm(); err != nil {
 		log.Printf("ERROR: Error parsing form: %v", err)

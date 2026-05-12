@@ -13,16 +13,28 @@ type ContactFormData struct {
 	Message        string
 	SuccessMessage string
 	ErrorMessage   string
+	HCaptchaSiteKey string
 }
 
 templ Contact(data ContactFormData, pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "contact.title", "contact.intro.p1", "contact.pageTitle", "contact.pageMetaDescription") {
 		<section>
+			<script src="https://hcaptcha.com/1/api.js" async defer></script>
+			<script>
+				document.body.addEventListener("htmx:afterSwap", function(e) {
+					if (e.detail.target && e.detail.target.id === "contact-form-container") {
+						var el = document.querySelector(".h-captcha");
+						if (el && typeof hcaptcha !== "undefined") {
+							hcaptcha.render(el);
+						}
+					}
+				});
+			</script>
 			@ContactFormPartial(data, pCtx)
 		</section>
 		<section>
 			<p>{ pCtx.T("contact.alternative.email") } <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
-			<p>{ pCtx.T("contact.alternative.linkedin") } <a href="https://www.linkedin.com/in/shawn-gordon-becker/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+			<p>{ pCtx.T("contact.alternative.linkedin") } <a href="https://www.linkedin.com/in/shawn-gordon-b-540076b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 		</section>
 	}
 }
