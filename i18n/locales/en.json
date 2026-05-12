@@ -17,12 +17,12 @@
 
   "home.hero.image.alt": "Shawn Becker",
   "home.hero.line1": "Hey, I'm Shawn –",
-  "home.hero.line2": "building thoughtful digital things",
+  "home.hero.line2": "building thoughtful digital products",
   "home.hero.subtitle": "Full-stack developer who cares about craft, clarity, and the people using what I build.",
   "home.hero.cta": "About my work",
 
   "about.title": "About me",
-  "about.greeting.p1": "I'm a web developer. I think in systems, care about details, and try to build things that work well and last. I've spent time on both sides of the product/engineering line, which shapes how I approach problems.",
+  "about.greeting.p1": "I'm a web developer. I think in systems, care about details, and build things that work well and last. I've spent time on both sides of the product/engineering line, which shapes how I approach problems.",
 
   "about.path.label": "My Journey",
   "about.path.p1": "I didn't take a straight path. It started with music and code, film sets and curiosity. Studies in marketing and informatics laid a foundation, but my time in product management (CODE University) connected the dots: structure, empathy, purpose.",
@@ -56,7 +56,7 @@
   "about.lookingFor.item3": "Continuous learning and knowledge sharing",
   "about.lookingFor.item4": "Building products that genuinely improve people's lives",
   "about.lookingFor.p2": "Ideal team size: 10-50 people. Ideal role: Full-Stack Developer or Backend-focused position with room to contribute to product thinking.",
-  "about.lookingFor.availability": "Availability: Open to discuss timing",
+  "about.lookingFor.availability": "Available now",
   "about.lookingFor.ctaDownload": "Download CV (PDF)",
 
   "about.connect.p1": "If any of this sounds like a fit, or you'd like to talk, I'd be glad to hear from you.",
@@ -182,7 +182,7 @@
   "experience.chapter3.p2": "The freedom is real. Set my schedule, choose my tools, work from anywhere. But the work itself has been limiting: small landing pages, WordPress customisations, design tweaks for clients who need a web presence but not a system. I miss deep logical work.",
   "experience.chapter3.p3": "Building backends, architecting systems, solving problems that require sustained thought. Creating something with internal logic and coherence, not customising templates. I miss working with a team. People to learn from, to review code with, to discuss trade-offs.",
   "experience.chapter3.p4": "U/skillity still resurfaces in my mind occasionally. Now that I have the technical skills, I sometimes think about rebuilding it properly. The idea (that passionate people teach best, and learning should be peer-driven) never really left. It's part of why I care about mentorship and knowledge sharing in teams.",
-  "experience.chapter3.p5": "In 2025, I enrolled in the **Advanced Web Development Programme at Neue Fische**. Intensive bootcamp focused on modern TypeScript, backend architecture, testing, and deployment. Sharpening skills, staying current.",
+  "experience.chapter3.p5": "In 2025, I completed the **Advanced Web Development Programme at Neue Fische** — an intensive bootcamp focused on modern TypeScript, backend architecture, testing, and deployment.",
   "experience.chapter3.p6": "**Looking back, the path makes sense.** Audio engineering taught me to shape systems from components. Kultstätte taught me to manage complexity and adapt to what emerges. Film work taught me collaboration and craft. U/skillity taught me that I care about how people learn. YPTOKEY taught me I'm a translator between disciplines. Freiheit taught me I love backend systems thinking.",
   "experience.chapter3.p7": "Twenty years of learning how to build things that work — sonic, cultural, digital. Now focused on software.",
 
@@ -232,5 +232,5 @@
   "arts.pageMetaDescription": "Creative explorations beyond code: photography, sound design, visual experiments. A developer's artistic practice in Berlin.",
 
   "contact.pageTitle": "Contact Shawn Becker – Developer in Berlin",
-  "contact.pageMetaDescription": "Hire a web developer in Berlin. Available for permanent positions & collaborations. TypeScript, React, Go expertise."
+  "contact.pageMetaDescription": "Based in Berlin, open to permanent positions and select collaborations. TypeScript, React, Go. If something resonated, reach out."
 }

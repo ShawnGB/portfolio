@@ -17,12 +17,12 @@
 
   "home.hero.image.alt": "Shawn Becker",
   "home.hero.line1": "Hey, ich bin Shawn –",
-  "home.hero.line2": "ich baue durchdachte digitale Dinge",
+  "home.hero.line2": "ich baue durchdachte digitale Produkte",
   "home.hero.subtitle": "Fullstack-Entwickler. Mir liegen Handwerk, Klarheit und die Menschen am Herzen, die nutzen, was ich baue.",
   "home.hero.cta": "Über meine Arbeit",
 
   "about.title": "Über Mich",
-  "about.greeting.p1": "Ich bin Webentwickler. Ich denke in Systemen, achte auf Details und versuche, Dinge zu bauen, die gut funktionieren und Bestand haben. Ich war auf beiden Seiten der Produkt-/Engineering-Linie unterwegs, das prägt, wie ich an Probleme herangehe.",
+  "about.greeting.p1": "Ich bin Webentwickler. Ich denke in Systemen, achte auf Details und baue Dinge, die gut funktionieren und Bestand haben. Ich war auf beiden Seiten der Produkt-/Engineering-Linie unterwegs, das prägt, wie ich an Probleme herangehe.",
 
   "about.path.label": "Mein Werdegang",
   "about.path.p1": "Mein Weg war nicht geradlinig. Er begann irgendwo zwischen Musik und Code, Filmsets und Neugier. Marketing und Informatik legten ein Fundament, aber erst im Produktmanagement an der CODE University fügte sich alles zusammen: Struktur, Empathie, Sinn.",
@@ -56,7 +56,7 @@
   "about.lookingFor.item3": "Kontinuierliches Lernen und Wissensaustausch",
   "about.lookingFor.item4": "Produkte entwickeln, die das Leben von Menschen wirklich verbessern",
   "about.lookingFor.p2": "Ideale Teamgröße: 10-50 Personen. Ideale Rolle: Full-Stack Entwickler oder Backend-fokussierte Position mit Raum für Produktdenken.",
-  "about.lookingFor.availability": "Verfügbarkeit: Offen für Gespräche über Timing",
+  "about.lookingFor.availability": "Jetzt verfügbar",
   "about.lookingFor.ctaDownload": "Lebenslauf herunterladen (PDF)",
 
   "about.connect.p1": "Wenn das hier passt oder du dich austauschen möchtest, freue ich mich über eine Nachricht.",
@@ -181,7 +181,7 @@
   "experience.chapter3.p2": "Die Freiheit ist echt. Eigener Rhythmus, eigene Tools, arbeiten von überall. Aber die Arbeit selbst war einschränkend: kleine Landingpages, WordPress-Anpassungen, Design-Korrekturen für Kunden, die eine Webpräsenz brauchen, aber kein System. Mir fehlt tiefgehende, logische Arbeit.",
   "experience.chapter3.p3": "Backends bauen, Systeme entwerfen, Probleme lösen, die nachhaltiges Nachdenken erfordern. Etwas mit innerer Logik und Zusammenhang erschaffen, keine Templates anpassen. Mir fehlt die Arbeit im Team. Leute, von denen man lernt, mit denen man Code reviewt, Trade-offs diskutiert.",
   "experience.chapter3.p4": "U/skillity taucht manchmal noch in meinen Gedanken auf. Jetzt, wo ich die technischen Fähigkeiten habe, denke ich gelegentlich darüber nach, es richtig neu zu bauen. Die Idee – dass Menschen, die für etwas brennen, am besten lehren, und Lernen am besten unter Gleichen funktioniert – ist nie wirklich verschwunden. Es ist ein Teil davon, warum mir Mentoring und Wissensaustausch in Teams wichtig sind.",
-  "experience.chapter3.p5": "2025 habe ich mich beim **Advanced Web Development Programm von Neue Fische** eingeschrieben. Intensives Bootcamp mit Fokus auf modernem TypeScript, Backend-Architektur, Testing und Deployment. Skills schärfen, am Ball bleiben.",
+  "experience.chapter3.p5": "2025 habe ich das **Advanced Web Development Programm von Neue Fische** abgeschlossen — ein intensives Bootcamp mit Fokus auf modernem TypeScript, Backend-Architektur, Testing und Deployment.",
   "experience.chapter3.p6": "**Im Rückblick ergibt der Weg Sinn.** Tontechnik hat mir beigebracht, Systeme aus Komponenten zu formen. Kultstätte, Komplexität zu managen und mich dem anzupassen, was entsteht. Filmarbeit, Zusammenarbeit und Handwerk. U/skillity, dass mir wichtig ist, wie Menschen lernen. YPTOKEY, dass ich zwischen Disziplinen übersetzen kann. Freiheit, dass ich Backend-Systemdenken liebe.",
   "experience.chapter3.p7": "Zwanzig Jahre gelernt, Dinge zu bauen, die funktionieren — klanglich, kulturell, digital. Jetzt fokussiert auf Software.",
 
@@ -231,5 +231,5 @@
   "arts.pageMetaDescription": "Kreative Erkundungen jenseits des Codes: Fotografie, Sounddesign, visuelle Experimente. Künstlerische Praxis in Berlin.",
 
   "contact.pageTitle": "Kontakt Shawn Becker – Entwickler in Berlin",
-  "contact.pageMetaDescription": "Webentwickler in Berlin. Verfügbar für Festanstellungen & Projekte. Expertise: TypeScript, React, Go."
+  "contact.pageMetaDescription": "In Berlin, offen für Festanstellungen und ausgewählte Projekte. TypeScript, React, Go. Bei Interesse gerne melden."
 }
