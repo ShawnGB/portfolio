@@ -10,6 +10,7 @@
   "nav.ariaLabel": "Hauptnavigation",
   "nav.toggleMenu": "Navigationsmenü umschalten",
   "nav.github.ariaLabel": "GitHub",
+  "nav.codeberg.ariaLabel": "Codeberg",
   "nav.linkedin.ariaLabel": "LinkedIn",
 
   "footer.copyright": "© 2026 Shawn Gordon Becker",
@@ -87,6 +88,7 @@
   "projects.labels.sideProject": "Nebenprojekt — Revival",
 
   "projects.links.viewOnGithub": "Auf GitHub ansehen",
+  "projects.links.viewOnCodeberg": "Auf Codeberg ansehen",
   "projects.links.visitSite": "Webseite besuchen",
   "projects.links.downloadCV": "Lebenslauf herunterladen",
 

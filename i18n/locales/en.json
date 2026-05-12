@@ -10,6 +10,7 @@
   "nav.ariaLabel": "Main navigation",
   "nav.toggleMenu": "Toggle navigation menu",
   "nav.github.ariaLabel": "GitHub",
+  "nav.codeberg.ariaLabel": "Codeberg",
   "nav.linkedin.ariaLabel": "LinkedIn",
 
   "footer.copyright": "© 2026 Shawn Gordon Becker",
@@ -88,6 +89,7 @@
   "projects.labels.sideProject": "Side Project — Revival",
 
   "projects.links.viewOnGithub": "View on GitHub",
+  "projects.links.viewOnCodeberg": "View on Codeberg",
   "projects.links.visitSite": "Visit Site",
   "projects.links.downloadCV": "Download CV",
 

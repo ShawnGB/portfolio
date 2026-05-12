@@ -6,124 +6,124 @@ import "mymodules/gofolio/views/components"
 
 templ About(pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "about.title", "about.greeting.p1", "about.pageTitle", "about.pageMetaDescription") {
-			<div class="grid-section major-break drives-path-section">
-				<div class="grid-row">
-					<div class="grid-col-7">
-						<div class="body-text">
-							<ul class="values-list">
-								<li>
-									@components.Icon("compass", "20", "")
-									<div class="value-content">
-										<h3 >{ pCtx.T("about.drivesMe.item1.title") }</h3>
-										<p>{ pCtx.T("about.drivesMe.item1.text") }</p>
-									</div>
-								</li>
-								<li>
-									@components.Icon("book-open", "20", "")
-									<div class="value-content">
-										<h3 >{ pCtx.T("about.drivesMe.item2.title") }</h3>
-										<p>{ pCtx.T("about.drivesMe.item2.text") }</p>
-									</div>
-								</li>
-								<li>
-									@components.Icon("heart", "20", "")
-									<div class="value-content">
-										<h3 >{ pCtx.T("about.drivesMe.item3.title") }</h3>
-										<p>{ pCtx.T("about.drivesMe.item3.text") }</p>
-									</div>
-								</li>
-								<li>
-									@components.Icon("users", "20", "")
-									<div class="value-content">
-										<h3 >{ pCtx.T("about.drivesMe.item4.title") }</h3>
-										<p>{ pCtx.T("about.drivesMe.item4.text") }</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="grid-col-5">
-						<div class="path-label">
-							<small>{ pCtx.T("about.path.label") }</small>
-						</div>
-						<div class="body-text">
-							<p>{ pCtx.T("about.path.p1") }</p>
-							<p>{ pCtx.T("about.path.p2") }</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="grid-section quote-image-beyond-module">
-				<div class="grid-row">
-					<div class="grid-col-3">
-						<blockquote>{ pCtx.T("about.quote") }</blockquote>
-					</div>
-					<div class="grid-col-4 image-wrapper-hero">
-						<img src="/static/images/arts/05.webp" alt={ pCtx.T("about.image.alt") } loading="lazy" class="hero-portrait"/>
-						<span class="image-caption">{ pCtx.T("about.image.caption") }</span>
-					</div>
-					<div class="grid-col-4">
-						<h2>{ pCtx.T("about.outsideScreen.title") }</h2>
-						<div class="body-text">
-							<p>{ pCtx.T("about.outsideScreen.p1") }</p>
-						</div>
-						<div class="interests-grid-inline">
-							<article>
-								@components.Icon("music", "18", "")
-								<span>{ pCtx.T("about.interests.music") }</span>
-							</article>
-							<article>
-								@components.Icon("map", "18", "")
-								<span>{ pCtx.T("about.interests.cycling") }</span>
-							</article>
-							<article>
-								@components.Icon("palette", "18", "")
-								<span>{ pCtx.T("about.interests.photography") }</span>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="grid-section looking-for-section major-break">
-				<div class="grid-row">
-					<div class="looking-for-header">
-						<h2 >{ pCtx.T("about.lookingFor.title") }</h2>
-					</div>
-				</div>
-				<div class="grid-row">
-					<div class="grid-col-4">
-						<div class="icon-header">
-							@components.Icon("briefcase", "20", "")
-							<h3>{ pCtx.T("about.lookingFor.environment.title") }</h3>
-						</div>
-						<div class="body-text">
-							<p>{ pCtx.T("about.lookingFor.p1") }</p>
-						</div>
-					</div>
-					<div class="grid-col-4">
-						<div class="icon-header">
-							@components.Icon("zap", "20", "")
-							<h3>{ pCtx.T("about.lookingFor.thrive.title") }</h3>
-						</div>
-						<ul class="checkmark-list">
-							<li>{ pCtx.T("about.lookingFor.item1") }</li>
-							<li>{ pCtx.T("about.lookingFor.item2") }</li>
-							<li>{ pCtx.T("about.lookingFor.item3") }</li>
-							<li>{ pCtx.T("about.lookingFor.item4") }</li>
+		<div class="grid-section major-break drives-path-section">
+			<div class="grid-row">
+				<div class="grid-col-7">
+					<div class="body-text">
+						<ul class="values-list">
+							<li>
+								@components.Icon("compass", "20", "")
+								<div class="value-content">
+									<h3>{ pCtx.T("about.drivesMe.item1.title") }</h3>
+									<p>{ pCtx.T("about.drivesMe.item1.text") }</p>
+								</div>
+							</li>
+							<li>
+								@components.Icon("book-open", "20", "")
+								<div class="value-content">
+									<h3>{ pCtx.T("about.drivesMe.item2.title") }</h3>
+									<p>{ pCtx.T("about.drivesMe.item2.text") }</p>
+								</div>
+							</li>
+							<li>
+								@components.Icon("heart", "20", "")
+								<div class="value-content">
+									<h3>{ pCtx.T("about.drivesMe.item3.title") }</h3>
+									<p>{ pCtx.T("about.drivesMe.item3.text") }</p>
+								</div>
+							</li>
+							<li>
+								@components.Icon("users", "20", "")
+								<div class="value-content">
+									<h3>{ pCtx.T("about.drivesMe.item4.title") }</h3>
+									<p>{ pCtx.T("about.drivesMe.item4.text") }</p>
+								</div>
+							</li>
 						</ul>
 					</div>
-					<div class="grid-col-4">
-						<div class="icon-header">
-							@components.Icon("calendar", "20", "")
-							<h3>{ pCtx.T("about.lookingFor.role.title") }</h3>
-						</div>
-						<div class="body-text">
-							<p>{ pCtx.T("about.lookingFor.p2") }</p>
-							<p><em>{ pCtx.T("about.lookingFor.availability") }</em></p>
-						</div>
+				</div>
+				<div class="grid-col-5">
+					<div class="path-label">
+						<small>{ pCtx.T("about.path.label") }</small>
+					</div>
+					<div class="body-text">
+						<p>{ pCtx.T("about.path.p1") }</p>
+						<p>{ pCtx.T("about.path.p2") }</p>
 					</div>
 				</div>
 			</div>
-			@layouts.CTAFooter(pCtx, "about.lookingFor.ctaDownload", "about.connect.p1", "about.connect.ctaText", "/contact")
+		</div>
+		<div class="grid-section quote-image-beyond-module">
+			<div class="grid-row">
+				<div class="grid-col-3">
+					<blockquote>{ pCtx.T("about.quote") }</blockquote>
+				</div>
+				<div class="grid-col-4 image-wrapper-hero">
+					<img src="/static/images/arts/05.webp" alt={ pCtx.T("about.image.alt") } loading="lazy" class="hero-portrait"/>
+					<span class="image-caption">{ pCtx.T("about.image.caption") }</span>
+				</div>
+				<div class="grid-col-4">
+					<h2>{ pCtx.T("about.outsideScreen.title") }</h2>
+					<div class="body-text">
+						<p>{ pCtx.T("about.outsideScreen.p1") }</p>
+					</div>
+					<div class="interests-grid-inline">
+						<article>
+							@components.Icon("music", "18", "")
+							<span>{ pCtx.T("about.interests.music") }</span>
+						</article>
+						<article>
+							@components.Icon("map", "18", "")
+							<span>{ pCtx.T("about.interests.cycling") }</span>
+						</article>
+						<article>
+							@components.Icon("palette", "18", "")
+							<span>{ pCtx.T("about.interests.photography") }</span>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-section looking-for-section major-break">
+			<div class="grid-row">
+				<div class="looking-for-header">
+					<h2>{ pCtx.T("about.lookingFor.title") }</h2>
+				</div>
+			</div>
+			<div class="grid-row">
+				<div class="grid-col-4">
+					<div class="icon-header">
+						@components.Icon("briefcase", "20", "")
+						<h3>{ pCtx.T("about.lookingFor.environment.title") }</h3>
+					</div>
+					<div class="body-text">
+						<p>{ pCtx.T("about.lookingFor.p1") }</p>
+					</div>
+				</div>
+				<div class="grid-col-4">
+					<div class="icon-header">
+						@components.Icon("zap", "20", "")
+						<h3>{ pCtx.T("about.lookingFor.thrive.title") }</h3>
+					</div>
+					<ul class="checkmark-list">
+						<li>{ pCtx.T("about.lookingFor.item1") }</li>
+						<li>{ pCtx.T("about.lookingFor.item2") }</li>
+						<li>{ pCtx.T("about.lookingFor.item3") }</li>
+						<li>{ pCtx.T("about.lookingFor.item4") }</li>
+					</ul>
+				</div>
+				<div class="grid-col-4">
+					<div class="icon-header">
+						@components.Icon("calendar", "20", "")
+						<h3>{ pCtx.T("about.lookingFor.role.title") }</h3>
+					</div>
+					<div class="body-text">
+						<p>{ pCtx.T("about.lookingFor.p2") }</p>
+						<p><em>{ pCtx.T("about.lookingFor.availability") }</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		@layouts.CTAFooter(pCtx, "about.lookingFor.ctaDownload", "about.connect.p1", "about.connect.ctaText", "/contact")
 	}
 }

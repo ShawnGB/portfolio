@@ -92,7 +92,9 @@ templ ContactFormPartial(data ContactFormData, pCtx i18n.PageContext) {
 				}
 				<script>
 					function enableSubmitButton() {
-						const submitButton = document.getElementById("submit-contact-form-button");
+						const submitButton = document.getElementById(
+							"submit-contact-form-button",
+						);
 						if (submitButton) {
 							submitButton.disabled = false;
 						}
