@@ -147,10 +147,8 @@ h3 + p {
 
 p strong,
 strong {
-  font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-primary);
-  font-size: 1rem;
 }
 
 em {
