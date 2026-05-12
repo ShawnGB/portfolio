@@ -1,12 +1,11 @@
 .hero-section-wrapper {
-  width: 100%;
   min-height: 55vh;
   max-height: 60vh;
   display: grid;
   grid-template-columns: 45% 55%;
   align-items: center;
   padding: 5rem 3rem 4rem;
-  margin: 0 0 var(--space-5xl);
+  margin: 0 -2rem var(--space-5xl);
   background: linear-gradient(
     to bottom,
     var(--paper-mid) 0%,
@@ -14,7 +13,6 @@
   );
   position: relative;
   overflow: visible;
-  transform: translateX(-1vw);
 }
 
 /* Left: Cropped portrait section - broken grid vertical offset */
@@ -139,8 +137,7 @@ h1.hero-main-visual-text .line-2 {
     min-height: auto;
     max-height: none;
     padding: var(--space-xl) var(--space-lg);
-    margin-bottom: var(--space-3xl);
-    transform: none;
+    margin: 0 0 var(--space-3xl);
   }
 
   .hero-left-column {
