@@ -1,0 +1,15 @@
+package pages
+
+import "mymodules/gofolio/i18n"
+import "mymodules/gofolio/views/layouts"
+
+templ NotFound(pCtx i18n.PageContext) {
+	@layouts.BaseHtml(pCtx, pCtx.T("notfound.pageTitle"), "") {
+		<div class="notfound-wrapper">
+			<p class="label-mono">404</p>
+			<h1>{ pCtx.T("notfound.heading") }</h1>
+			<p>{ pCtx.T("notfound.message") }</p>
+			<a href={ pCtx.CurrentLangLink("/") } class="cta-link">{ pCtx.T("notfound.cta") }</a>
+		</div>
+	}
+}

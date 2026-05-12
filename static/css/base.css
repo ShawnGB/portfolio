@@ -312,6 +312,24 @@ hr,
   margin: var(--space-4xl) 0;
 }
 
+.notfound-wrapper {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+  padding: var(--space-5xl) 0;
+}
+
+.notfound-wrapper h1 {
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.notfound-wrapper > p:not(.label-mono) {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
 .page-container {
   width: 100%;
   max-width: var(--container-max);

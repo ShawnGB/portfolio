@@ -62,7 +62,17 @@ func main() {
 }
 
 func registerPageRoutes(mux *http.ServeMux) {
-	mux.HandleFunc("/", handlers.PageHandler(pages.Home))
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		if r.URL.Path != "/" {
+			w.WriteHeader(http.StatusNotFound)
+			pCtx := i18n.NewPageContext(r)
+			if err := pages.NotFound(pCtx).Render(r.Context(), w); err != nil {
+				log.Printf("ERROR: rendering 404 page: %v", err)
+			}
+			return
+		}
+		handlers.PageHandler(pages.Home)(w, r)
+	})
 	mux.HandleFunc("/about", handlers.PageHandler(pages.About))
 	mux.HandleFunc("/experience", handlers.PageHandler(pages.Experience))
 	mux.HandleFunc("/projects", handlers.PageHandler(pages.Projects))

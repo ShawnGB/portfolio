@@ -216,6 +216,11 @@
   "contact.alternative.email": "Oder direkt per E-Mail:",
   "contact.alternative.linkedin": "Verbinden auf",
 
+  "notfound.pageTitle": "Seite nicht gefunden – Shawn Becker",
+  "notfound.heading": "Seite nicht gefunden",
+  "notfound.message": "Diese Seite existiert nicht. Möglicherweise hast du einem defekten Link gefolgt.",
+  "notfound.cta": "Zurück zur Startseite",
+
   "home.pageTitle": "Shawn Becker – Fullstack-Entwickler & Produktdenker",
   "home.pageMetaDescription": "Webentwickler in Berlin. TypeScript, Go, React. Ich baue Webprodukte mit Sorgfalt.",
 
