@@ -79,28 +79,6 @@
   mix-blend-mode: multiply;
 }
 
-.arts-sound {
-  display: flex;
-  gap: var(--space-xl);
-  align-items: flex-start;
-  margin: var(--space-3xl) 0 var(--space-2xl) 0;
-}
-
-.arts-sound img {
-  flex: 1;
-  max-width: 50%;
-  object-fit: cover;
-  mix-blend-mode: multiply;
-}
-
-.arts-sound-text {
-  flex: 1;
-}
-
-.arts-sound-text h2 {
-  margin-top: 0;
-}
-
 @media (max-width: 768px) {
   .arts-anchor img {
     height: 50vh;
@@ -118,11 +96,4 @@
     padding: 0 var(--space-md);
   }
 
-  .arts-sound {
-    flex-direction: column;
-  }
-
-  .arts-sound img {
-    max-width: 100%;
-  }
 }

@@ -64,9 +64,7 @@
   "about.connect.ctaText": "Zur Kontaktseite",
 
   "arts.title": "Kunst",
-  "arts.intro.p1": "Abseits vom Code folge ich Licht, Klang und Bewegung. Fotografie kam erst kürzlich, langsam und intuitiv. Musik war immer da. Das hier sind Erkundungen ohne Agenda: Präsenz, Übung, Neugier.",
-  "arts.sound.title": "Klang & Musik",
-  "arts.sound.text": "Analoge und digitale Erkundungen, Ambient-Kompositionen, klangliches Tagebuchschreiben",
+  "arts.intro.p1": "Abseits vom Code folge ich Licht, Klang und Bewegung. Fotografie kam erst kürzlich, langsam und intuitiv. Musik war immer da — Bass, Ambient-Kompositionen, klangliches Tagebuchschreiben. Das hier sind Erkundungen ohne Agenda: Präsenz, Übung, Neugier.",
   "arts.gallery.imageAlt": "Kunstbild",
   "projects.title": "Projekte",
   "projects.intro.p1": "Eine Auswahl dessen, was ich gebaut habe. Dieses Portfolio ist der aktuelle Fokus, von Grund auf in Go gebaut, um die Sprache richtig zu lernen. Darunter Kundenprojekte und Kollaborationen der letzten Jahre, dazu ein paar frühere Experimente, die geprägt haben, wie ich über Software denke.",
