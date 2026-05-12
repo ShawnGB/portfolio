@@ -1,0 +1,66 @@
+/* Tech Stack Section */
+
+.tech-stack-groups {
+  display: flex;
+  gap: var(--space-2xl);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+}
+
+.tech-stack-group {
+  flex: 1;
+  min-width: 160px;
+}
+
+.tech-stack-group .label-mono {
+  margin-bottom: var(--space-sm);
+  color: var(--text-tertiary);
+}
+
+.tech-stack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-sm);
+}
+
+.tech-stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  width: 56px;
+}
+
+.tech-stack-item svg {
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+}
+
+.tech-stack-item:hover svg {
+  opacity: 1;
+}
+
+.tech-stack-item span {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+  .tech-stack-group {
+    flex: 0 0 calc(50% - var(--space-2xl) / 2);
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-groups {
+    gap: var(--space-xl);
+  }
+
+  .tech-stack-group {
+    flex: 0 0 100%;
+  }
+}

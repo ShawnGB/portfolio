@@ -17,6 +17,7 @@
 /* Page-specific styles */
 @import "./css/home.css";
 @import "./css/about.css";
+@import "./css/techstack.css";
 @import "./css/projects.css";
 @import "./css/experience.css";
 @import "./css/arts.css";
