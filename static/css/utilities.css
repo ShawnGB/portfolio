@@ -162,3 +162,55 @@
   color: var(--ink-warm);
   opacity: 0.5;
 }
+
+/* ========================================
+   CTA FOOTER - shared layout component
+   Used by CTAFooter in views/layouts/layouts.templ
+   ======================================== */
+
+.cta-footer-grid {
+  grid-column: 1 / -1;
+  margin-top: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-footer-grid .cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-footer-grid .cta-link {
+  display: inline-flex;
+  text-align: center;
+}
+
+.cta-footer-grid .contact-sentence {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.9375rem;
+  margin-top: var(--space-lg);
+  color: var(--text-secondary);
+}
+
+.cta-footer-grid .contact-sentence a {
+  color: var(--ink-warm);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .cta-footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .cta-footer-grid .contact-sentence {
+    order: 1;
+  }
+
+  .cta-footer-grid .cta-button-wrapper {
+    order: 2;
+  }
+}

@@ -79,10 +79,10 @@
 .projects-client {
   position: relative;
   background: var(--paper-mid);
-  margin-left: -64px;
-  margin-right: -64px;
-  padding-left: 64px;
-  padding-right: 64px;
+  margin-left: calc(-1 * var(--grid-outer-padding));
+  margin-right: calc(-1 * var(--grid-outer-padding));
+  padding-left: var(--grid-outer-padding);
+  padding-right: var(--grid-outer-padding);
 }
 
 .projects-client::before {
@@ -234,10 +234,10 @@
 
 @media (max-width: 900px) {
   .projects-client {
-    margin-left: -24px;
-    margin-right: -24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-left: calc(-1 * var(--grid-outer-padding-mobile));
+    margin-right: calc(-1 * var(--grid-outer-padding-mobile));
+    padding-left: var(--grid-outer-padding-mobile);
+    padding-right: var(--grid-outer-padding-mobile);
   }
 
   .projects-featured::before,

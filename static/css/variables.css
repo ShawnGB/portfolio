@@ -50,8 +50,8 @@
   --link-hover: var(--ink-warm);
   --link-visited: var(--ink-soft);
 
-  /* States (monochrome-aligned) */
-  --state-error: var(--ink-warm);
+  /* States */
+  --state-error: #b71c1c;
   --state-error-bg: var(--paper-mid);
   --state-success: var(--ink-warm);
   --state-success-bg: var(--paper-mid);
@@ -145,6 +145,8 @@
   --nav-height: 3.5rem;
   --container-max: 800px; /* Tighter for reading */
   --container-wide: 1200px;
+  --grid-outer-padding: 64px;
+  --grid-outer-padding-mobile: 24px;
 
   /* =================================
      BREAKPOINTS

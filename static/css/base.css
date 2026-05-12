@@ -198,7 +198,7 @@ blockquote::before {
   display: none;
 }
 .text-error {
-  color: #b71c1c;
+  color: var(--state-error);
 }
 
 section {
