@@ -35,21 +35,30 @@
   color: var(--ink-warm);
 }
 
+.experience-chapter-1::after { content: "01"; }
+.experience-chapter-2::after { content: "02"; }
+.experience-chapter-3::after { content: "03"; }
+
 .experience-chapter-1::after,
 .experience-chapter-2::after,
 .experience-chapter-3::after {
-  content: "<section>";
   position: absolute;
   top: 3rem;
   right: -1rem;
-  font-family: var(--font-mono);
-  font-size: 4.5rem;
-  font-weight: 400;
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 800;
   line-height: 1;
   color: var(--ink-warm);
-  opacity: 0.035;
+  opacity: 0.04;
   pointer-events: none;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
+}
+
+.experience-chapter-2,
+.experience-chapter-3 {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-4xl);
 }
 
 .breakout-image-container {
