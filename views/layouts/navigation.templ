@@ -24,11 +24,11 @@ templ Navigation(pCtx i18n.PageContext) {
 			</label>
 			<div class="nav-right-group">
 				<ul class="nav-links" id="nav-links-list">
-					<li><a href={ pCtx.CurrentLangLink("/about") }>{ pCtx.T("nav.about") }</a></li>
-					<li><a href={ pCtx.CurrentLangLink("/experience") }>{ pCtx.T("nav.experience") }</a></li>
-					<li><a href={ pCtx.CurrentLangLink("/projects") }>{ pCtx.T("nav.projects") }</a></li>
-					<li><a href={ pCtx.CurrentLangLink("/arts") }>{ pCtx.T("nav.arts") }</a></li>
-					<li><a href={ pCtx.CurrentLangLink("/contact") }>{ pCtx.T("nav.contact") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/about") } if pCtx.BasePath == "/about" { aria-current="page" class="nav-link--active" }>{ pCtx.T("nav.about") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/experience") } if pCtx.BasePath == "/experience" { aria-current="page" class="nav-link--active" }>{ pCtx.T("nav.experience") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/projects") } if pCtx.BasePath == "/projects" { aria-current="page" class="nav-link--active" }>{ pCtx.T("nav.projects") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/arts") } if pCtx.BasePath == "/arts" { aria-current="page" class="nav-link--active" }>{ pCtx.T("nav.arts") }</a></li>
+					<li><a href={ pCtx.CurrentLangLink("/contact") } if pCtx.BasePath == "/contact" { aria-current="page" class="nav-link--active" }>{ pCtx.T("nav.contact") }</a></li>
 				</ul>
 				<div class="nav-utility-icons">
 					<a href="https://github.com/ShawnGB" target="_blank" rel="noopener noreferrer" aria-label={ pCtx.T("nav.github.ariaLabel") }>

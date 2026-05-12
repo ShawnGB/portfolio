@@ -90,6 +90,11 @@ nav ul li a:hover {
   opacity: 0.65;
 }
 
+nav ul li a.nav-link--active {
+  border-bottom-color: var(--ink-warm);
+  opacity: 1;
+}
+
 .nav-utility-icons {
   display: flex;
   align-items: center;
