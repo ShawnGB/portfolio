@@ -211,7 +211,6 @@ section:last-child {
 img {
   filter: saturate(0.82) contrast(0.92);
   opacity: 0.9;
-  mix-blend-mode: multiply;
   display: block;
   max-width: 100%;
   height: auto;

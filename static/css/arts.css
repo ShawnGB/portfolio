@@ -14,6 +14,7 @@
   height: 70vh;
   object-fit: cover;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .arts-anchor--slim img {
@@ -52,6 +53,7 @@
   width: 100%;
   height: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .arts-grid--halves {
@@ -74,6 +76,7 @@
   width: 100%;
   height: auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .arts-sound {
@@ -87,6 +90,7 @@
   flex: 1;
   max-width: 50%;
   object-fit: cover;
+  mix-blend-mode: multiply;
 }
 
 .arts-sound-text {

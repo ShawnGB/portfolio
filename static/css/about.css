@@ -82,6 +82,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  mix-blend-mode: multiply;
 }
 
 .image-wrapper-hero::before {
