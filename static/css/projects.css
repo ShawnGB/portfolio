@@ -206,7 +206,7 @@
 .background-inline {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: var(--space-md);
   max-width: 65ch;
 }
 
@@ -215,17 +215,8 @@
   font-size: 0.9375rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  padding: var(--space-md) 0;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.background-inline span:first-child {
-  padding-top: 0;
-}
-
-.background-inline span:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+  border-left: 1px solid var(--border-medium);
 }
 
 .background-inline strong {
