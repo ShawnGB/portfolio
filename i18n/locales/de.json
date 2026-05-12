@@ -205,7 +205,13 @@
   "contact.form.submitButton": "Nachricht senden",
   "contact.form.loadingIndicator": "Wird gesendet...",
   "contact.success.title": "Nachricht gesendet",
+  "contact.success.message": "Deine Nachricht wurde erfolgreich gesendet! Ich melde mich so bald wie möglich.",
   "contact.success.returnHome": "Zurück zur Startseite",
+  "contact.error.parse": "Ein interner Fehler ist aufgetreten. Bitte versuche es später erneut.",
+  "contact.error.captcha": "Captcha-Überprüfung fehlgeschlagen. Bitte versuche es erneut.",
+  "contact.error.required": "Bitte fülle alle Pflichtfelder aus (Vorname, Nachname, E-Mail und Nachricht).",
+  "contact.error.config": "Deine Nachricht konnte aufgrund eines Serverkonfigurationsfehlers nicht gesendet werden. Bitte nutze die E-Mail-Adresse unten.",
+  "contact.error.send": "Deine Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut oder nutze die E-Mail-Adresse unten.",
   "contact.alternative.email": "Oder direkt per E-Mail:",
   "contact.alternative.linkedin": "Verbinden auf",
 

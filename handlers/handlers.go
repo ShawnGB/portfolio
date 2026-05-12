@@ -97,7 +97,7 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 
 	if err := r.ParseForm(); err != nil {
 		log.Printf("ERROR: Error parsing form: %v", err)
-		formData.ErrorMessage = "An internal error occurred. Please try again later."
+		formData.ErrorMessage = pCtx.T("contact.error.parse")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusInternalServerError)
 		return
 	}
@@ -113,7 +113,7 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	if formData.Website != "" {
 		log.Println("INFO: Honeypot field filled, contact form submission cancelled.")
 		renderContact(w, r, forms.ContactFormPartial(forms.ContactFormData{
-			SuccessMessage: "Your message was sent successfully! I will get back to you as soon as possible.",
+			SuccessMessage: pCtx.T("contact.success.message"),
 		}, pCtx), http.StatusOK)
 		return
 	}
@@ -121,20 +121,20 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	captchaResp := captchaClient.VerifyToken(r.FormValue("h-captcha-response"))
 	if !captchaResp.Success {
 		log.Printf("WARN: hCaptcha verification failed: %+v", captchaResp)
-		formData.ErrorMessage = "Captcha verification failed. Please try again."
+		formData.ErrorMessage = pCtx.T("contact.error.captcha")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusBadRequest)
 		return
 	}
 
 	if formData.FirstName == "" || formData.LastName == "" || formData.Email == "" || formData.Message == "" {
-		formData.ErrorMessage = "Please fill out all required fields (First Name, Last Name, Email, and Message)."
+		formData.ErrorMessage = pCtx.T("contact.error.required")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusBadRequest)
 		return
 	}
 
 	if emailConfig.ResendAPIKey == "" || emailConfig.SenderEmail == "" || emailConfig.RecipientEmail == "" {
 		log.Println("ERROR: Email environment variables not (fully) set. Cannot send mail.")
-		formData.ErrorMessage = "Your message could not be sent due to a server configuration issue. Please use the email address in the footer."
+		formData.ErrorMessage = pCtx.T("contact.error.config")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusInternalServerError)
 		return
 	}
@@ -151,13 +151,13 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	_, emailErr := utils.SendContactMail(emailConfig, mailData)
 	if emailErr != nil {
 		log.Printf("ERROR: Error from utils.SendContactMail: %v\n", emailErr)
-		formData.ErrorMessage = "Your message could not be sent. Please try again later or use the email address in the footer."
+		formData.ErrorMessage = pCtx.T("contact.error.send")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusInternalServerError)
 		return
 	}
 
 	log.Printf("INFO: Email successfully processed for %s %s (%s) and dispatch initiated.\n", formData.FirstName, formData.LastName, formData.Email)
 	renderContact(w, r, forms.ContactFormPartial(forms.ContactFormData{
-		SuccessMessage: "Your message was sent successfully! I will get back to you as soon as possible.",
+		SuccessMessage: pCtx.T("contact.success.message"),
 	}, pCtx), http.StatusOK)
 }

@@ -206,7 +206,13 @@
   "contact.form.submitButton": "Send Message",
   "contact.form.loadingIndicator": "Sending...",
   "contact.success.title": "Message Sent",
+  "contact.success.message": "Your message was sent successfully! I will get back to you as soon as possible.",
   "contact.success.returnHome": "Return to Home",
+  "contact.error.parse": "An internal error occurred. Please try again later.",
+  "contact.error.captcha": "Captcha verification failed. Please try again.",
+  "contact.error.required": "Please fill out all required fields (First Name, Last Name, Email, and Message).",
+  "contact.error.config": "Your message could not be sent due to a server configuration issue. Please use the email address below.",
+  "contact.error.send": "Your message could not be sent. Please try again later or use the email address below.",
   "contact.alternative.email": "Or email directly:",
   "contact.alternative.linkedin": "Connect on",
 
