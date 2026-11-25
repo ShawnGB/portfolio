@@ -1,26 +1,16 @@
 package pages
 
+import "fmt"
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 
 templ Experience(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("experience.pageTitle"), pCtx.T("experience.pageMetaDescription")) {
 		<div class="page-grid-container">
-			<section class="grid-section experience-glance" aria-labelledby="experience-glance-title">
-				<h2 id="experience-glance-title" class="label-mono glance-title">{ pCtx.T("experience.glance.title") }</h2>
-				<ol class="glance-list">
-					for _, n := range []string{"1", "2", "3", "4", "5", "6", "7", "8", "9"} {
-						<li>
-							<span class="glance-years">{ pCtx.T("experience.glance." + n + ".years") }</span>
-							<span class="glance-role">{ pCtx.T("experience.glance." + n + ".role") }</span>
-							<span class="glance-org">{ pCtx.T("experience.glance." + n + ".org") }</span>
-						</li>
-					}
-				</ol>
-			</section>
 			<div class="grid-section experience-chapter-1">
 				<h2>{ pCtx.T("experience.chapter1.title") }</h2>
 				<p class="label-mono">{ pCtx.T("experience.chapter1.subtitle") }</p>
+				@chapterRoles(pCtx, "1", 2)
 				<div class="grid--halves">
 					<p>@pCtx.TRich("experience.chapter1.p1")
 </p>
@@ -51,6 +41,7 @@ templ Experience(pCtx i18n.PageContext) {
 					<div class="grid-col-12">
 						<h2>{ pCtx.T("experience.chapter2.title") }</h2>
 						<p class="label-mono">{ pCtx.T("experience.chapter2.subtitle") }</p>
+						@chapterRoles(pCtx, "2", 4)
 					</div>
 				</div>
 				<div class="grid-row">
@@ -89,6 +80,7 @@ templ Experience(pCtx i18n.PageContext) {
 					<div class="grid-col-12">
 						<h2>{ pCtx.T("experience.chapter3.title") }</h2>
 						<p class="label-mono">{ pCtx.T("experience.chapter3.subtitle") }</p>
+						@chapterRoles(pCtx, "3", 3)
 					</div>
 				</div>
 				<div class="grid-row">
@@ -134,4 +126,13 @@ templ Experience(pCtx i18n.PageContext) {
 			@layouts.CTAFooter(pCtx, "experience.cta.downloadCV", "experience.cta.or", "experience.cta.viewProjects", "/projects")
 		</div>
 	}
+}
+
+// chapterRoles lists the roles of one chapter's period under its date line.
+templ chapterRoles(pCtx i18n.PageContext, chapter string, count int) {
+	<ul class="chapter-roles">
+		for i := 1; i <= count; i++ {
+			<li>{ pCtx.T(fmt.Sprintf("experience.chapter%s.roles.%d", chapter, i)) }</li>
+		}
+	</ul>
 }

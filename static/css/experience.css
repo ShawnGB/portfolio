@@ -132,47 +132,22 @@
   }
 }
 
-/* At-a-glance timeline above chapter 1 */
-.experience-glance {
-  margin-bottom: var(--space-4xl);
+/* Roles of each chapter's period, under its date line */
+.experience-chapter-1 h2 + .label-mono:has(+ .chapter-roles),
+.experience-chapter-2 h2 + .label-mono:has(+ .chapter-roles),
+.experience-chapter-3 h2 + .label-mono:has(+ .chapter-roles) {
+  margin-bottom: var(--space-sm);
 }
 
-.experience-glance .glance-title {
-  margin-bottom: var(--space-md);
-}
-
-.glance-list {
+.chapter-roles {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.glance-list li {
-  display: grid;
-  grid-template-columns: 9rem minmax(0, 1fr) minmax(0, 1fr);
-  gap: var(--space-md);
-  align-items: baseline;
-  padding: var(--space-sm) 0;
-  border-bottom: 1px solid var(--border-subtle);
-  font-size: var(--text-body-sm);
-  line-height: 1.45;
-}
-
-.glance-years {
+  margin: 0 0 var(--space-xl);
+  padding: 0 0 0 2.75rem; /* aligns with the date text after its rule */
   font-family: var(--font-mono);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  line-height: 1.7;
   color: var(--text-tertiary);
-  white-space: nowrap;
-}
-
-.glance-role {
-  color: var(--text-primary);
-  font-weight: var(--weight-medium);
-}
-
-.glance-org {
-  color: var(--text-secondary);
 }
 
 /* "What each stage taught me" list in chapter 3 */
@@ -190,8 +165,7 @@
 }
 
 @media (max-width: 640px) {
-  .glance-list li {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.15rem;
+  .chapter-roles {
+    padding-left: 0;
   }
 }
