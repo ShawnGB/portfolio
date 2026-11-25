@@ -163,6 +163,30 @@
 }
 
 /* ========================================
+   TINTED CTA - soft serif link with a faint fill
+   Used for primary in-content actions (home hero, project cards)
+   ======================================== */
+
+a.cta-tinted {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.025em;
+  color: var(--ink-warm);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  background: var(--ink-tint-faint);
+  border-bottom: 1px solid var(--ink-rule-medium);
+  transition: var(--transition-fast);
+}
+
+a.cta-tinted:hover {
+  background: var(--ink-tint-subtle);
+  border-bottom-color: var(--ink-rule-strong);
+}
+
+/* ========================================
    CTA FOOTER - shared layout component
    Used by CTAFooter in views/layouts/layouts.templ
    ======================================== */
