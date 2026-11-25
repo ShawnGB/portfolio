@@ -73,5 +73,9 @@ templ Arts(images []utils.Image, pCtx i18n.PageContext) {
 				<source src="/static/images/arts/IMG_3991.mp4" type="video/mp4"/>
 			</video>
 		</section>
+		<section class="arts-support">
+			<p>{ pCtx.T("arts.support.text") }</p>
+			<a href="https://ko-fi.com/shawngordonbecker" class="cta-link" target="_blank" rel="noopener">{ pCtx.T("arts.support.link") }</a>
+		</section>
 	}
 }

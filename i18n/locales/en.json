@@ -270,5 +270,8 @@
   "consent.decline": "Decline",
   "footer.arts": "Photography & music",
   "legal.imprint.metaDesc": "Legal notice for shawnbecker.de: who is responsible for this website and how to reach him, according to § 5 DDG.",
-  "legal.privacy.metaDesc": "Privacy policy for shawnbecker.de: what data is processed, by which services, on what legal basis, and your rights under the GDPR."
+  "legal.privacy.metaDesc": "Privacy policy for shawnbecker.de: what data is processed, by which services, on what legal basis, and your rights under the GDPR.",
+  "footer.support": "Support me",
+  "arts.support.text": "I follow what I care about – sound, code, wood, whatever comes next – and that path isn't always the financially sensible one. If you like what you see and want to help me keep going, you can support me here. Thank you.",
+  "arts.support.link": "Support me on Ko-fi →"
 }

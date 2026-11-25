@@ -269,5 +269,8 @@
   "consent.decline": "Ablehnen",
   "footer.arts": "Fotografie & Musik",
   "legal.imprint.metaDesc": "Impressum von shawnbecker.de: Angaben zum Verantwortlichen für diese Website und Kontakt gemäß § 5 DDG.",
-  "legal.privacy.metaDesc": "Datenschutzerklärung von shawnbecker.de: welche Dienste welche Daten verarbeiten, auf welcher Rechtsgrundlage und welche Rechte nach DSGVO bestehen."
+  "legal.privacy.metaDesc": "Datenschutzerklärung von shawnbecker.de: welche Dienste welche Daten verarbeiten, auf welcher Rechtsgrundlage und welche Rechte nach DSGVO bestehen.",
+  "footer.support": "Unterstützen",
+  "arts.support.text": "Ich folge dem, was mir wichtig ist – Klang, Code, Holz, was als Nächstes kommt – und dieser Weg ist nicht immer der finanziell vernünftige. Wenn dir gefällt, was du siehst, und du mich dabei unterstützen möchtest, kannst du das hier tun. Danke.",
+  "arts.support.link": "Unterstütze mich auf Ko-fi →"
 }

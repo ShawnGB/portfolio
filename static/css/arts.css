@@ -79,3 +79,17 @@
   }
 
 }
+
+/* Closing note after the video: personal support link (Ko-fi) */
+.arts-support {
+  max-width: 60ch;
+  margin: var(--space-4xl) auto var(--space-2xl);
+  text-align: center;
+}
+
+.arts-support p {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0 auto var(--space-lg);
+}
+
