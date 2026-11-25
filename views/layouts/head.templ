@@ -1,6 +1,9 @@
 package layouts
 
-import "mymodules/gofolio/i18n"
+import (
+	"mymodules/gofolio/bundle"
+	"mymodules/gofolio/i18n"
+)
 
 templ Head(pCtx i18n.PageContext, pagetitle string, pagedescription string) {
 	<head>
@@ -23,7 +26,10 @@ templ Head(pCtx i18n.PageContext, pagetitle string, pagedescription string) {
 		<meta property="og:url" content={ string("https://shawnbecker.de" + string(pCtx.CurrentLangLink(pCtx.BasePath))) }/>
 		<meta property="og:title" content={ pagetitle }/>
 		<meta property="og:description" content={ pagedescription }/>
-		<meta property="og:image" content="https://shawnbecker.de/static/images/website/shawn-hero.webp"/>
+		<meta property="og:image" content="https://shawnbecker.de/static/images/website/og-image.jpg"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="630"/>
+		<meta property="og:image:alt" content="Shawn Gordon Becker – Building thoughtful digital products"/>
 		if pCtx.ActiveLang == "en" {
 			<meta property="og:locale" content="en_US"/>
 			<meta property="og:locale:alternate" content="de_DE"/>
@@ -36,7 +42,7 @@ templ Head(pCtx i18n.PageContext, pagetitle string, pagedescription string) {
 		<meta name="twitter:url" content={ string("https://shawnbecker.de" + string(pCtx.CurrentLangLink(pCtx.BasePath))) }/>
 		<meta name="twitter:title" content={ pagetitle }/>
 		<meta name="twitter:description" content={ pagedescription }/>
-		<meta name="twitter:image" content="https://shawnbecker.de/static/images/website/shawn-hero.webp"/>
+		<meta name="twitter:image" content="https://shawnbecker.de/static/images/website/og-image.jpg"/>
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/static/favicon.svg"/>
 		<!-- Google Fonts - Inky Minimalism Typography -->
@@ -44,18 +50,9 @@ templ Head(pCtx i18n.PageContext, pagetitle string, pagedescription string) {
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 		<!-- Stylesheets (versioned for cache-busting) -->
-		<link rel="stylesheet" href="/static/styles.css?v=20261125a"/>
+		<link rel="stylesheet" href={ "/static/styles.css?v=" + bundle.CSSVersion() }/>
 		<!-- Scripts -->
 		<script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C24CERYFB"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-			gtag("config", "G-8C24CERYFB");
-		</script>
 		<!-- Structured Data (Schema.org JSON-LD) -->
 		<script type="application/ld+json">
 			{

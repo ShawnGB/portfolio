@@ -5,5 +5,27 @@ import "mymodules/gofolio/i18n"
 templ Footer(pCtx i18n.PageContext) {
 	<footer>
 		<p class="copyright">{ pCtx.T("footer.copyright") }</p>
+		<div class="footer-legal">
+			<a href={ pCtx.CurrentLangLink("/impressum") }>{ pCtx.T("footer.imprint") }</a>
+			<a href={ pCtx.CurrentLangLink("/datenschutz") }>{ pCtx.T("footer.privacy") }</a>
+			<button type="button" class="consent-reopen">{ pCtx.T("footer.cookieSettings") }</button>
+		</div>
 	</footer>
+	@ConsentBanner(pCtx)
+}
+
+// ConsentBanner asks before Google Analytics loads. It stays hidden until
+// consent.js finds no stored choice, so nothing flashes for returning visitors.
+templ ConsentBanner(pCtx i18n.PageContext) {
+	<div id="consent-banner" class="consent-banner" role="dialog" aria-live="polite" aria-label={ pCtx.T("consent.label") } hidden>
+		<p>
+			{ pCtx.T("consent.text") }
+			<a href={ pCtx.CurrentLangLink("/datenschutz") }>{ pCtx.T("consent.more") }</a>
+		</p>
+		<div class="consent-actions">
+			<button type="button" class="consent-button" data-consent="denied">{ pCtx.T("consent.decline") }</button>
+			<button type="button" class="consent-button" data-consent="granted">{ pCtx.T("consent.accept") }</button>
+		</div>
+	</div>
+	<script src="/static/js/consent.js" data-ga-id="G-8C24CERYFB" defer></script>
 }

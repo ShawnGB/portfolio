@@ -211,6 +211,9 @@
   "contact.error.required": "Bitte fülle alle Pflichtfelder aus (Vorname, Nachname, E-Mail und Nachricht).",
   "contact.error.config": "Deine Nachricht konnte aufgrund eines Serverkonfigurationsfehlers nicht gesendet werden. Bitte nutze die E-Mail-Adresse unten.",
   "contact.error.send": "Deine Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut oder nutze die E-Mail-Adresse unten.",
+  "contact.error.email": "Bitte gib eine gültige E-Mail-Adresse ein.",
+  "contact.error.tooLong": "Eines der Felder ist zu lang. Bitte kürze deine Nachricht (max. 5.000 Zeichen).",
+  "contact.error.rateLimit": "Zu viele Nachrichten in kurzer Zeit. Bitte versuche es in ein paar Minuten erneut.",
   "contact.alternative.email": "Oder direkt per E-Mail:",
   "contact.alternative.linkedin": "Verbinden auf",
 
@@ -235,5 +238,16 @@
   "arts.pageMetaDescription": "Kreative Erkundungen jenseits des Codes: Fotografie, Sounddesign, visuelle Experimente. Künstlerische Praxis in Berlin.",
 
   "contact.pageTitle": "Kontakt Shawn Becker – Entwickler in Berlin",
-  "contact.pageMetaDescription": "In Berlin, offen für Festanstellungen und ausgewählte Projekte. TypeScript, React, Go. Bei Interesse gerne melden."
+  "contact.pageMetaDescription": "In Berlin, offen für Festanstellungen und ausgewählte Projekte. TypeScript, React, Go. Bei Interesse gerne melden.",
+
+  "footer.imprint": "Impressum",
+  "footer.privacy": "Datenschutz",
+  "footer.cookieSettings": "Cookie-Einstellungen",
+  "legal.imprint.pageTitle": "Impressum – Shawn Becker",
+  "legal.privacy.pageTitle": "Datenschutzerklärung – Shawn Becker",
+  "consent.label": "Cookie-Einwilligung",
+  "consent.text": "Ich würde gern Google Analytics nutzen, um zu sehen, wie die Seite genutzt wird. Dabei werden Cookies gesetzt – aber nur, wenn du zustimmst.",
+  "consent.more": "Datenschutzerklärung",
+  "consent.accept": "Akzeptieren",
+  "consent.decline": "Ablehnen"
 }

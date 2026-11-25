@@ -212,6 +212,9 @@
   "contact.error.required": "Please fill out all required fields (First Name, Last Name, Email, and Message).",
   "contact.error.config": "Your message could not be sent due to a server configuration issue. Please use the email address below.",
   "contact.error.send": "Your message could not be sent. Please try again later or use the email address below.",
+  "contact.error.email": "Please enter a valid email address.",
+  "contact.error.tooLong": "One of the fields is too long. Please shorten your message (max. 5,000 characters).",
+  "contact.error.rateLimit": "Too many messages in a short time. Please try again in a few minutes.",
   "contact.alternative.email": "Or email directly:",
   "contact.alternative.linkedin": "Connect on",
 
@@ -236,5 +239,16 @@
   "arts.pageMetaDescription": "Creative explorations beyond code: photography, sound design, visual experiments. A developer's artistic practice in Berlin.",
 
   "contact.pageTitle": "Contact Shawn Becker – Developer in Berlin",
-  "contact.pageMetaDescription": "Based in Berlin, open to permanent positions and select collaborations. TypeScript, React, Go. If something resonated, reach out."
+  "contact.pageMetaDescription": "Based in Berlin, open to permanent positions and select collaborations. TypeScript, React, Go. If something resonated, reach out.",
+
+  "footer.imprint": "Legal notice",
+  "footer.privacy": "Privacy",
+  "footer.cookieSettings": "Cookie settings",
+  "legal.imprint.pageTitle": "Legal Notice – Shawn Becker",
+  "legal.privacy.pageTitle": "Privacy Policy – Shawn Becker",
+  "consent.label": "Cookie consent",
+  "consent.text": "I'd like to use Google Analytics to see how visitors use this site. It sets cookies and only loads if you agree.",
+  "consent.more": "Privacy policy",
+  "consent.accept": "Accept",
+  "consent.decline": "Decline"
 }

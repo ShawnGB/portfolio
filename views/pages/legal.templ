@@ -1,0 +1,92 @@
+package pages
+
+import "mymodules/gofolio/i18n"
+import "mymodules/gofolio/views/layouts"
+
+// Legal pages are written out per language instead of going through the
+// locale files: they are long, rarely change, and must stay word-for-word.
+
+templ legalAddress() {
+	<p>
+		Shawn Gordon Becker<br/>
+		Baseler Str. 38<br/>
+		12205 Berlin<br/>
+		Deutschland
+	</p>
+}
+
+templ Impressum(pCtx i18n.PageContext) {
+	@layouts.BaseHtml(pCtx, pCtx.T("legal.imprint.pageTitle"), pCtx.T("legal.imprint.pageTitle")) {
+		<div class="page-grid-container legal-page">
+			if pCtx.ActiveLang == "de" {
+				<h1>Impressum</h1>
+				<h2>Angaben gemäß § 5 DDG</h2>
+				@legalAddress()
+				<h2>Kontakt</h2>
+				<p>E-Mail: <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
+				<h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+				@legalAddress()
+				<h2>Haftung für Links</h2>
+				<p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für diese fremden Inhalte ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+			} else {
+				<h1>Legal Notice</h1>
+				<h2>Information according to § 5 DDG (German Digital Services Act)</h2>
+				@legalAddress()
+				<h2>Contact</h2>
+				<p>Email: <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
+				<h2>Responsible for content according to § 18 (2) MStV</h2>
+				@legalAddress()
+				<h2>Liability for links</h2>
+				<p>This website contains links to external third-party websites whose content I have no control over. The respective provider or operator is always responsible for that content. If I become aware of any legal violations, I will remove such links immediately.</p>
+				<p><a href={ pCtx.LanguageSwitchURL("de") }>German version (legally binding)</a></p>
+			}
+		</div>
+	}
+}
+
+templ Privacy(pCtx i18n.PageContext) {
+	@layouts.BaseHtml(pCtx, pCtx.T("legal.privacy.pageTitle"), pCtx.T("legal.privacy.pageTitle")) {
+		<div class="page-grid-container legal-page">
+			if pCtx.ActiveLang == "de" {
+				<h1>Datenschutzerklärung</h1>
+				<h2>1. Verantwortlicher</h2>
+				@legalAddress()
+				<p>E-Mail: <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
+				<h2>2. Hosting und Server-Logs</h2>
+				<p>Diese Website wird bei Render Services, Inc., San Francisco, USA, gehostet. Beim Aufruf der Website verarbeitet der Hoster technisch notwendige Daten (z. B. IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp), um die Website auszuliefern und ihre Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Soweit Daten in die USA übermittelt werden, erfolgt dies auf Grundlage eines Angemessenheitsbeschlusses bzw. der EU-Standardvertragsklauseln.</p>
+				<h2>3. Google Fonts</h2>
+				<p>Zur einheitlichen Darstellung von Schriften werden Google Fonts der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, geladen. Dabei wird Ihre IP-Adresse an Google übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen Darstellung).</p>
+				<h2>4. HTMX über unpkg</h2>
+				<p>Die JavaScript-Bibliothek HTMX wird über das Content-Delivery-Network unpkg (betrieben von Cloudflare, Inc., USA) geladen. Dabei wird Ihre IP-Adresse an den Anbieter übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer schnellen, zuverlässigen Auslieferung).</p>
+				<h2>5. Kontaktformular</h2>
+				<p>Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben (Name, E-Mail-Adresse, optional Telefonnummer, Nachricht) verarbeitet, um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bzw. Art. 6 Abs. 1 lit. f DSGVO. Die Nachricht wird über den E-Mail-Dienst Resend (Plus Five Five, Inc., San Francisco, USA) an mich zugestellt. Die Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+				<p>Zum Schutz vor Spam wird hCaptcha der Intuition Machines, Inc., San Francisco, USA, eingesetzt. hCaptcha wird nur auf der Kontaktseite geladen und verarbeitet dabei u. a. Ihre IP-Adresse und Merkmale Ihres Browsers. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Schutz vor Missbrauch).</p>
+				<h2>6. Google Analytics (nur mit Einwilligung)</h2>
+				<p>Wenn Sie über das Cookie-Banner einwilligen, nutzt diese Website Google Analytics 4 der Google Ireland Limited, um die Nutzung der Website statistisch auszuwerten. Dabei werden Cookies gesetzt und Nutzungsdaten (z. B. aufgerufene Seiten, Verweildauer, Gerätetyp, gekürzte IP-Adresse) verarbeitet; eine Übermittlung an Google LLC in den USA ist möglich. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Ohne Einwilligung wird Google Analytics nicht geladen.</p>
+				<p>Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen: <button type="button" class="consent-reopen">Cookie-Einstellungen öffnen</button></p>
+				<h2>7. Ihre Rechte</h2>
+				<p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21). Eine erteilte Einwilligung können Sie jederzeit widerrufen (Art. 7 Abs. 3). Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit.</p>
+			} else {
+				<h1>Privacy Policy</h1>
+				<h2>1. Controller</h2>
+				@legalAddress()
+				<p>Email: <a href="mailto:contact@shawnbecker.de">contact@shawnbecker.de</a></p>
+				<h2>2. Hosting and server logs</h2>
+				<p>This website is hosted by Render Services, Inc., San Francisco, USA. When you visit the site, the host processes technically necessary data (e.g. IP address, date and time, page requested, browser type) to deliver the website and keep it secure. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in secure and stable operation). Where data is transferred to the USA, this is based on an adequacy decision or the EU standard contractual clauses.</p>
+				<h2>3. Google Fonts</h2>
+				<p>Fonts are loaded from Google Fonts, provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Your IP address is transmitted to Google in the process. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in consistent typography).</p>
+				<h2>4. HTMX via unpkg</h2>
+				<p>The JavaScript library HTMX is loaded from the unpkg content delivery network (operated by Cloudflare, Inc., USA). Your IP address is transmitted to the provider in the process. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in fast, reliable delivery).</p>
+				<h2>5. Contact form</h2>
+				<p>If you use the contact form, the details you enter (name, email address, optional phone number, message) are processed to answer your enquiry. The legal basis is Art. 6(1)(b) GDPR or Art. 6(1)(f) GDPR. The message is delivered to me via the email service Resend (Plus Five Five, Inc., San Francisco, USA). The data is deleted once the enquiry has been fully dealt with, unless statutory retention obligations apply.</p>
+				<p>To protect against spam, hCaptcha by Intuition Machines, Inc., San Francisco, USA, is used. hCaptcha is only loaded on the contact page and processes, among other things, your IP address and browser characteristics. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in preventing abuse).</p>
+				<h2>6. Google Analytics (only with consent)</h2>
+				<p>If you consent via the cookie banner, this website uses Google Analytics 4 by Google Ireland Limited to analyse how the site is used. Cookies are set and usage data (e.g. pages visited, time on page, device type, shortened IP address) is processed; transfer to Google LLC in the USA is possible. The legal basis is your consent under Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent, Google Analytics is not loaded.</p>
+				<p>You can withdraw your consent at any time with effect for the future: <button type="button" class="consent-reopen">Open cookie settings</button></p>
+				<h2>7. Your rights</h2>
+				<p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on Art. 6(1)(f) GDPR (Art. 21). You can withdraw consent at any time (Art. 7(3)). You may also lodge a complaint with a data protection supervisory authority, e.g. the Berlin Commissioner for Data Protection and Freedom of Information.</p>
+				<p><a href={ pCtx.LanguageSwitchURL("de") }>German version (legally binding)</a></p>
+			}
+		</div>
+	}
+}
