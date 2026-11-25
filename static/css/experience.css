@@ -156,6 +156,7 @@
   padding: var(--space-sm) 0;
   border-bottom: 1px solid var(--border-subtle);
   font-size: var(--text-body-sm);
+  line-height: 1.45;
 }
 
 .glance-years {
