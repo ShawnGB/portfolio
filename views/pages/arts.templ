@@ -3,6 +3,49 @@ package pages
 import "mymodules/gofolio/i18n"
 import "mymodules/gofolio/views/layouts"
 
+type artsSection struct {
+	Images []string
+	Class  string
+}
+
+// artsLayout is the editorial rhythm of the gallery: each entry takes the
+// next n images. Images beyond the layout are not shown (20.webp is a still
+// of the closing video, which the page shows instead).
+var artsLayout = []struct {
+	n     int
+	class string
+}{
+	{3, "arts-grid"},
+	{3, "arts-grid"},
+	{1, "arts-anchor arts-anchor--slim"},
+	{3, "arts-grid"},
+	{3, "arts-grid"},
+	{3, "arts-grid"},
+	{2, "arts-grid--halves"},
+}
+
+// buildArtsSections distributes images over artsLayout without ever
+// slicing out of range, so a missing or extra image can't break the page.
+// The first image (01) is intentionally not shown in the gallery.
+func buildArtsSections(imgs []string) []artsSection {
+	if len(imgs) > 0 {
+		imgs = imgs[1:]
+	}
+	var sections []artsSection
+	take := func(n int, class string) {
+		n = min(n, len(imgs))
+		sections = append(sections, artsSection{Images: imgs[:n], Class: class})
+		imgs = imgs[n:]
+	}
+	for _, l := range artsLayout {
+		if len(imgs) == 0 {
+			return sections
+		}
+		take(l.n, l.class)
+	}
+	return sections
+}
+
 templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext) {
 	if len(imgs) > 0 {
 		<section class={ sectionClass }>
@@ -15,18 +58,14 @@ templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext
 
 templ Arts(images []string, pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "arts.title", "arts.intro.p1", "arts.pageTitle", "arts.pageMetaDescription") {
-		@artsImageSection(images[1:4], "arts-grid", pCtx)
-		@artsImageSection(images[4:7], "arts-grid", pCtx)
-		@artsImageSection(images[7:8], "arts-anchor arts-anchor--slim", pCtx)
-		@artsImageSection(images[8:11], "arts-grid", pCtx)
-		@artsImageSection(images[11:14], "arts-grid", pCtx)
-		@artsImageSection(images[14:17], "arts-grid", pCtx)
-		@artsImageSection(images[17:19], "arts-grid--halves", pCtx)
+		for _, s := range buildArtsSections(images) {
+			@artsImageSection(s.Images, s.Class, pCtx)
+		}
 		<section class="arts-anchor arts-anchor--contained">
 			<video autoplay loop muted playsinline>
 				<source src="/static/images/arts/IMG_3991.webm" type="video/webm"/>
 				<source src="/static/images/arts/IMG_3991.mp4" type="video/mp4"/>
 			</video>
 		</section>
-}
+	}
 }
