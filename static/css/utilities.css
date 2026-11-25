@@ -228,12 +228,12 @@ a.cta-tinted:hover {
     flex-direction: column;
     gap: var(--space-lg);
   }
+}
 
-  .cta-footer-grid .contact-sentence {
-    order: 1;
-  }
-
-  .cta-footer-grid .cta-button-wrapper {
-    order: 2;
-  }
+/* Full-bleed: break out of the page container to the full viewport width.
+   The one place this pattern lives; add the class instead of copying it. */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }

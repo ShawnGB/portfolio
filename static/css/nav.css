@@ -40,7 +40,9 @@ nav {
   display: inline-block;
 }
 
-#logo-link h3 {
+#logo-link .logo-mark {
+  display: block;
+  line-height: 1.2;
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: var(--weight-semibold);
@@ -50,7 +52,7 @@ nav {
   transition: opacity 0.2s ease;
 }
 
-#logo-link:hover h3 {
+#logo-link:hover .logo-mark {
   opacity: 0.65;
 }
 

@@ -8,6 +8,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: var(--paper-warm);
@@ -19,6 +22,27 @@ body {
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Paper grain: one fixed layer over the whole page, as specified in
+   EDITORIAL_MONOCHROME.md. SVG fractal noise, multiplied at 4% so it reads
+   as texture, not pattern. It never catches clicks and is skipped for print
+   and for people who ask for less transparency. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media print, (prefers-reduced-transparency: reduce) {
+  body::before {
+    display: none;
+  }
 }
 
 /* =================================
@@ -60,6 +84,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
+  overflow-wrap: break-word;
   padding: 0;
   color: var(--text-primary);
 }
@@ -207,7 +232,7 @@ img {
   height: auto;
 }
 
-article {
+.interests-grid-inline article {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -220,7 +245,7 @@ article {
     box-shadow 0.2s ease;
 }
 
-article:hover {
+.interests-grid-inline article:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-raised);
 }
@@ -325,6 +350,7 @@ hr,
 }
 
 .page-container {
+  flex: 1 0 auto;
   width: 100%;
   max-width: var(--container-max);
   margin: var(--nav-height) auto 0;
@@ -337,8 +363,45 @@ hr,
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .page-container {
     padding: 0 1rem;
   }
 }
+
+/* Page title of subpages: semantically the h1, visually the section-heading size */
+h1.page-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 2.5rem 0 1rem 0;
+}
+
+/* Visible to screen readers and search engines only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Long German compounds ("Datenschutzerklärung") can be wider than a phone.
+   Hyphenate headings only on small screens, and never the hero line. */
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    hyphens: auto;
+  }
+
+  h1.hero-main-visual-text {
+    hyphens: manual;
+  }
+}
+

@@ -60,12 +60,6 @@
 }
 
 .breakout-image-container {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
   text-align: center;
@@ -164,7 +158,7 @@
   margin-bottom: var(--space-xs);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .chapter-roles {
     padding-left: 0;
   }

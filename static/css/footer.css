@@ -105,3 +105,10 @@ footer {
   background: var(--text-primary);
   color: var(--bg-base);
 }
+
+/* Arts link leads the footer links, set apart from the legal ones */
+.footer-legal a.footer-arts {
+  color: var(--text-secondary);
+  margin-right: var(--space-md);
+}
+

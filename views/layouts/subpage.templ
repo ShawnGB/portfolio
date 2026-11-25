@@ -6,7 +6,7 @@ templ SubpageTemplate(pCtx i18n.PageContext, sectionLabelKey string, introTextKe
 	@BaseHtml(pCtx, pCtx.T(metaTitleKey), pCtx.T(metaDescKey)) {
 		<div class="page-grid-container">
 			<section class="grid--intro">
-				<h2>{ pCtx.T(sectionLabelKey) }</h2>
+				<h1 class="page-title">{ pCtx.T(sectionLabelKey) }</h1>
 				<p>{ pCtx.T(introTextKey) }</p>
 			</section>
 			{ children... }

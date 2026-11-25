@@ -8,7 +8,7 @@ templ Navigation(pCtx i18n.PageContext) {
 		<div class="nav-inner">
 			<div class="nav-left-group">
 				<a id="logo-link" href={ pCtx.CurrentLangLink("/") }>
-					<h3>{ pCtx.T("nav.logo") }</h3>
+					<span class="logo-mark">{ pCtx.T("nav.logo") }</span>
 				</a>
 				<div class="language-switcher">
 					<a href={ pCtx.LanguageSwitchURL("de") } class="lang-link">de</a>

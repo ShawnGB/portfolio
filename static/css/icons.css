@@ -10,53 +10,27 @@
   transition: opacity 0.2s ease;
 }
 
-/* Icon Sizes */
-
-/* Social Icons Container */
-
-/* Icon with Text Link */
-
-.cta-link.with-icon {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-md);
+/* Icon inside a .button (e.g. the CV download). Layout, type and colours
+   come from .button / .button--solid in base.css; only the icon motion lives here. */
+.button.with-icon {
   padding: var(--space-md) var(--space-xl);
-  background: var(--paper-mid);
-  border-radius: var(--radius-md);
-  border: 2px solid var(--ink-warm);
-  font-size: var(--text-md);
-  font-weight: var(--weight-semibold);
-  color: var(--ink-warm);
-  text-decoration: none;
-  transition: all 0.2s ease;
   white-space: nowrap;
 }
 
-.cta-link.with-icon .icon {
-  color: var(--ink-warm);
+.button.with-icon .icon {
+  color: currentColor;
   transition: transform 0.2s ease;
 }
 
-.cta-link.with-icon:hover {
-  background: var(--ink-warm);
-  color: var(--paper-warm);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-subtle);
-}
-
-.cta-link.with-icon:hover .icon {
-  color: var(--paper-warm);
-  transform: scale(1.1);
-}
-
-.cta-link.with-icon.download:hover .icon {
-  transform: translateY(3px) scale(1.1);
+.button.with-icon.download:hover .icon {
+  transform: translateY(3px);
 }
 
 @media (max-width: 768px) {
-
-  .cta-link.with-icon {
-    font-size: var(--text-body-sm);
+  .button.with-icon {
     padding: var(--space-sm) var(--space-lg);
+    white-space: normal;
+    max-width: 100%;
+    text-align: left;
   }
 }

@@ -7,6 +7,7 @@ import "mymodules/gofolio/views/layouts"
 templ Experience(pCtx i18n.PageContext) {
 	@layouts.BaseHtml(pCtx, pCtx.T("experience.pageTitle"), pCtx.T("experience.pageMetaDescription")) {
 		<div class="page-grid-container">
+			<h1 class="sr-only">{ pCtx.T("nav.experience") }</h1>
 			<div class="grid-section experience-chapter-1">
 				<h2>{ pCtx.T("experience.chapter1.title") }</h2>
 				<p class="label-mono">{ pCtx.T("experience.chapter1.subtitle") }</p>
@@ -17,7 +18,7 @@ templ Experience(pCtx i18n.PageContext) {
 					<p>@pCtx.TRich("experience.chapter1.p2")
 </p>
 				</div>
-				<div class="breakout-image-container">
+				<div class="breakout-image-container full-bleed">
 					<img src="/static/images/experience/a-performance-at-keller.webp" alt={ pCtx.T("experience.chapter1.image.alt") } loading="lazy" class="breakout-image-horizontal"/>
 					<span class="image-caption">{ pCtx.T("experience.chapter1.image.caption") }</span>
 				</div>

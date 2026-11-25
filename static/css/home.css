@@ -5,7 +5,7 @@
   grid-template-columns: 45% 55%;
   align-items: center;
   padding: 5rem 3rem 4rem;
-  margin: 0 -2rem var(--space-5xl);
+  margin: 0 -2rem calc(var(--space-5xl) + 4rem);
   background: linear-gradient(
     to bottom,
     var(--paper-mid) 0%,
@@ -77,7 +77,7 @@ h1.hero-main-visual-text {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 901px) {
   h1.hero-main-visual-text {
     letter-spacing: -0.015em;
   }

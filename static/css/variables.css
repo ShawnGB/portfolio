@@ -10,7 +10,7 @@
 
   /* Warm Paper Tones */
   --paper-warm: #f8f6f2; /* Warm beige-tinted off-white */
-  --paper-mid: #f7f6f4; /* Mid paper - for subtle sections */
+  --paper-mid: #f1eee8; /* Mid paper - visibly darker than paper-warm, for alternate sections and insets */
   --paper-light: #fdfcfb; /* Lightest - for cards/elevated surfaces */
 
   /* Warm Ink Blacks */
