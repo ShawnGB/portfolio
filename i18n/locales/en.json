@@ -223,14 +223,14 @@
   "notfound.message": "This page doesn't exist. You may have followed a broken link.",
   "notfound.cta": "Back to home",
 
-  "home.pageTitle": "Shawn Becker – Fullstack Developer & Product Thinker",
-  "home.pageMetaDescription": "Web developer in Berlin. TypeScript, Go, React. I build web products with care.",
+  "home.pageTitle": "Shawn Becker – Software Engineer in Berlin (Go, TypeScript)",
+  "home.pageMetaDescription": "Software engineer in Berlin with a backend focus: Go, TypeScript, Node.js, PostgreSQL. Also builds campers and tiny houses out of wood.",
 
-  "about.pageTitle": "Shawn Becker – About Me, Developer & Thinker",
-  "about.pageMetaDescription": "Web developer, 7+ years. TypeScript, React, Go. Product thinking meets technical depth. Based in Berlin.",
+  "about.pageTitle": "About Shawn Becker – Software Engineer in Berlin",
+  "about.pageMetaDescription": "Software engineer in Berlin. Backend and systems work with TypeScript and Go, a background in sound engineering and live events, and a workshop full of wood.",
 
-  "experience.pageTitle": "Shawn Becker – 7+ Years in Web Development",
-  "experience.pageMetaDescription": "7+ years web development: React, TypeScript, Go. Product management & technical leadership for startups. Based in Berlin.",
+  "experience.pageTitle": "Shawn Becker – From Sound Engineering to Backend Systems",
+  "experience.pageMetaDescription": "From audio engineering and co-running a Berlin club to product roles and software development with React, TypeScript, Node.js and Go.",
 
   "projects.pageTitle": "Shawn Becker – Web Projects & Creative Work",
   "projects.pageMetaDescription": "Portfolio of web development projects: Go SSR, React SPAs, WordPress sites. Cultural projects & collaborations in Berlin.",

@@ -222,14 +222,14 @@
   "notfound.message": "Diese Seite existiert nicht. Möglicherweise hast du einem defekten Link gefolgt.",
   "notfound.cta": "Zurück zur Startseite",
 
-  "home.pageTitle": "Shawn Becker – Fullstack-Entwickler & Produktdenker",
-  "home.pageMetaDescription": "Webentwickler in Berlin. TypeScript, Go, React. Ich baue Webprodukte mit Sorgfalt.",
+  "home.pageTitle": "Shawn Becker – Softwareentwickler in Berlin (Go, TypeScript)",
+  "home.pageMetaDescription": "Softwareentwickler in Berlin mit Backend-Fokus: Go, TypeScript, Node.js, PostgreSQL. Baut außerdem Campervans und Tiny Houses aus Holz.",
 
-  "about.pageTitle": "Shawn Becker – Über mich, Entwickler & Denker",
-  "about.pageMetaDescription": "Webentwickler, 7+ Jahre. TypeScript, React, Go. Produktdenken trifft technische Tiefe. Berlin.",
+  "about.pageTitle": "Über Shawn Becker – Softwareentwickler in Berlin",
+  "about.pageMetaDescription": "Softwareentwickler in Berlin. Backend und Systeme mit TypeScript und Go, ein Hintergrund in Tontechnik und Veranstaltungen und eine Werkstatt voller Holz.",
 
-  "experience.pageTitle": "Shawn Becker – 7+ Jahre Webentwicklung",
-  "experience.pageMetaDescription": "7+ Jahre Webentwicklung: React, TypeScript, Go. Produktmanagement & Tech-Leadership für Startups. Standort Berlin.",
+  "experience.pageTitle": "Shawn Becker – Von der Tontechnik zu Backend-Systemen",
+  "experience.pageMetaDescription": "Von Tontechnik und einem Berliner Club über Produktrollen zur Softwareentwicklung mit React, TypeScript, Node.js und Go.",
 
   "projects.pageTitle": "Shawn Becker – Webprojekte & Kreative Arbeiten",
   "projects.pageMetaDescription": "Portfolio: Go SSR, React SPAs, WordPress. Digitale & kulturelle Projekte aus Berlin. Webentwicklung mit Sinn.",
