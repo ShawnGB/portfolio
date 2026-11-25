@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"os"
 
+	"mymodules/gofolio/bundle"
 	"mymodules/gofolio/handlers"
 	"mymodules/gofolio/i18n"
 	"mymodules/gofolio/middleware"
@@ -28,8 +29,14 @@ func main() {
 
 	mux := http.NewServeMux()
 
+	if err := bundle.LoadCSS("./static/styles.css"); err != nil {
+		log.Fatalf("FATAL: bundling CSS: %v", err)
+	}
+	log.Printf("INFO: CSS bundled (version %s)", bundle.CSSVersion())
+	mux.HandleFunc("/static/styles.css", bundle.ServeCSS)
+
 	fs := http.FileServer(noDirListing{http.Dir("./static")})
-	mux.Handle("/static/", http.StripPrefix("/static/", fs))
+	mux.Handle("/static/", http.StripPrefix("/static/", staticCache(fs)))
 
 	mux.HandleFunc("/robots.txt", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/robots.txt")
@@ -59,6 +66,15 @@ func main() {
 	if err != nil {
 		log.Fatalf("FATAL: Server error: %v", err)
 	}
+}
+
+// staticCache lets browsers keep static files for a week. Files are not
+// content-hashed, so this stays well short of "immutable".
+func staticCache(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", "public, max-age=604800")
+		next.ServeHTTP(w, r)
+	})
 }
 
 // noDirListing wraps a FileSystem so directories return 404 instead of an
@@ -94,4 +110,6 @@ func registerPageRoutes(mux *http.ServeMux) {
 	mux.HandleFunc("/projects", handlers.PageHandler(pages.Projects))
 	mux.HandleFunc("/arts", handlers.ArtsHandler)
 	mux.HandleFunc("/contact", handlers.ContactHandler)
+	mux.HandleFunc("/impressum", handlers.PageHandler(pages.Impressum))
+	mux.HandleFunc("/datenschutz", handlers.PageHandler(pages.Privacy))
 }
