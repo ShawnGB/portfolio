@@ -4,7 +4,7 @@
    ================================= */
 
 .page-grid-container {
-  max-width: 1280px;
+  max-width: var(--container-grid);
   margin-left: auto;
   margin-right: auto;
   padding: 0 var(--grid-outer-padding);
@@ -14,7 +14,7 @@
 .grid-row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 32px;
+  gap: var(--space-xl);
 }
 
 /* =================================
@@ -107,13 +107,13 @@
 
 .grid-section {
   grid-column: 1 / -1;
-  padding: 64px 0;
+  padding: var(--space-3xl) 0;
   position: relative;
 }
 
 .grid-section.major-break {
   padding-top: 112px;
-  margin-top: 64px;
+  margin-top: var(--space-3xl);
 }
 
 /* =================================

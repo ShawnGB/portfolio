@@ -1,3 +1,17 @@
+/* Section numerals - shared look; position set per section below */
+.drives-path-section::before,
+.quote-image-beyond-module::before,
+.looking-for-section::before {
+  font-family: var(--font-display);
+  font-size: var(--section-number-size);
+  font-weight: var(--weight-extrabold);
+  line-height: 1;
+  color: var(--ink-warm);
+  opacity: var(--opacity-editorial-number);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .drives-path-section {
   position: relative;
 }
@@ -6,15 +20,7 @@
   content: "01";
   position: absolute;
   top: calc(var(--space-2xl) * -1);
-  right: -32px;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
+  right: calc(-1 * var(--space-xl));
 }
 
 .drives-path-section::after {
@@ -24,7 +30,7 @@
   left: 0;
   width: 4rem;
   height: 1px;
-  background: rgba(43, 43, 43, 0.15);
+  background: var(--ink-rule);
 }
 
 .drives-path-section .grid-row::after {
@@ -35,7 +41,7 @@
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-tertiary);
@@ -57,16 +63,8 @@
 .quote-image-beyond-module::before {
   content: "02";
   position: absolute;
-  top: 24px;
-  left: -32px;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
+  top: var(--space-lg);
+  left: calc(-1 * var(--space-xl));
 }
 
 .image-wrapper-hero {
@@ -91,8 +89,8 @@
   inset: 0;
   background: radial-gradient(
     ellipse at center,
-    rgba(255, 255, 255, 0.02) 0%,
-    rgba(255, 255, 255, 0) 70%
+    var(--highlight-faint) 0%,
+    var(--highlight-none) 70%
   );
   pointer-events: none;
   z-index: 1;
@@ -111,16 +109,8 @@
 .looking-for-section::before {
   content: "03";
   position: absolute;
-  top: -24px;
-  right: -32px;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
+  top: calc(-1 * var(--space-lg));
+  right: calc(-1 * var(--space-xl));
 }
 
 .looking-for-header {
@@ -131,7 +121,7 @@
 
 .quote-image-beyond-module .body-text p {
   color: var(--text-secondary);
-  font-size: 0.9375rem;
+  font-size: var(--text-body-sm);
   line-height: 1.7;
   margin-bottom: var(--space-md);
 }

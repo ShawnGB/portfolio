@@ -61,12 +61,28 @@
      ================================= */
 
   /* Opacity Tokens */
-  --opacity-editorial-number: 0.05;
+  --opacity-editorial-number: 0.04; /* large background section numerals */
   --opacity-editorial-rule: 0.15;
   --opacity-image-filter: 0.9;
 
   /* Filter Presets */
-  --filter-monochrome-editorial: saturate(0.82) contrast(0.92) opacity(0.9);
+  --filter-monochrome-editorial: saturate(0.82) contrast(0.92); /* pair with --opacity-image-filter */
+
+  /* Ink tints - --ink-warm (#2b2b2b) at fixed alphas */
+  --ink-tint-faint: rgba(43, 43, 43, 0.025); /* CTA fill */
+  --ink-tint-subtle: rgba(43, 43, 43, 0.05); /* CTA fill on hover */
+  --ink-tint-edge: rgba(43, 43, 43, 0.06); /* hairline edge shadows */
+  --ink-rule: rgba(43, 43, 43, 0.15); /* editorial hairlines */
+  --ink-rule-medium: rgba(43, 43, 43, 0.25); /* CTA underline */
+  --ink-rule-strong: rgba(43, 43, 43, 0.5); /* CTA underline on hover */
+
+  /* Paper overlays */
+  --paper-warm-translucent: rgba(248, 246, 242, 0.95); /* sticky nav, image overlays */
+  --highlight-faint: rgba(255, 255, 255, 0.02); /* radial depth gradients */
+  --highlight-none: rgba(255, 255, 255, 0);
+
+  /* Section numerals ("01", "02") */
+  --section-number-size: 10.2rem;
 
   /* =================================
      TYPOGRAPHY SCALE
@@ -88,6 +104,8 @@
   /* Type Scale */
   --text-xs: 0.6875rem; /* 11px - Small/Meta */
   --text-sm: 0.8rem; /* 12.8px - Captions */
+  --text-ui: 0.875rem; /* 14px - Buttons, small, UI labels */
+  --text-body-sm: 0.9375rem; /* 15px - Small body, nav links */
   --text-base: 0.9rem; /* 14.4px - Body text */
   --text-md: 1rem; /* 16px - Large body */
   --text-lg: 1.125rem; /* 18px - Lead paragraphs */
@@ -121,6 +139,12 @@
   --shadow-card: 0 4px 8px rgba(28, 28, 28, 0.06), 0 12px 24px rgba(28, 28, 28, 0.04);
   --shadow-card-hover: 0 8px 16px rgba(28, 28, 28, 0.08), 0 16px 32px rgba(28, 28, 28, 0.06);
 
+  /* Interaction elevation */
+  --shadow-lift: 0 2px 8px rgba(43, 43, 43, 0.1); /* button hover */
+  --shadow-raised: 0 4px 12px rgba(43, 43, 43, 0.08); /* card hover */
+  --shadow-menu: 0 8px 16px rgba(28, 28, 28, 0.06); /* mobile nav dropdown */
+  --shadow-overlay: 0 8px 24px rgba(43, 43, 43, 0.08); /* consent banner */
+
   /* =================================
      TRANSITIONS
      ================================= */
@@ -145,6 +169,8 @@
   --nav-height: 3.5rem;
   --container-max: 800px; /* Tighter for reading */
   --container-wide: 1200px;
+  --container-nav: 1120px;
+  --container-grid: 1280px;
   --grid-outer-padding: 64px;
   --grid-outer-padding-mobile: 24px;
 

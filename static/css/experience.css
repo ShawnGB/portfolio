@@ -13,8 +13,8 @@
 .experience-chapter-3 h2::before {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 400;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-regular);
   letter-spacing: 0.08em;
   color: var(--text-tertiary);
   margin-bottom: 0.6rem;
@@ -77,8 +77,6 @@
   object-fit: cover;
   object-position: center 40%;
   display: block;
-  filter: saturate(0.82) contrast(0.92);
-  opacity: 0.9;
   mix-blend-mode: multiply;
 }
 
@@ -100,8 +98,6 @@
   object-position: center;
   display: block;
   border-radius: var(--radius-sm);
-  filter: saturate(0.82) contrast(0.92);
-  opacity: 0.9;
   mix-blend-mode: multiply;
 }
 
@@ -118,8 +114,6 @@
   height: auto;
   display: block;
   border-radius: var(--radius-sm);
-  filter: saturate(0.82) contrast(0.92);
-  opacity: 0.9;
   mix-blend-mode: multiply;
 }
 

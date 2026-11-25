@@ -37,7 +37,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-tertiary);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 
 /* Vertical rule - optional left accent */
@@ -90,7 +90,7 @@
 .label-mono {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-tertiary);
@@ -113,7 +113,7 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-md);
-  margin-bottom: 24px;
+  margin-bottom: var(--space-lg);
 }
 
 .values-list .icon {
@@ -125,14 +125,14 @@
 }
 
 .values-list .value-content h3 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
   margin: 0 0 0.25rem 0;
   color: var(--text-primary);
 }
 
 .values-list .value-content p {
-  font-size: 0.9375rem;
+  font-size: var(--text-body-sm);
   line-height: 1.7;
   color: var(--text-secondary);
   margin: 0;
@@ -150,7 +150,7 @@
   padding-left: 1.25rem;
   margin-bottom: 6px;
   line-height: 1.7;
-  font-size: 0.9375rem;
+  font-size: var(--text-body-sm);
   color: var(--text-secondary);
 }
 
@@ -188,14 +188,14 @@
 .cta-footer-grid .contact-sentence {
   grid-column: 1 / -1;
   text-align: center;
-  font-size: 0.9375rem;
+  font-size: var(--text-body-sm);
   margin-top: var(--space-lg);
   color: var(--text-secondary);
 }
 
 .cta-footer-grid .contact-sentence a {
   color: var(--ink-warm);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 
 @media (max-width: 900px) {

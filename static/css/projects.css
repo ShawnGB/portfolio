@@ -1,5 +1,20 @@
 /* Projects Page */
 
+/* Section numerals - shared look; position set per section below */
+.projects-featured::before,
+.projects-client::before,
+.projects-explorations::before {
+  font-family: var(--font-display);
+  font-size: var(--section-number-size);
+  font-weight: var(--weight-extrabold);
+  line-height: 1;
+  color: var(--ink-warm);
+  opacity: var(--opacity-editorial-number);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
 .projects-featured {
   position: relative;
 }
@@ -7,16 +22,8 @@
 .projects-featured::before {
   content: "01";
   position: absolute;
-  top: -48px;
-  right: -32px;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
+  top: calc(-1 * var(--space-2xl));
+  right: calc(-1 * var(--space-xl));
 }
 
 .projects-featured + .projects-featured::before {
@@ -39,7 +46,7 @@
   position: absolute;
   bottom: var(--space-xl);
   left: var(--space-xl);
-  background: rgba(248, 246, 242, 0.95);
+  background: var(--paper-warm-translucent);
   padding: var(--space-lg) var(--space-xl);
   border-radius: var(--radius-sm);
   max-width: 50%;
@@ -88,35 +95,27 @@
 .projects-client::before {
   content: "02";
   position: absolute;
-  top: 24px;
-  left: -32px;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
+  top: var(--space-lg);
+  left: calc(-1 * var(--space-xl));
 }
 
 .project-cta a {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-medium);
   letter-spacing: 0.025em;
   color: var(--ink-warm);
   text-decoration: none;
-  border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+  border-bottom: 1px solid var(--ink-rule-medium);
   padding: 0.4rem 0.8rem;
-  background: rgba(43, 43, 43, 0.025);
+  background: var(--ink-tint-faint);
   display: inline-block;
   transition: var(--transition-fast);
 }
 
 .project-cta a:hover {
-  background: rgba(43, 43, 43, 0.05);
-  border-bottom-color: rgba(43, 43, 43, 0.5);
+  background: var(--ink-tint-subtle);
+  border-bottom-color: var(--ink-rule-strong);
 }
 
 .client-image-tall {
@@ -161,16 +160,8 @@
 .projects-explorations::before {
   content: "03";
   position: absolute;
-  top: -48px;
+  top: calc(-1 * var(--space-2xl));
   right: 0;
-  font-family: var(--font-display);
-  font-size: 10.2rem;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--ink-warm);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 0;
 }
 
 .projects-explorations > h2 {
@@ -212,7 +203,7 @@
 
 .background-inline span {
   display: block;
-  font-size: 0.9375rem;
+  font-size: var(--text-body-sm);
   line-height: 1.7;
   color: var(--text-secondary);
   padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);

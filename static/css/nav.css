@@ -1,11 +1,11 @@
 nav {
   width: 100%;
   height: auto;
-  min-height: 3.5rem;
+  min-height: var(--nav-height);
   position: sticky;
   top: 0;
   left: 0;
-  background: rgba(250, 250, 248, 0.95);
+  background: var(--paper-warm-translucent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-subtle);
   z-index: 100;
@@ -13,7 +13,7 @@ nav {
 }
 
 .nav-inner {
-  max-width: 1120px;
+  max-width: var(--container-nav);
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -43,7 +43,7 @@ nav {
 #logo-link h3 {
   font-family: var(--font-display);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
   margin: 0;
   letter-spacing: 0.01em;
   color: var(--ink-warm);
@@ -69,8 +69,8 @@ nav ul li {
 
 nav ul li a {
   font-family: var(--font-mono);
-  font-size: 0.9375rem;
-  font-weight: 400;
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-regular);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -130,8 +130,8 @@ nav ul li a.nav-link--active {
 
 .lang-link {
   font-family: var(--font-mono);
-  font-size: 0.9375rem;
-  font-weight: 400;
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-regular);
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-secondary);
@@ -208,12 +208,12 @@ nav ul li a.nav-link--active {
 
   .nav-right-group {
     position: absolute;
-    top: calc(3.5rem + 1px);
+    top: calc(var(--nav-height) + 1px);
     left: 0;
     width: 100%;
     background-color: var(--paper-warm);
     border-bottom: 1px solid var(--border-subtle);
-    box-shadow: 0 8px 16px rgba(28, 28, 28, 0.06);
+    box-shadow: var(--shadow-menu);
     display: none;
     flex-direction: column;
     align-items: stretch;

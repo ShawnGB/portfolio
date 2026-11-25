@@ -7,8 +7,8 @@
 
 .form-label {
   font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-tertiary);
@@ -21,7 +21,7 @@
   width: 100%;
   box-sizing: border-box;
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: var(--text-md);
   color: var(--text-primary);
   background: var(--paper-light);
   border: 1px solid var(--border-strong);
