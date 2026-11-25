@@ -68,7 +68,7 @@
 
   "arts.title": "Arts",
   "arts.intro.p1": "Outside of code, I follow light, sound, and motion. Photography came recently, slowly and intuitively. Music has always been there: bass, ambient compositions, sonic journalling. These are explorations without agenda: presence, practice, curiosity.",
-  "arts.gallery.imageAlt": "Art Image",
+  "arts.gallery.imageAlt": "Photograph by Shawn Becker",
 
   "projects.title": "Projects",
   "projects.intro.p1": "A selection of what I've built. This portfolio is the current focus, built from scratch in Go to learn the language properly. Below that, client work and collaborations from recent years, plus some earlier experiments that shaped how I think about software.",
@@ -255,8 +255,8 @@
   "arts.pageTitle": "Shawn Becker – Photography & Creative Arts",
   "arts.pageMetaDescription": "Creative explorations beyond code: photography, sound design, visual experiments. A developer's artistic practice in Berlin.",
 
-  "contact.pageTitle": "Contact Shawn Becker – Developer in Berlin",
-  "contact.pageMetaDescription": "Based in Berlin, open to permanent positions and select collaborations. TypeScript, React, Go. If something resonated, reach out.",
+  "contact.pageTitle": "Contact Shawn Becker – Software Engineer in Berlin",
+  "contact.pageMetaDescription": "Based in Berlin, open to permanent positions and selected collaborations. TypeScript, Node.js, Go. If something resonated, get in touch.",
 
   "footer.imprint": "Legal notice",
   "footer.privacy": "Privacy",
@@ -267,5 +267,8 @@
   "consent.text": "I'd like to use Google Analytics to see how visitors use this site. It sets cookies and only loads if you agree.",
   "consent.more": "Privacy policy",
   "consent.accept": "Accept",
-  "consent.decline": "Decline"
+  "consent.decline": "Decline",
+  "footer.arts": "Photography & music",
+  "legal.imprint.metaDesc": "Legal notice for shawnbecker.de: who is responsible for this website and how to reach him, according to § 5 DDG.",
+  "legal.privacy.metaDesc": "Privacy policy for shawnbecker.de: what data is processed, by which services, on what legal basis, and your rights under the GDPR."
 }

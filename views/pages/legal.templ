@@ -16,7 +16,7 @@ templ legalAddress() {
 }
 
 templ Impressum(pCtx i18n.PageContext) {
-	@layouts.BaseHtml(pCtx, pCtx.T("legal.imprint.pageTitle"), pCtx.T("legal.imprint.pageTitle")) {
+	@layouts.BaseHtml(pCtx, pCtx.T("legal.imprint.pageTitle"), pCtx.T("legal.imprint.metaDesc")) {
 		<div class="page-grid-container legal-page">
 			if pCtx.ActiveLang == "de" {
 				<h1>Impressum</h1>
@@ -45,7 +45,7 @@ templ Impressum(pCtx i18n.PageContext) {
 }
 
 templ Privacy(pCtx i18n.PageContext) {
-	@layouts.BaseHtml(pCtx, pCtx.T("legal.privacy.pageTitle"), pCtx.T("legal.privacy.pageTitle")) {
+	@layouts.BaseHtml(pCtx, pCtx.T("legal.privacy.pageTitle"), pCtx.T("legal.privacy.metaDesc")) {
 		<div class="page-grid-container legal-page">
 			if pCtx.ActiveLang == "de" {
 				<h1>Datenschutzerklärung</h1>
