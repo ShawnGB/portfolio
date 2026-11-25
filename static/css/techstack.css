@@ -33,7 +33,7 @@
 
 .tech-stack-item svg {
   opacity: 0.6;
-  transition: opacity var(--transition-fast);
+  transition: opacity 0.2s ease;
 }
 
 .tech-stack-item:hover svg {

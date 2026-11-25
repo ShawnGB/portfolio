@@ -24,7 +24,7 @@
   font-size: 1rem;
   color: var(--text-primary);
   background: var(--paper-light);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-strong);
   transition: border-color 0.2s ease;
 }
 

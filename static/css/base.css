@@ -236,6 +236,8 @@ article:hover {
 
 .button,
 a.button,
+.button--solid,
+a.button--solid,
 button {
   display: inline-flex;
   align-items: center;
@@ -259,6 +261,8 @@ button {
 
 .button:hover,
 a.button:hover,
+.button--solid:hover,
+a.button--solid:hover,
 button:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(43, 43, 43, 0.1);

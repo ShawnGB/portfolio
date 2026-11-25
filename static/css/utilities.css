@@ -58,7 +58,6 @@
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   color: var(--text-tertiary);
-  opacity: 0.6;
   letter-spacing: 0.05em;
 }
 

@@ -16,8 +16,7 @@
   font-size: 0.6875rem;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--ink-muted);
-  opacity: 0.6;
+  color: var(--text-tertiary);
   margin-bottom: 0.6rem;
   text-transform: uppercase;
 }

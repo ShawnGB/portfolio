@@ -11,7 +11,7 @@ footer .copyright {
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   font-weight: 400;
-  color: rgba(43, 43, 43, 0.4);
+  color: var(--text-tertiary);
   margin: 0;
   letter-spacing: 0.05em;
   text-transform: uppercase;

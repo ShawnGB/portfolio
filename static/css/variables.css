@@ -21,7 +21,7 @@
   /* Warm Grays - Dividers & Borders */
   --gray-warm-100: #e8e8e6; /* Light warm gray - subtle dividers */
   --gray-warm-200: #d4d4d1; /* Medium warm gray - borders */
-  --gray-warm-300: #a8a8a5; /* Dark warm gray - de-emphasized elements */
+  --gray-warm-300: #8c8c89; /* Dark warm gray - strong borders; 3.1:1+ on all papers (WCAG 1.4.11) */
 
   /* =================================
      SEMANTIC COLOR ASSIGNMENTS
