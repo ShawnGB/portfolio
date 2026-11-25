@@ -4,6 +4,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
+	"time"
 
 	"mymodules/gofolio/i18n"
 	"mymodules/gofolio/utils"
@@ -95,6 +97,14 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	var formData forms.ContactFormData
 	formData.HCaptchaSiteKey = os.Getenv("HCAPTCHA_SITE_KEY")
 
+	if !contactLimiter.allow(clientIP(r), time.Now()) {
+		log.Println("WARN: contact form rate limit hit")
+		formData.ErrorMessage = pCtx.T("contact.error.rateLimit")
+		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusTooManyRequests)
+		return
+	}
+
+	r.Body = http.MaxBytesReader(w, r.Body, maxContactBody)
 	if err := r.ParseForm(); err != nil {
 		log.Printf("ERROR: Error parsing form: %v", err)
 		formData.ErrorMessage = pCtx.T("contact.error.parse")
@@ -103,12 +113,12 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	formData.Website = r.FormValue("website")
-	formData.FirstName = r.FormValue("firstname")
-	formData.LastName = r.FormValue("lastname")
-	formData.Email = r.FormValue("email")
-	formData.Phone = r.FormValue("phone")
+	formData.FirstName = strings.TrimSpace(r.FormValue("firstname"))
+	formData.LastName = strings.TrimSpace(r.FormValue("lastname"))
+	formData.Email = strings.TrimSpace(r.FormValue("email"))
+	formData.Phone = strings.TrimSpace(r.FormValue("phone"))
 	formData.Service = r.FormValue("service")
-	formData.Message = r.FormValue("message")
+	formData.Message = strings.TrimSpace(r.FormValue("message"))
 
 	if formData.Website != "" {
 		log.Println("INFO: Honeypot field filled, contact form submission cancelled.")
@@ -118,16 +128,16 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	captchaResp := captchaClient.VerifyToken(r.FormValue("h-captcha-response"))
-	if !captchaResp.Success {
-		log.Printf("WARN: hCaptcha verification failed: %+v", captchaResp)
-		formData.ErrorMessage = pCtx.T("contact.error.captcha")
+	if key := validateContact(formData.FirstName, formData.LastName, formData.Email, formData.Phone, formData.Service, formData.Message); key != "" {
+		formData.ErrorMessage = pCtx.T(key)
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusBadRequest)
 		return
 	}
 
-	if formData.FirstName == "" || formData.LastName == "" || formData.Email == "" || formData.Message == "" {
-		formData.ErrorMessage = pCtx.T("contact.error.required")
+	captchaResp := captchaClient.VerifyToken(r.FormValue("h-captcha-response"))
+	if !captchaResp.Success {
+		log.Printf("WARN: hCaptcha verification failed: %+v", captchaResp)
+		formData.ErrorMessage = pCtx.T("contact.error.captcha")
 		renderContact(w, r, forms.ContactFormPartial(formData, pCtx), http.StatusBadRequest)
 		return
 	}
@@ -156,7 +166,7 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("INFO: Email successfully processed for %s %s (%s) and dispatch initiated.\n", formData.FirstName, formData.LastName, formData.Email)
+	log.Println("INFO: Contact email sent.")
 	renderContact(w, r, forms.ContactFormPartial(forms.ContactFormData{
 		SuccessMessage: pCtx.T("contact.success.message"),
 	}, pCtx), http.StatusOK)
