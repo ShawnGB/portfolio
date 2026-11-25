@@ -28,7 +28,7 @@ func main() {
 
 	mux := http.NewServeMux()
 
-	fs := http.FileServer(http.Dir("./static"))
+	fs := http.FileServer(noDirListing{http.Dir("./static")})
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	mux.HandleFunc("/robots.txt", func(w http.ResponseWriter, r *http.Request) {
@@ -59,6 +59,22 @@ func main() {
 	if err != nil {
 		log.Fatalf("FATAL: Server error: %v", err)
 	}
+}
+
+// noDirListing wraps a FileSystem so directories return 404 instead of an
+// auto-generated file index.
+type noDirListing struct{ fs http.FileSystem }
+
+func (n noDirListing) Open(name string) (http.File, error) {
+	f, err := n.fs.Open(name)
+	if err != nil {
+		return nil, err
+	}
+	if info, err := f.Stat(); err != nil || info.IsDir() {
+		f.Close()
+		return nil, os.ErrNotExist
+	}
+	return f, nil
 }
 
 func registerPageRoutes(mux *http.ServeMux) {
