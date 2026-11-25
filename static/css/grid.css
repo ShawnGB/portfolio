@@ -133,4 +133,13 @@
   [class^="grid-col-"] {
     grid-column: 1 / -1;
   }
+
+  .grid--intro,
+  .grid--hero,
+  .grid--thirds,
+  .grid--halves,
+  .grid--feature {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
 }
