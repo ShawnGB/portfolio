@@ -24,19 +24,10 @@ body {
 /* =================================
    Typography - Editorial Hierarchy
 
-   USAGE GUIDELINES:
-
-   Use semantic HTML tags (h1-h6, p, etc.) when:
-   - The element IS semantically that type (e.g., <h2> for actual section headings)
-   - You want default styling for that element type
-   - SEO and accessibility matter (screen readers use semantic structure)
-
-   Use utility classes (.section-header, .section-label, etc.) when:
-   - You need a specific visual size decoupled from semantic meaning
-   - Example: <div class="section-header"> when you want h2 sizing without <h2> semantics
-   - You want to override default tag styling in a specific context
-
-   See utilities.css for available typography utility classes.
+   Style elements, not classes: pick h1-h4 by document outline and
+   let these rules set the look. Restyle a heading in its page CSS
+   when a context needs a different size. Sizes and weights must
+   use tokens from variables.css.
    ================================= */
 
 /* LINKS: Monochrome with opacity transitions */
