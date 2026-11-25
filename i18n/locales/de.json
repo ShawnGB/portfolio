@@ -19,9 +19,9 @@
   "home.hero.eyebrow": "Shawn Becker · Softwareentwickler · Berlin",
   "home.hero.title": "Ich baue Software, die hält.",
   "home.hero.subtitle": "TypeScript, Node.js und Go – mit Hang zum Backend.",
-  "home.hero.cta": "Über meine Arbeit",
+  "home.hero.cta": "Mehr über mich",
 
-  "about.title": "Über Mich",
+  "about.title": "Über mich",
   "about.greeting.p1": "Ich bin Softwareentwickler in Berlin. Ich arbeite im ganzen TypeScript-Stack und bin am liebsten im Backend: APIs, Datenmodelle und die Logik dazwischen. Vor dem Code habe ich Tontechnik gelernt, einen Club mitbetrieben und an Filmsets gearbeitet.",
 
   "about.path.label": "Mein Werdegang",
@@ -67,7 +67,7 @@
   "about.connect.ctaText": "Zur Kontaktseite",
 
   "arts.title": "Kunst",
-  "arts.intro.p1": "Abseits vom Code folge ich Licht, Klang und Bewegung. Fotografie kam erst kürzlich, langsam und intuitiv. Musik war immer da — Bass, Ambient-Kompositionen, klangliches Tagebuchschreiben. Das hier sind Erkundungen ohne Agenda: Präsenz, Übung, Neugier.",
+  "arts.intro.p1": "Abseits vom Code folge ich Licht, Klang und Bewegung. Fotografie kam erst kürzlich, langsam und intuitiv. Musik war immer da: Bass, Ambient-Kompositionen, klangliches Tagebuchschreiben. Das hier sind Erkundungen ohne Agenda: Präsenz, Übung, Neugier.",
   "arts.gallery.imageAlt": "Kunstbild",
   "projects.title": "Projekte",
   "projects.intro.p1": "Eine Auswahl dessen, was ich gebaut habe. Dieses Portfolio ist der aktuelle Fokus, von Grund auf in Go gebaut, um die Sprache richtig zu lernen. Darunter Kundenprojekte und Kollaborationen der letzten Jahre, dazu ein paar frühere Experimente, die geprägt haben, wie ich über Software denke.",
@@ -87,7 +87,7 @@
   "projects.labels.festivalWebsite": "Festival-Webseite",
   "projects.labels.reactSpa": "React SPA",
   "projects.labels.educationalPlatform": "Bildungsplattform",
-  "projects.labels.sideProject": "Nebenprojekt — Revival",
+  "projects.labels.sideProject": "Nebenprojekt – Revival",
 
   "projects.links.viewOnGithub": "Auf GitHub ansehen",
   "projects.links.viewOnCodeberg": "Auf Codeberg ansehen",
@@ -118,7 +118,7 @@
 
   "projects.tadaa.label": "Bootcamp-Abschlussprojekt",
   "projects.tadaa.name": "Tadaa",
-  "projects.tadaa.description": "Interaktive Secret-Santa-App – Wunschlisten, flexible Ausschlussregeln und anonymer Chat. Als Abschlussprojekt für Neue Fische (2025–26) entwickelt. Meine Rolle: Produktmanagement und Entwicklung.",
+  "projects.tadaa.description": "Interaktive Secret-Santa-App – Wunschlisten, flexible Ausschlussregeln und anonymer Chat. Als Abschlussprojekt für Neue Fische (2025 – 26) entwickelt. Meine Rolle: Produktmanagement und Entwicklung.",
   "projects.tadaa.stack": "TypeScript · Handlebars · CSS",
 
   "projects.booksApp.label": "Full-Stack TypeScript",
@@ -136,10 +136,10 @@
 
   "projects.uskillity.title": "U/skillity",
   "projects.uskillity.imageAlt": "U/skillity Plattform – Landingpage mit Workshop-Kategorien",
-  "projects.uskillity.description": "Revival einer Plattform, die ich 2017 mitgegründet habe — ein Peer-to-Peer-Marktplatz für Workshops von leidenschaftlichen Menschen. Jetzt baue ich sie alleine von Grund auf neu, mit einem modernen Stack. Workshops von Menschen, die für etwas brennen, für Menschen, die lernen wollen. Kleine Gruppen, vor Ort, in deiner Stadt.",
+  "projects.uskillity.description": "Revival einer Plattform, die ich 2017 mitgegründet habe: ein Peer-to-Peer-Marktplatz für Workshops von leidenschaftlichen Menschen. Jetzt baue ich sie alleine von Grund auf neu, mit einem modernen Stack. Workshops von Menschen, die für etwas brennen, für Menschen, die lernen wollen. Kleine Gruppen, vor Ort, in deiner Stadt.",
   "projects.uskillity.stack.value": "Bun · NestJS · Next.js · React Router v7 · PostgreSQL · Docker",
 
-  "projects.cultural.kultschaette.name": "Kultstätte Keller (2011–2016)",
+  "projects.cultural.kultschaette.name": "Kultstätte Keller (2011 – 2016)",
   "projects.cultural.kultschaette.p1": "Mitbegründer der Kultstätte Keller, eines lebendigen, hybriden Kulturraums in Berlin, der ein Yogastudio, Aufnahmemöglichkeiten, einen Club und einen Workshop-Ort beherbergte.",
   "projects.cultural.evolveFestivalSupport.name": "Evolve Festival (2024)",
   "projects.cultural.evolveFestivalSupport.p1": "Organisatorische Unterstützung und Webseite-Beratung.",
@@ -148,7 +148,7 @@
   "projects.film.linkCrewUnitedText": "Shawn Gordon Becker bei Crew United",
 
   "experience.chapter1.title": "Klang, Raum und Systeme",
-  "experience.chapter1.subtitle": "2006 - 2016",
+  "experience.chapter1.subtitle": "2006 – 2016",
   "experience.chapter1.roles.1": "2006 · Tontechnik · SAE Institute Berlin",
   "experience.chapter1.roles.2": "2011 – 2016 · Mitinhaber, technischer Betrieb · Kultstätte Keller",
   "experience.chapter1.quote": "Wer für etwas brennt, vermittelt es mühelos. Und Lernen funktioniert am besten direkt, von Mensch zu Mensch.",
@@ -164,7 +164,7 @@
   "experience.chapter1.p8": "Dann fand ich das HEAR-Programm der National University of Ireland Maynooth – ein Zugang für Menschen, die später ins Studium einsteigen. Ich machte die Aufnahmeprüfung, wurde angenommen und zog nach Irland.",
 
   "experience.chapter2.title": "Die Jahre der Formalisierung",
-  "experience.chapter2.subtitle": "2016 - 2022",
+  "experience.chapter2.subtitle": "2016 – 2022",
   "experience.chapter2.roles.1": "2017 – 2018 · Marketing & Informatik · NUI Maynooth",
   "experience.chapter2.roles.2": "2018 – 2020 · Produktmanagement · CODE University Berlin",
   "experience.chapter2.roles.3": "2018 – 2020 · Product Owner & Frontend-Entwickler · YPTOKEY",
@@ -182,14 +182,14 @@
   "experience.chapter2.p7": "Als Freiheit Ende 2022 einen Kunden verlor und mich gehen lassen musste, nutzte ich einen ihrer früheren Kundenkontakte, um als Freelancer zu starten. Nach Jahren in Anstellung dachte ich, Selbstständigkeit könnte das Richtige sein.",
 
   "experience.chapter3.title": "Die Suche nach Tiefe",
-  "experience.chapter3.subtitle": "2023 - Heute",
+  "experience.chapter3.subtitle": "2023 – heute",
   "experience.chapter3.roles.1": "2023 – heute · Freiberuflicher Webentwickler · Berlin",
   "experience.chapter3.roles.2": "2025 – 2026 · Advanced-Web-Development-Programm · Neue Fische",
   "experience.chapter3.roles.3": "2026 – Q1 2027 · Weiterbildung AWS Cloud & DevOps · TechPionier (AWS re/Start)",
   "experience.chapter3.quote": "Ich will Probleme, die länger als einen Nachmittag dauern.",
   "experience.chapter3.image.alt": "Remote-Arbeitsplatz",
   "experience.chapter3.image.caption": "Die Freelance-Realität – von überall arbeiten",
-  "experience.chapter3.p1": "Seit 2023 arbeite ich freiberuflich, vor allem an Websites für Kunstschaffende und kleine Unternehmen, und verantworte jedes Projekt vom ersten Gespräch bis zum Deployment. Dabei wurde klar, was ich als Nächstes will: **Backend- und Systemarbeit im Team**, mit Code-Reviews und Problemen, die länger als einen Nachmittag dauern.",
+  "experience.chapter3.p1": "Seit 2023 arbeite ich freiberuflich, vor allem an Websites für Kunstschaffende und kleine Unternehmen, und habe die meisten Projekte vom ersten Gespräch bis zum Deployment verantwortet. Dabei wurde klar, was ich als Nächstes will: **Backend- und Systemarbeit im Team**, mit Code-Reviews und Problemen, die länger als einen Nachmittag dauern.",
   "experience.chapter3.p2": "Von Oktober 2025 bis Februar 2026 habe ich das **Advanced-Web-Development-Programm von Neue Fische** absolviert. Jetzt mache ich eine sechsmonatige **Weiterbildung zu AWS Cloud & DevOps** (Terraform, Docker, CI/CD, AWS-Architektur) und bereite mich bis Q1 2027 auf AWS Cloud Practitioner und danach Solutions Architect Associate vor.",
   "experience.chapter3.p3": "Nebenbei baue ich **U/skillity** mit NestJS, React und PostgreSQL neu. Die Idee, dass Menschen, die für etwas brennen, am besten lehren, hat mich nie losgelassen.",
   "experience.chapter3.p4": "Klang, Räume, Software. Ich baue gern Dinge, die in der echten Welt funktionieren müssen.",
@@ -245,7 +245,7 @@
   "about.pageTitle": "Über Shawn Becker – Softwareentwickler in Berlin",
   "about.pageMetaDescription": "Softwareentwickler in Berlin mit Hang zum Backend, mit TypeScript und Go. Ein Hintergrund in Tontechnik und Veranstaltungen.",
 
-  "experience.pageTitle": "Shawn Becker – Von der Tontechnik zu Backend-Systemen",
+  "experience.pageTitle": "Shawn Becker – Von der Tontechnik zur Software",
   "experience.pageMetaDescription": "Von Tontechnik und einem Berliner Club über Produktrollen zur Softwareentwicklung mit React, TypeScript, Node.js und Go.",
 
   "projects.pageTitle": "Shawn Becker – Webprojekte & Kreative Arbeiten",

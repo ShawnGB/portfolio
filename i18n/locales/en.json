@@ -19,7 +19,7 @@
   "home.hero.eyebrow": "Shawn Becker · Software Engineer · Berlin",
   "home.hero.title": "I build software that holds up.",
   "home.hero.subtitle": "TypeScript, Node.js and Go – with a lean toward the backend.",
-  "home.hero.cta": "About my work",
+  "home.hero.cta": "More about me",
 
   "about.title": "About me",
   "about.greeting.p1": "I'm a software engineer in Berlin. I work across the TypeScript stack and I'm most at home on the backend: APIs, data models and the logic between them. Before code I trained as a sound engineer, co-ran a club and worked on film sets.",
@@ -67,7 +67,7 @@
   "about.connect.ctaText": "Reach Out via Contact Page",
 
   "arts.title": "Arts",
-  "arts.intro.p1": "Outside of code, I follow light, sound, and motion. Photography came recently, slowly and intuitively. Music has always been there — bass, ambient compositions, sonic journalling. These are explorations without agenda: presence, practice, curiosity.",
+  "arts.intro.p1": "Outside of code, I follow light, sound, and motion. Photography came recently, slowly and intuitively. Music has always been there: bass, ambient compositions, sonic journalling. These are explorations without agenda: presence, practice, curiosity.",
   "arts.gallery.imageAlt": "Art Image",
 
   "projects.title": "Projects",
@@ -88,7 +88,7 @@
   "projects.labels.festivalWebsite": "Festival Website",
   "projects.labels.reactSpa": "React SPA",
   "projects.labels.educationalPlatform": "Educational Platform",
-  "projects.labels.sideProject": "Side Project — Revival",
+  "projects.labels.sideProject": "Side Project – Revival",
 
   "projects.links.viewOnGithub": "View on GitHub",
   "projects.links.viewOnCodeberg": "View on Codeberg",
@@ -119,12 +119,12 @@
 
   "projects.tadaa.label": "Bootcamp Capstone",
   "projects.tadaa.name": "Tadaa",
-  "projects.tadaa.description": "Interactive Secret Santa app — wish lists, flexible exclusion rules, and anonymous chat. Built as capstone project for Neue Fische (2025–26). My role: product management and development.",
+  "projects.tadaa.description": "Interactive Secret Santa app: wish lists, flexible exclusion rules, and anonymous chat. Built as capstone project for Neue Fische (2025 – 26). My role: product management and development.",
   "projects.tadaa.stack": "TypeScript · Handlebars · CSS",
 
   "projects.booksApp.label": "Full-Stack TypeScript",
   "projects.booksApp.name": "Books API + Frontend",
-  "projects.booksApp.description": "NestJS REST API paired with a React frontend — two repos, one application. Full-stack TypeScript with Docker, built during Neue Fische advanced web development training.",
+  "projects.booksApp.description": "NestJS REST API paired with a React frontend – two repos, one application. Full-stack TypeScript with Docker, built during Neue Fische advanced web development training.",
   "projects.booksApp.stack": "TypeScript · NestJS · React · Docker",
 
   "projects.taskTemplate.label": "Open Source Template",
@@ -137,10 +137,10 @@
 
   "projects.uskillity.title": "U/skillity",
   "projects.uskillity.imageAlt": "U/skillity platform – landing page showing workshop categories",
-  "projects.uskillity.description": "Reviving a platform I originally co-founded in 2017 — a peer-to-peer marketplace for workshops led by passionate people. Now rebuilding it solo from scratch with a modern stack. Workshops led by people who care deeply about something, for people who want to learn. Small groups, in person, in your city.",
+  "projects.uskillity.description": "Reviving a platform I originally co-founded in 2017: a peer-to-peer marketplace for workshops led by passionate people. Now rebuilding it solo from scratch with a modern stack. Workshops led by people who care deeply about something, for people who want to learn. Small groups, in person, in your city.",
   "projects.uskillity.stack.value": "Bun · NestJS · Next.js · React Router v7 · PostgreSQL · Docker",
 
-  "projects.cultural.kultschaette.name": "Kultstätte Keller (2011–2016)",
+  "projects.cultural.kultschaette.name": "Kultstätte Keller (2011 – 2016)",
   "projects.cultural.kultschaette.p1": "Co-founded Kultstätte Keller, a vibrant hybrid cultural space in Berlin, housing a yoga studio, recording facilities, a club, and a workshop venue.",
   "projects.cultural.evolveFestivalSupport.name": "Evolve Festival (2024)",
   "projects.cultural.evolveFestivalSupport.p1": "Organisational support and website consulting.",
@@ -149,7 +149,7 @@
   "projects.film.linkCrewUnitedText": "Shawn Gordon Becker on Crew United",
 
   "experience.chapter1.title": "Sound, Space, and Systems",
-  "experience.chapter1.subtitle": "2006 - 2016",
+  "experience.chapter1.subtitle": "2006 – 2016",
   "experience.chapter1.roles.1": "2006 · Audio engineering training · SAE Institute Berlin",
   "experience.chapter1.roles.2": "2011 – 2016 · Co-owner, technical operations · Kultstätte Keller",
   "experience.chapter1.quote": "Passionate people teach their passions effortlessly, and learning works best when it's peer-to-peer and practice-based.",
@@ -165,7 +165,7 @@
   "experience.chapter1.p8": "That's when I found the HEAR programme at the National University of Ireland Maynooth, a route designed for mature students entering higher education later in life. I took the entry exams, got accepted, and moved to Ireland.",
 
   "experience.chapter2.title": "The Formalisation Years",
-  "experience.chapter2.subtitle": "2016 - 2022",
+  "experience.chapter2.subtitle": "2016 – 2022",
   "experience.chapter2.roles.1": "2017 – 2018 · Marketing & Computer Science · NUI Maynooth",
   "experience.chapter2.roles.2": "2018 – 2020 · Product Management · CODE University Berlin",
   "experience.chapter2.roles.3": "2018 – 2020 · Product Owner & frontend developer · YPTOKEY",
@@ -183,14 +183,14 @@
   "experience.chapter2.p7": "When Freiheit lost a client in late 2022 and had to let me go, I used one of their former customer contacts to start freelancing. After years of employment, I thought independence might be what I needed.",
 
   "experience.chapter3.title": "Seeking Depth",
-  "experience.chapter3.subtitle": "2023 - Present",
+  "experience.chapter3.subtitle": "2023 – Present",
   "experience.chapter3.roles.1": "2023 – today · Freelance web developer · Berlin",
   "experience.chapter3.roles.2": "2025 – 2026 · Advanced Web Development programme · Neue Fische",
   "experience.chapter3.roles.3": "2026 – Q1 2027 · AWS Cloud & DevOps programme · TechPionier (AWS re/Start)",
   "experience.chapter3.quote": "I want problems that take longer than an afternoon.",
   "experience.chapter3.image.alt": "Remote work setup",
   "experience.chapter3.image.caption": "The freelance reality – working from anywhere",
-  "experience.chapter3.p1": "Since 2023 I've worked freelance, mostly on websites for artists and small businesses, owning each project from the first call to deployment. It made clear what I want next: **backend and systems work in a team**, with code review and problems that take longer than an afternoon.",
+  "experience.chapter3.p1": "Since 2023 I've worked freelance, mostly on websites for artists and small businesses, and owned most projects from the first call to deployment. It made clear what I want next: **backend and systems work in a team**, with code review and problems that take longer than an afternoon.",
   "experience.chapter3.p2": "From October 2025 to February 2026 I did the **Advanced Web Development programme at Neue Fische**. Now I'm in a six-month **AWS Cloud & DevOps programme** (Terraform, Docker, CI/CD, AWS architecture), preparing for AWS Cloud Practitioner and then Solutions Architect Associate, through Q1 2027.",
   "experience.chapter3.p3": "On the side, I'm rebuilding **U/skillity** with NestJS, React and PostgreSQL. The idea that passionate people teach best never left me.",
   "experience.chapter3.p4": "Sound, spaces, software. I like building things that have to work in the real world.",
@@ -246,7 +246,7 @@
   "about.pageTitle": "About Shawn Becker – Software Engineer in Berlin",
   "about.pageMetaDescription": "Software engineer in Berlin with a lean toward the backend, working in TypeScript and Go. A background in sound engineering and live events.",
 
-  "experience.pageTitle": "Shawn Becker – From Sound Engineering to Backend Systems",
+  "experience.pageTitle": "Shawn Becker – From Sound Engineering to Software",
   "experience.pageMetaDescription": "From audio engineering and co-running a Berlin club to product roles and software development with React, TypeScript, Node.js and Go.",
 
   "projects.pageTitle": "Shawn Becker – Web Projects & Creative Work",
