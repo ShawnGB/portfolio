@@ -22,13 +22,13 @@
   "home.hero.cta": "About my work",
 
   "about.title": "About me",
-  "about.greeting.p1": "I'm a software engineer in Berlin, most at home on the backend: APIs, data models, the parts that have to keep working when nobody's watching. Before code I was a sound engineer, co-ran a club and worked on film sets, and I still build with my hands: campers, tiny houses, furniture.",
+  "about.greeting.p1": "I'm a software engineer in Berlin. I work across the TypeScript stack and I'm most at home on the backend: APIs, data models and the logic between them. Before code I trained as a sound engineer, co-ran a club and worked on film sets.",
 
   "about.path.label": "My Journey",
   "about.path.p1": "Sound engineering, a Berlin club, film sets, product roles, then code. The long version, with all the turns, is on the",
   "about.path.link": "Experience page →",
   "about.current.label": "Currently",
-  "about.current.p1": "Six-month **AWS Cloud & DevOps program** (Linux, networking, Python, Terraform, Docker, CI/CD, AWS architecture), preparing for **AWS Solutions Architect Associate**, through Q1 2027.",
+  "about.current.p1": "Six-month **AWS Cloud & DevOps programme** with TechPionier (AWS re/Start): Linux, networking, Python, Terraform, Docker, CI/CD, AWS architecture. Preparing for **AWS Cloud Practitioner**, then **Solutions Architect Associate**. Runs until Q1 2027.",
 
   "about.quote": "I build things that work well, look considered, and respect the people who use them.",
   "about.image.alt": "Self-reflection in mirror",
@@ -40,7 +40,7 @@
   "about.drivesMe.item2.text": "Technology should serve people, not distract them. I try to build with that in mind.",
   "about.drivesMe.item3.title": "Learning & Doing",
   "about.drivesMe.item3.text": "I learn best by making things. Curiosity keeps me going.",
-  "about.drivesMe.item4.title": "Aesthetics & Craftsmanship",
+  "about.drivesMe.item4.title": "Care & Craft",
   "about.drivesMe.item4.text": "In the workshop, a wrong cut costs a board. I bring the same habit of checking before committing to code.",
 
   "about.outsideScreen.title": "Beyond the Screen",
@@ -190,9 +190,9 @@
   "experience.chapter3.image.alt": "Remote work setup",
   "experience.chapter3.image.caption": "The freelance reality – working from anywhere",
   "experience.chapter3.p1": "Since 2023 I've worked freelance, mostly on websites for artists and small businesses, owning each project from the first call to deployment. It made clear what I want next: **backend and systems work in a team**, with code review and problems that take longer than an afternoon.",
-  "experience.chapter3.p2": "In 2025 I completed the **Advanced Web Development programme at Neue Fische**. Currently I'm in a six-month **AWS Cloud & DevOps program** (Terraform, Docker, CI/CD, AWS architecture), preparing for the AWS Solutions Architect Associate exam, through Q1 2027.",
+  "experience.chapter3.p2": "In 2025 I completed the **Advanced Web Development programme at Neue Fische**. Currently I'm in a six-month **AWS Cloud & DevOps programme** (Terraform, Docker, CI/CD, AWS architecture), preparing for AWS Cloud Practitioner and then Solutions Architect Associate, through Q1 2027.",
   "experience.chapter3.p3": "On the side, I'm rebuilding **U/skillity** with NestJS, Next.js and PostgreSQL. The idea that passionate people teach best never left me.",
-  "experience.chapter3.p4": "Sound, spaces, software – and lately wood again. I like building things that have to work in the real world.",
+  "experience.chapter3.p4": "Sound, spaces, software. I like building things that have to work in the real world.",
   "experience.chapter3.lessons.title": "What each stage taught me",
   "experience.chapter3.lessons.1": "**Audio engineering:** building a whole from separate components.",
   "experience.chapter3.lessons.2": "**Kultstätte Keller:** managing complexity and adapting to what emerges.",
@@ -239,11 +239,11 @@
   "notfound.message": "This page doesn't exist. You may have followed a broken link.",
   "notfound.cta": "Back to home",
 
-  "home.pageTitle": "Shawn Becker – Software Engineer in Berlin (Go, TypeScript)",
-  "home.pageMetaDescription": "Software engineer in Berlin with a backend focus: Go, TypeScript, Node.js, PostgreSQL. Also builds campers and tiny houses out of wood.",
+  "home.pageTitle": "Shawn Becker – Software Engineer in Berlin (TypeScript, Go)",
+  "home.pageMetaDescription": "Software engineer in Berlin with a lean toward the backend: TypeScript, NestJS, Node.js, PostgreSQL, Docker. Also builds with Go; currently training on AWS.",
 
   "about.pageTitle": "About Shawn Becker – Software Engineer in Berlin",
-  "about.pageMetaDescription": "Software engineer in Berlin. Backend and systems work with TypeScript and Go, a background in sound engineering and live events, and a workshop full of wood.",
+  "about.pageMetaDescription": "Software engineer in Berlin with a lean toward the backend, working in TypeScript and Go. A background in sound engineering and live events.",
 
   "experience.pageTitle": "Shawn Becker – From Sound Engineering to Backend Systems",
   "experience.pageMetaDescription": "From audio engineering and co-running a Berlin club to product roles and software development with React, TypeScript, Node.js and Go.",

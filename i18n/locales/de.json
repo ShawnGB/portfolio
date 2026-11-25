@@ -22,13 +22,13 @@
   "home.hero.cta": "Über meine Arbeit",
 
   "about.title": "Über Mich",
-  "about.greeting.p1": "Ich bin Softwareentwickler in Berlin und am liebsten im Backend unterwegs: APIs, Datenmodelle, die Teile, die auch dann laufen müssen, wenn niemand hinschaut. Vor dem Code war ich Tontechniker, habe einen Club mitbetrieben und an Filmsets gearbeitet, und ich baue bis heute mit den Händen: Campervans, Tiny Houses, Möbel.",
+  "about.greeting.p1": "Ich bin Softwareentwickler in Berlin. Ich arbeite im ganzen TypeScript-Stack und bin am liebsten im Backend: APIs, Datenmodelle und die Logik dazwischen. Vor dem Code habe ich Tontechnik gelernt, einen Club mitbetrieben und an Filmsets gearbeitet.",
 
   "about.path.label": "Mein Werdegang",
   "about.path.p1": "Tontechnik, ein Berliner Club, Filmsets, Produktrollen, dann Code. Die lange Version mit allen Umwegen steht unter",
   "about.path.link": "Erfahrung →",
   "about.current.label": "Aktuell",
-  "about.current.p1": "Sechsmonatige **AWS Cloud & DevOps Weiterbildung** (Linux, Netzwerke, Python, Terraform, Docker, CI/CD, AWS-Architektur), Vorbereitung auf **AWS Solutions Architect Associate**, bis Q1 2027.",
+  "about.current.p1": "Sechsmonatige **Weiterbildung zu AWS Cloud & DevOps** bei TechPionier (AWS re/Start): Linux, Netzwerke, Python, Terraform, Docker, CI/CD, AWS-Architektur. Ich bereite mich auf **AWS Cloud Practitioner** und danach **Solutions Architect Associate** vor. Läuft bis Q1 2027.",
 
   "about.quote": "Ich baue Dinge, die gut funktionieren, durchdacht aussehen und die Menschen respektieren, die sie nutzen.",
   "about.image.alt": "Selbstreflexion im Spiegel",
@@ -40,7 +40,7 @@
   "about.drivesMe.item2.text": "Technologie sollte Menschen dienen, nicht ablenken. Ich versuche, mit diesem Gedanken zu bauen.",
   "about.drivesMe.item3.title": "Lernen & Machen",
   "about.drivesMe.item3.text": "Ich lerne am besten durchs Machen. Neugier hält mich am Laufen.",
-  "about.drivesMe.item4.title": "Ästhetik & Handwerk",
+  "about.drivesMe.item4.title": "Sorgfalt & Handwerk",
   "about.drivesMe.item4.text": "In der Werkstatt kostet ein falscher Schnitt ein Brett. Die Gewohnheit, vorher zu prüfen, nehme ich mit in den Code.",
 
   "about.outsideScreen.title": "Abseits vom Bildschirm",
@@ -189,9 +189,9 @@
   "experience.chapter3.image.alt": "Remote-Arbeitsplatz",
   "experience.chapter3.image.caption": "Die Freelance-Realität – von überall arbeiten",
   "experience.chapter3.p1": "Seit 2023 arbeite ich freiberuflich, vor allem an Websites für Kunstschaffende und kleine Unternehmen, und verantworte jedes Projekt vom ersten Gespräch bis zum Deployment. Dabei wurde klar, was ich als Nächstes will: **Backend- und Systemarbeit im Team**, mit Code-Reviews und Problemen, die länger als einen Nachmittag dauern.",
-  "experience.chapter3.p2": "2025 habe ich das **Advanced Web Development Programm von Neue Fische** abgeschlossen. Gerade mache ich eine sechsmonatige **AWS Cloud & DevOps Weiterbildung** (Terraform, Docker, CI/CD, AWS-Architektur) und bereite mich bis Q1 2027 auf die Prüfung zum AWS Solutions Architect Associate vor.",
+  "experience.chapter3.p2": "2025 habe ich das **Advanced Web Development Programm von Neue Fische** abgeschlossen. Gerade mache ich eine sechsmonatige **Weiterbildung zu AWS Cloud & DevOps** (Terraform, Docker, CI/CD, AWS-Architektur) und bereite mich bis Q1 2027 auf AWS Cloud Practitioner und danach Solutions Architect Associate vor.",
   "experience.chapter3.p3": "Nebenbei baue ich **U/skillity** mit NestJS, Next.js und PostgreSQL neu. Die Idee, dass Menschen, die für etwas brennen, am besten lehren, hat mich nie losgelassen.",
-  "experience.chapter3.p4": "Klang, Räume, Software – und seit einiger Zeit wieder Holz. Ich baue gern Dinge, die in der echten Welt funktionieren müssen.",
+  "experience.chapter3.p4": "Klang, Räume, Software. Ich baue gern Dinge, die in der echten Welt funktionieren müssen.",
   "experience.chapter3.lessons.title": "Was ich wo gelernt habe",
   "experience.chapter3.lessons.1": "**Tontechnik:** aus einzelnen Komponenten ein Ganzes bauen.",
   "experience.chapter3.lessons.2": "**Kultstätte Keller:** Komplexität managen und mich dem anpassen, was entsteht.",
@@ -238,11 +238,11 @@
   "notfound.message": "Diese Seite existiert nicht. Möglicherweise hast du einem defekten Link gefolgt.",
   "notfound.cta": "Zurück zur Startseite",
 
-  "home.pageTitle": "Shawn Becker – Softwareentwickler in Berlin (Go, TypeScript)",
-  "home.pageMetaDescription": "Softwareentwickler in Berlin mit Backend-Fokus: Go, TypeScript, Node.js, PostgreSQL. Baut außerdem Campervans und Tiny Houses aus Holz.",
+  "home.pageTitle": "Shawn Becker – Softwareentwickler in Berlin (TypeScript, Go)",
+  "home.pageMetaDescription": "Softwareentwickler in Berlin mit Hang zum Backend: TypeScript, NestJS, Node.js, PostgreSQL, Docker. Entwickelt auch mit Go und bildet sich gerade zu AWS weiter.",
 
   "about.pageTitle": "Über Shawn Becker – Softwareentwickler in Berlin",
-  "about.pageMetaDescription": "Softwareentwickler in Berlin. Backend und Systeme mit TypeScript und Go, ein Hintergrund in Tontechnik und Veranstaltungen und eine Werkstatt voller Holz.",
+  "about.pageMetaDescription": "Softwareentwickler in Berlin mit Hang zum Backend, mit TypeScript und Go. Ein Hintergrund in Tontechnik und Veranstaltungen.",
 
   "experience.pageTitle": "Shawn Becker – Von der Tontechnik zu Backend-Systemen",
   "experience.pageMetaDescription": "Von Tontechnik und einem Berliner Club über Produktrollen zur Softwareentwicklung mit React, TypeScript, Node.js und Go.",
