@@ -47,11 +47,17 @@ templ About(pCtx i18n.PageContext) {
 				</div>
 				<div class="grid-col-5">
 					<div class="path-label">
+						<small>{ pCtx.T("about.current.label") }</small>
+					</div>
+					<div class="body-text">
+						<p>@pCtx.TRich("about.current.p1")
+</p>
+					</div>
+					<div class="path-label">
 						<small>{ pCtx.T("about.path.label") }</small>
 					</div>
 					<div class="body-text">
-						<p>{ pCtx.T("about.path.p1") }</p>
-						<p>{ pCtx.T("about.path.p2") }</p>
+						<p>{ pCtx.T("about.path.p1") } <a href={ pCtx.CurrentLangLink("/experience") }>{ pCtx.T("about.path.link") }</a></p>
 					</div>
 				</div>
 			</div>

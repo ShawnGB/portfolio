@@ -22,11 +22,13 @@
   "home.hero.cta": "Über meine Arbeit",
 
   "about.title": "Über Mich",
-  "about.greeting.p1": "Ich bin Webentwickler. Ich denke in Systemen, achte auf Details und baue Dinge, die gut funktionieren und Bestand haben. Ich war auf beiden Seiten der Produkt-/Engineering-Linie unterwegs, das prägt, wie ich an Probleme herangehe.",
+  "about.greeting.p1": "Ich bin Softwareentwickler in Berlin und am liebsten im Backend unterwegs: APIs, Datenmodelle, die Teile, die auch dann laufen müssen, wenn niemand hinschaut. Vor dem Code war ich Tontechniker, habe einen Club mitbetrieben und an Filmsets gearbeitet, und ich baue bis heute mit den Händen: Campervans, Tiny Houses, Möbel.",
 
   "about.path.label": "Mein Werdegang",
-  "about.path.p1": "Mein Weg war nicht geradlinig. Er begann irgendwo zwischen Musik und Code, Filmsets und Neugier. Marketing und Informatik legten ein Fundament, aber erst im Produktmanagement an der CODE University fügte sich alles zusammen: Struktur, Empathie, Sinn.",
-  "about.path.p2": "Über die Jahre war ich in verschiedenen Rollen unterwegs: als Entwickler, Produktdenker, Mitgestalter in digitalen und kulturellen Räumen. Ich arbeitete mit Startups wie YPTOKEY und Data4Life, gründete U/skillity (eine Plattform für geteiltes Wissen) und Kultstätte Keller, einen Raum für Kunst, Klang und Gemeinschaft. Nebenbei unterstützte ich verschiedene Filmproduktionen, meist als Assistent hinter den Kulissen. Diese Erfahrungen haben geprägt, wie ich Zusammenarbeit, Timing und Präsenz verstehe.",
+  "about.path.p1": "Tontechnik, ein Berliner Club, Filmsets, Produktrollen, dann Code. Die lange Version mit allen Umwegen steht unter",
+  "about.path.link": "Erfahrung →",
+  "about.current.label": "Aktuell",
+  "about.current.p1": "Sechsmonatige **AWS Cloud & DevOps Weiterbildung** (Linux, Netzwerke, Python, Terraform, Docker, CI/CD, AWS-Architektur), Vorbereitung auf **AWS Solutions Architect Associate**, bis Q1 2027.",
 
   "about.quote": "Ich baue Dinge, die gut funktionieren, durchdacht aussehen und die Menschen respektieren, die sie nutzen.",
   "about.image.alt": "Selbstreflexion im Spiegel",
@@ -39,13 +41,13 @@
   "about.drivesMe.item3.title": "Lernen & Machen",
   "about.drivesMe.item3.text": "Ich lerne am besten durchs Machen. Neugier hält mich am Laufen.",
   "about.drivesMe.item4.title": "Ästhetik & Handwerk",
-  "about.drivesMe.item4.text": "Details sind mir wichtig. Etwas, das gut funktioniert und durchdacht aussieht, ist besser als etwas, das nur funktioniert.",
+  "about.drivesMe.item4.text": "In der Werkstatt kostet ein falscher Schnitt ein Brett. Die Gewohnheit, vorher zu prüfen, nehme ich mit in den Code.",
 
   "about.outsideScreen.title": "Abseits vom Bildschirm",
   "about.interests.music": "Musik",
   "about.interests.cycling": "Radfahren",
   "about.interests.photography": "Fotografie",
-  "about.outsideScreen.p1": "Abseits der Arbeit beschäftige ich mich mit Musik (hörend und produzierend), fermentiere Wasserkefir, fahre lange Strecken mit dem Rad oder bin draußen in der Natur. Neuerdings entdecke ich auch die Fotografie, langsam und intuitiv.",
+  "about.outsideScreen.p1": "Abseits der Arbeit mache ich Musik, fahre lange Strecken mit dem Rad und verbringe viel Zeit in der Werkstatt. Die Fotografie kam erst vor Kurzem dazu, langsam und intuitiv.",
 
   "about.lookingFor.title": "Wonach ich suche",
   "about.lookingFor.environment.title": "Ideale Umgebung",
@@ -56,7 +58,7 @@
   "about.lookingFor.item2": "Funktionsübergreifende Zusammenarbeit zwischen Engineering, Produkt und Design",
   "about.lookingFor.item3": "Kontinuierliches Lernen und Wissensaustausch",
   "about.lookingFor.item4": "Produkte entwickeln, die das Leben von Menschen wirklich verbessern",
-  "about.lookingFor.p2": "Ideale Teamgröße: 10-50 Personen. Ideale Rolle: Full-Stack Entwickler oder Backend-fokussierte Position mit Raum für Produktdenken.",
+  "about.lookingFor.p2": "Ideale Teamgröße: 10–50 Personen. Ideale Rolle: Softwareentwickler mit Backend- oder Plattform-Fokus und Raum, über das Produkt mitzudenken.",
   "about.lookingFor.availability": "Jetzt verfügbar",
   "about.lookingFor.ctaDownload": "Lebenslauf herunterladen (PDF)",
 

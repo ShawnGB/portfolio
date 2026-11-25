@@ -22,11 +22,13 @@
   "home.hero.cta": "About my work",
 
   "about.title": "About me",
-  "about.greeting.p1": "I'm a web developer. I think in systems, care about details, and build things that work well and last. I've spent time on both sides of the product/engineering line, which shapes how I approach problems.",
+  "about.greeting.p1": "I'm a software engineer in Berlin, most at home on the backend: APIs, data models, the parts that have to keep working when nobody's watching. Before code I was a sound engineer, co-ran a club and worked on film sets, and I still build with my hands: campers, tiny houses, furniture.",
 
   "about.path.label": "My Journey",
-  "about.path.p1": "I didn't take a straight path. It started with music and code, film sets and curiosity. Studies in marketing and informatics laid a foundation, but my time in product management (CODE University) connected the dots: structure, empathy, purpose.",
-  "about.path.p2": "Over the years, I've worked in different roles: as a developer, product thinker, and collaborator in both digital and cultural spaces. I worked with startups like YPTOKEY and Data4Life, co-founded U/skillity (a platform for shared knowledge) and Kultstätte Keller, a space for art, sound, and community. Along the way, I also supported various film productions, often in assistant roles behind the scenes. These experiences shaped how I understand collaboration, pace, and presence.",
+  "about.path.p1": "Sound engineering, a Berlin club, film sets, product roles, then code. The long version, with all the turns, is on the",
+  "about.path.link": "Experience page →",
+  "about.current.label": "Currently",
+  "about.current.p1": "Six-month **AWS Cloud & DevOps program** (Linux, networking, Python, Terraform, Docker, CI/CD, AWS architecture), preparing for **AWS Solutions Architect Associate**, through Q1 2027.",
 
   "about.quote": "I build things that work well, look considered, and respect the people who use them.",
   "about.image.alt": "Self-reflection in mirror",
@@ -39,13 +41,13 @@
   "about.drivesMe.item3.title": "Learning & Doing",
   "about.drivesMe.item3.text": "I learn best by making things. Curiosity keeps me going.",
   "about.drivesMe.item4.title": "Aesthetics & Craftsmanship",
-  "about.drivesMe.item4.text": "Details matter to me. A thing that works well and looks considered is better than one that just works.",
+  "about.drivesMe.item4.text": "In the workshop, a wrong cut costs a board. I bring the same habit of checking before committing to code.",
 
   "about.outsideScreen.title": "Beyond the Screen",
   "about.interests.music": "Music",
   "about.interests.cycling": "Cycling",
   "about.interests.photography": "Photography",
-  "about.outsideScreen.p1": "Outside of work, I explore music (creating and listening), ferment water kefir, ride long distances by bike, or spend time in nature. More recently, I've started learning photography, slowly and intuitively.",
+  "about.outsideScreen.p1": "Outside of work I make music, ride long distances by bike and spend a lot of time in the workshop. Photography came recently, slowly and intuitively.",
 
   "about.lookingFor.title": "What I'm Looking For",
   "about.lookingFor.environment.title": "Ideal Environment",
@@ -56,7 +58,7 @@
   "about.lookingFor.item2": "Cross-functional collaboration between engineering, product, and design",
   "about.lookingFor.item3": "Continuous learning and knowledge sharing",
   "about.lookingFor.item4": "Building products that genuinely improve people's lives",
-  "about.lookingFor.p2": "Ideal team size: 10-50 people. Ideal role: Full-Stack Developer or Backend-focused position with room to contribute to product thinking.",
+  "about.lookingFor.p2": "Ideal team size: 10–50 people. Ideal role: backend or platform-focused software engineer, with room to think about the product.",
   "about.lookingFor.availability": "Available now",
   "about.lookingFor.ctaDownload": "Download CV (PDF)",
 
