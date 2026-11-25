@@ -30,9 +30,6 @@
   /* Backgrounds */
   --bg-base: var(--paper-warm);
   --bg-surface: var(--paper-light);
-  --bg-elevated: var(--paper-light);
-  --bg-section-alt: var(--paper-mid);
-  --bg-inset: var(--paper-mid);
 
   /* Text */
   --text-primary: var(--ink-warm);
@@ -47,14 +44,9 @@
 
   /* Links */
   --link-default: var(--ink-warm);
-  --link-hover: var(--ink-warm);
-  --link-visited: var(--ink-soft);
 
   /* States */
   --state-error: #b71c1c;
-  --state-error-bg: var(--paper-mid);
-  --state-success: var(--ink-warm);
-  --state-success-bg: var(--paper-mid);
 
   /* =================================
      EDITORIAL EFFECTS
@@ -62,7 +54,6 @@
 
   /* Opacity Tokens */
   --opacity-editorial-number: 0.04; /* large background section numerals */
-  --opacity-editorial-rule: 0.15;
   --opacity-image-filter: 0.9;
 
   /* Filter Presets */
@@ -98,7 +89,6 @@
   --weight-regular: 400; /* Regular - for body paragraphs */
   --weight-medium: 500; /* Medium - for emphasis */
   --weight-semibold: 600; /* Semi-bold - for strong emphasis */
-  --weight-bold: 700; /* Bold - for subheadings */
   --weight-extrabold: 800; /* Extra bold - for main headings */
 
   /* Type Scale */
@@ -106,13 +96,8 @@
   --text-sm: 0.8rem; /* 12.8px - Captions */
   --text-ui: 0.875rem; /* 14px - Buttons, small, UI labels */
   --text-body-sm: 0.9375rem; /* 15px - Small body, nav links */
-  --text-base: 0.9rem; /* 14.4px - Body text */
   --text-md: 1rem; /* 16px - Large body */
   --text-lg: 1.125rem; /* 18px - Lead paragraphs */
-  --text-xl: 1.35rem; /* 21.6px - H4 */
-  --text-2xl: 1.5625rem; /* 25px - H3 */
-  --text-3xl: 2rem; /* 32px - H2 */
-  --text-4xl: 3.125rem; /* 50px - H1 max */
 
   /* =================================
      SPACING SCALE
@@ -137,7 +122,6 @@
 
   /* Card elevation */
   --shadow-card: 0 4px 8px rgba(28, 28, 28, 0.06), 0 12px 24px rgba(28, 28, 28, 0.04);
-  --shadow-card-hover: 0 8px 16px rgba(28, 28, 28, 0.08), 0 16px 32px rgba(28, 28, 28, 0.06);
 
   /* Interaction elevation */
   --shadow-lift: 0 2px 8px rgba(43, 43, 43, 0.1); /* button hover */
@@ -149,8 +133,6 @@
      TRANSITIONS
      ================================= */
 
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* =================================
@@ -159,8 +141,6 @@
 
   --radius-sm: 4px;
   --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
 
   /* =================================
      LAYOUT CONSTRAINTS
@@ -168,15 +148,11 @@
 
   --nav-height: 3.5rem;
   --container-max: 800px; /* Tighter for reading */
-  --container-wide: 1200px;
   --container-nav: 1120px;
   --container-grid: 1280px;
   --grid-outer-padding: 64px;
   --grid-outer-padding-mobile: 24px;
 
-  /* =================================
-     BREAKPOINTS
-     ================================= */
-
-  --breakpoint-mobile: 767.98px;
+  /* Breakpoints can't be custom properties (not allowed in @media).
+     Use 900px (tablet) and 767.98px (mobile) literally. */
 }
