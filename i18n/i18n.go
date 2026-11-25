@@ -56,6 +56,10 @@ func Init(localesDir string) {
 func MiddlewareI18n(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		currentPath := r.URL.Path
+		if isAssetPath(currentPath) {
+			next.ServeHTTP(w, r)
+			return
+		}
 		var langCodeToUse string
 		basePath := currentPath
 
@@ -140,4 +144,12 @@ func getBasePath(ctx context.Context) string {
 		return val
 	}
 	return "/"
+}
+
+// isAssetPath reports paths that are language-independent files. They skip
+// the language redirect, which would otherwise cost every asset a round trip.
+func isAssetPath(p string) bool {
+	return strings.HasPrefix(p, "/static/") ||
+		strings.HasPrefix(p, "/.well-known/") ||
+		p == "/robots.txt" || p == "/sitemap.xml"
 }
