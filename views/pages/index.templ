@@ -11,10 +11,8 @@ templ Home(pCtx i18n.PageContext) {
 			</div>
 			<div class="hero-right-column">
 				<div class="hero-content">
-					<h1 class="hero-main-visual-text">
-						<span class="line-1">{ pCtx.T("home.hero.line1") }</span>
-						<span class="line-2">{ pCtx.T("home.hero.line2") }</span>
-					</h1>
+					<p class="label-mono hero-eyebrow">{ pCtx.T("home.hero.eyebrow") }</p>
+					<h1 class="hero-main-visual-text">{ pCtx.T("home.hero.title") }</h1>
 					<p class="hero-subtitle">{ pCtx.T("home.hero.subtitle") }</p>
 					<div class="hero-cta">
 						<a href={ pCtx.CurrentLangLink("/about") } class="cta-tinted">{ pCtx.T("home.hero.cta") }</a>

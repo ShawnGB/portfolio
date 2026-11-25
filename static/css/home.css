@@ -83,21 +83,9 @@ h1.hero-main-visual-text {
   }
 }
 
-h1.hero-main-visual-text .line-1,
-h1.hero-main-visual-text .line-2 {
-  display: inline;
-  color: var(--ink-warm);
-}
-
-h1.hero-main-visual-text .line-1 {
-  line-height: 1.3;
-  margin-bottom: 0.35rem;
-  display: block;
-}
-
-h1.hero-main-visual-text .line-2 {
-  line-height: 1.5;
-  display: block;
+.hero-eyebrow {
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.06em;
 }
 
 .hero-subtitle {

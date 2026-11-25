@@ -16,9 +16,9 @@
   "footer.copyright": "© 2026 Shawn Gordon Becker",
 
   "home.hero.image.alt": "Shawn Becker",
-  "home.hero.line1": "Hey, I'm Shawn –",
-  "home.hero.line2": "I build software that holds up.",
-  "home.hero.subtitle": "Software engineer in Berlin, focused on backends and the systems behind them: Go, TypeScript, PostgreSQL. Away from the screen I build campers and tiny houses out of wood.",
+  "home.hero.eyebrow": "Shawn Becker · Software Engineer · Berlin",
+  "home.hero.title": "I build software that holds up.",
+  "home.hero.subtitle": "TypeScript, Node.js and Go – with a lean toward the backend.",
   "home.hero.cta": "About my work",
 
   "about.title": "About me",
