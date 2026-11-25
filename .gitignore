@@ -12,3 +12,5 @@ tmp/
 
 # Local development
 docs/
+# Go build output
+/gofolio
