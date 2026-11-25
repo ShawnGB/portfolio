@@ -1,10 +1,12 @@
 package pages
 
 import "mymodules/gofolio/i18n"
+import "mymodules/gofolio/utils"
+import "strconv"
 import "mymodules/gofolio/views/layouts"
 
 type artsSection struct {
-	Images []string
+	Images []utils.Image
 	Class  string
 }
 
@@ -15,19 +17,19 @@ var artsLayout = []struct {
 	n     int
 	class string
 }{
-	{3, "arts-grid"},
-	{3, "arts-grid"},
-	{1, "arts-anchor arts-anchor--slim"},
-	{3, "arts-grid"},
-	{3, "arts-grid"},
-	{3, "arts-grid"},
-	{2, "arts-grid--halves"},
+	{3, "arts-grid full-bleed"},
+	{3, "arts-grid full-bleed"},
+	{1, "arts-anchor arts-anchor--slim full-bleed"},
+	{3, "arts-grid full-bleed"},
+	{3, "arts-grid full-bleed"},
+	{3, "arts-grid full-bleed"},
+	{2, "arts-grid--halves full-bleed"},
 }
 
 // buildArtsSections distributes images over artsLayout without ever
 // slicing out of range, so a missing or extra image can't break the page.
 // The first image (01) is intentionally not shown in the gallery.
-func buildArtsSections(imgs []string) []artsSection {
+func buildArtsSections(imgs []utils.Image) []artsSection {
 	if len(imgs) > 0 {
 		imgs = imgs[1:]
 	}
@@ -46,22 +48,26 @@ func buildArtsSections(imgs []string) []artsSection {
 	return sections
 }
 
-templ artsImageSection(imgs []string, sectionClass string, pCtx i18n.PageContext) {
+templ artsImageSection(imgs []utils.Image, sectionClass string, pCtx i18n.PageContext) {
 	if len(imgs) > 0 {
 		<section class={ sectionClass }>
 			for _, img := range imgs {
-				<img src={ "/static/" + img } alt={ pCtx.T("arts.gallery.imageAlt") }/>
+				if img.Width > 0 {
+					<img src={ "/static/" + img.Path } alt={ pCtx.T("arts.gallery.imageAlt") } width={ strconv.Itoa(img.Width) } height={ strconv.Itoa(img.Height) } loading="lazy" decoding="async"/>
+				} else {
+					<img src={ "/static/" + img.Path } alt={ pCtx.T("arts.gallery.imageAlt") } loading="lazy" decoding="async"/>
+				}
 			}
 		</section>
 	}
 }
 
-templ Arts(images []string, pCtx i18n.PageContext) {
+templ Arts(images []utils.Image, pCtx i18n.PageContext) {
 	@layouts.SubpageTemplate(pCtx, "arts.title", "arts.intro.p1", "arts.pageTitle", "arts.pageMetaDescription") {
 		for _, s := range buildArtsSections(images) {
 			@artsImageSection(s.Images, s.Class, pCtx)
 		}
-		<section class="arts-anchor arts-anchor--contained">
+		<section class="arts-anchor arts-anchor--contained full-bleed">
 			<video autoplay loop muted playsinline>
 				<source src="/static/images/arts/IMG_3991.webm" type="video/webm"/>
 				<source src="/static/images/arts/IMG_3991.mp4" type="video/mp4"/>

@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	cachedImages  []string
+	cachedImages  []utils.Image
 	captchaClient *hcaptcha.Client
 	emailConfig   utils.SendContactMailConfig
 )
@@ -46,7 +46,7 @@ func InitEmailConfig() {
 }
 
 func LoadImages() error {
-	images, err := utils.GetArtsImages()
+	images, err := utils.GetArtsImagesWithSize()
 	if err != nil {
 		return err
 	}

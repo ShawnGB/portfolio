@@ -1,10 +1,4 @@
 .arts-anchor {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-xl);
 }
@@ -34,12 +28,6 @@
 }
 
 .arts-grid {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   padding: 0 8vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -57,12 +45,6 @@
 }
 
 .arts-grid--halves {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   padding: 0 8vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
